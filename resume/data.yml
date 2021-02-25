@@ -31,35 +31,30 @@ experience:
   description: Making coffee and baking cookies.
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
-
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: B.S. in Computer Science, Minor in Applied Mathematics
+  timeperiod: January 2011 - December 2014
+  description: Francis Marion University, Florence, SC 29501
+  website: jamieleviner.com
 
 # skill level goes 0 to 100
+# git, TeamCity, Intercom, NewRelic, AWS S3, Grunt.js, .cshtml, VSCode,
+# GoLand, Postman, Visual Studio 2012 & 2017, Webstorm, Node.js, Powershell,
+# Vuetify, vue-router, jQuery Plug-ins, Jira
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
 - name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
   level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: jQuery
+  level: 95
+- name: Vue.js
+  level: 97
+- name: CSS/LESS/SASS
+  level: 93
+- name: ASP.NET - MVC in C#
+  level: 60
+- name: Go
+  level: 80
+# knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
+#   (English and Klingon).
 
 projects:
 - name: best-resume-ever
@@ -83,12 +78,12 @@ contributions:
   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: levinerjamie@gmail.com
+  phone: (843) 229-1193
+  street:
+  city: Florence
+  website: jamieleviner.com
+  github: https://github.com/where-are-you-cloud
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en
 `
