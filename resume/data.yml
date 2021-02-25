@@ -18,17 +18,21 @@ experience:
   position: Software Engineer
   timeperiod: July 2017 - present
   description: Programming and watching cute cat videos.
-  website: https://example.com
+  website: https://www.acstechnologies.com/
 
 - company: ACS Technologies
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
+  position: Software Engineer-Associate
+  timeperiod: July 2016 - July 2017
   description: Fulfillment of extremely important tasks.
 
 - company: ACS Technologies
-  position: Trainee
-  timeperiod: March 2014 - December 2014
+  position: Software Development Apprentice
+  timeperiod: August 2015 - July 2016
   description: Making coffee and baking cookies.
+
+- company: ACS Technologies
+  position: Intern
+  timeperiod: May 2015 - August 2016
 
 education:
 - degree: B.S. in Computer Science, Minor in Applied Mathematics
@@ -37,45 +41,57 @@ education:
   website: jamieleviner.com
 
 # skill level goes 0 to 100
-# git, TeamCity, Intercom, NewRelic, AWS S3, Grunt.js, .cshtml, VSCode,
-# GoLand, Postman, Visual Studio 2012 & 2017, Webstorm, Node.js, Powershell,
-# Vuetify, vue-router, jQuery Plug-ins, Jira
+# VueJS: Vuetify, vue-router, vue-cli
+# Analytics: Intercom, Segment, Google Analytics, NewRelic
+# Other: Git, GruntJS
+# School/Recreational: Android/Java
 skills:
 - name: JavaScript
   level: 99
 - name: jQuery
   level: 95
-- name: Vue.js
+- name: VueJS
   level: 97
 - name: CSS/LESS/SASS
   level: 93
-- name: ASP.NET - MVC in C#
-  level: 60
-- name: Go
+- name: C#/ASP.NET MVC
   level: 80
+- name: Go
+  level: 60
+- name: Intercom
+  level: 77
+- name: PostgreSQL
+  level: 40
 # knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
 #   (English and Klingon).
 
+# Android Apps: Box Ready, Bar Buddy
+# Contract Work: IKS Metal Slitting Calculator, Muscovy's Food & Spirits website
 projects:
 - name: best-resume-ever
   platform: Vue
   timeperiod: February 2016
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
   url: https://github.com/salomonelli/best-resume-ever
+- name: jamieleviner.com
+  platform: Jekyll
+  timeperiod: January 2021
+  description: My personal website. Created using the jekyll theme Jalpc.
+  # url: https://github.com/noDojo/personal-site    # uncomment when set to public
 
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
+# hobbies:
+# - name: Video Games
+#   iconClass: fa fa-gamepad
+#   url: https://example.com
 
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
+# - name: Drawing
+#   iconClass: fa fa-pencil
+#   url: https://example.com
 
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+# contributions:
+# - name: best-resume-ever
+#   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+#   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
   email: levinerjamie@gmail.com
@@ -83,7 +99,7 @@ contact:
   street:
   city: Florence
   website: jamieleviner.com
-  github: https://github.com/where-are-you-cloud
+  github: where-are-you-cloud
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en
 `
