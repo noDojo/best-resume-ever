@@ -41,7 +41,7 @@ education:
   minor: Minor in Applied Mathematics
   timeperiod: Jan 2011 - Dec 2014
   description: Francis Marion University, Florence, SC 29501
-  # website: jamieleviner.com
+  website: https://www.fmarion.edu/computerscience/
 
 # skill level goes 0 to 100
 # VueJS: Vuetify, vue-router, vue-cli

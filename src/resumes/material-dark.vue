@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <a :href="contactLinks.phone">
+      <a :href="contactLinks.phone" target="_blank">
         <div class="item">
           <div class="icon">
             <i class="material-icons">phone</i>
@@ -45,7 +45,7 @@
         </div>
       </a>
 
-      <a :href="contactLinks.email">
+      <a :href="contactLinks.email" target="_blank">
         <div class="item">
           <div class="icon">
             <i class="material-icons">email</i>
@@ -130,7 +130,7 @@
         v-for="experience in person.experience"
         :key="experience.company"
       >
-        <a :href="experience.website">
+        <a :href="experience.website" target="_blank">
           <div class="block-helper"></div>
           <h3 class="headline">
             {{ experience.position }} - {{ experience.company }}
@@ -147,7 +147,7 @@
         v-for="education in person.education"
         :key="education.degree"
       >
-        <a :href="education.website">
+        <a :href="education.website" target="_blank">
           <div class="block-helper"></div>
           <h3 class="headline">{{ education.description }}</h3>
           <div class="subheadline">{{ education.timeperiod }}</div>
