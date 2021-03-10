@@ -265,12 +265,12 @@ p {
 .fa,
 .material-icons {
   display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
+  // font-style: normal;
+  // font-weight: normal;
+  // line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 26px;
+  // font-size: 26px;
   font: normal normal 26px/1;
 }
 
