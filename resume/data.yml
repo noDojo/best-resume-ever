@@ -36,9 +36,12 @@ experience:
 
 education:
 - degree: B.S. in Computer Science, Minor in Applied Mathematics
-  timeperiod: January 2011 - December 2014
+  school: Francis Marion University
+  major: Bachelor of Science in Computer Science
+  minor: Minor in Applied Mathematics
+  timeperiod: Jan 2011 - Dec 2014
   description: Francis Marion University, Florence, SC 29501
-  website: jamieleviner.com
+  # website: jamieleviner.com
 
 # skill level goes 0 to 100
 # VueJS: Vuetify, vue-router, vue-cli
@@ -96,8 +99,9 @@ projects:
 contact:
   email: levinerjamie@gmail.com
   phone: (843) 229-1193
-  street:
   city: Florence
+  citystate: Florence, SC
+  zipcode: 29501
   website: jamieleviner.com
   github: jamieleviner
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
