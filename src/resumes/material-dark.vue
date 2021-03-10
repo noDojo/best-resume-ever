@@ -323,11 +323,14 @@ h4 {
 }
 
 .rightCol {
-  width: 63.5%;
+  // width: 63.5%;
+  width: 68%;
   height: 100%;
   float: right;
   display: flex;
   flex-direction: column;
+  padding-right: 4%;
+  padding-left: 2%;
 
   .experience {
     margin-top: 40px;
@@ -428,7 +431,8 @@ h4 {
 }
 
 .leftCol {
-  width: 35%;
+  // width: 35%;
+  width: 24%;
   height: 100%;
   float: left;
   padding: 0;
