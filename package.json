@@ -1,12 +1,12 @@
 {
   "name": "best-resume-ever",
   "version": "1.0.0",
-  "description": "Build fast and easy multiple beautiful resumes and create your best CV ever! ",
-  "author": "salomonelli",
+  "description": "Quickly generate multiple resumes of different styles as PDF files.",
+  "author": "nodojo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/salomonelli/best-resume-ever.git"
+    "url": "git+https://github.com/nodojo/best-resume-ever.git"
   },
   "scripts": {
     "docs": "node build/build.js",

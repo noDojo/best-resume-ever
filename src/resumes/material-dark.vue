@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div class="item">
+    <!-- <div class="item">
       <div class="icon">
         <i class="material-icons">location_city</i>
       </div>
@@ -28,7 +28,7 @@
           <li>{{person.contact.city}}</li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <a :href="contactLinks.phone">
       <div class="item">
