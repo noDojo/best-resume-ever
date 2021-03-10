@@ -1,15 +1,14 @@
 <template>
   <div class="resume">
+    <!-- left column -->
     <div class="leftCol m_box">
       <div class="shadow"></div>
       <div class="heading" id="myselfpic"></div>
-      <div class="section-headline">
-        {{ lang.contact }}
-      </div>
-      <div
-        v-if="person.name.first || person.name.last"
-        class="item"
-      >
+
+      <!-- contact info -->
+      <div class="section-headline">{{ lang.contact }}</div>
+      <!-- name -->
+      <div v-if="person.name.first || person.name.last" class="item">
         <div class="icon">
           <i class="material-icons">account_circle</i>
         </div>
@@ -19,11 +18,8 @@
           </ul>
         </div>
       </div>
-
-      <div
-        v-if="person.contact.citystate || person.contact.zipcode"
-        class="item"
-      >
+      <!-- location -->
+      <div v-if="person.contact.citystate || person.contact.zipcode" class="item">
         <div class="icon">
           <i class="material-icons">location_city</i>
         </div>
@@ -33,7 +29,7 @@
           </ul>
         </div>
       </div>
-
+      <!-- phone -->
       <a :href="contactLinks.phone" target="_blank">
         <div class="item">
           <div class="icon">
@@ -44,7 +40,7 @@
           </div>
         </div>
       </a>
-
+      <!-- email -->
       <a :href="contactLinks.email" target="_blank">
         <div class="item">
           <div class="icon">
@@ -55,12 +51,8 @@
           </div>
         </div>
       </a>
-
-      <a
-        v-if="person.contact.github"
-        :href="contactLinks.github"
-        target="_blank"
-      >
+      <!-- github -->
+      <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
         <div class="item">
           <div class="icon">
             <i class="fa fa-github"></i>
@@ -70,12 +62,8 @@
           </div>
         </div>
       </a>
-
-      <a
-        v-if="person.contact.website"
-        :href="person.contact.website"
-        target="_blank"
-      >
+      <!-- personal website -->
+      <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
         <div class="item">
           <div class="icon">
             <i class="material-icons">language</i>
@@ -86,10 +74,9 @@
         </div>
       </a>
 
+      <!-- skills -->
       <div class="item">
-        <div class="section-headline">
-          {{ lang.skills }}
-        </div>
+        <div class="section-headline">{{ lang.skills }}</div>
         <div class="skill" v-for="skill in person.skills" :key="skill.name">
           <div class="right">
             <span>{{ skill.name }}&nbsp;</span>
@@ -102,10 +89,9 @@
         </div>
       </div>
 
+      <!-- additional skills -->
       <div class="item last">
-        <div v-if="person.knowledge" class="section-headline">
-          {{ lang.additionalSkills }}
-        </div>
+        <div v-if="person.knowledge" class="section-headline">{{ lang.additionalSkills }}</div>
         <div v-if="person.knowledge" class="skill">
           <div class="right">
             <span>{{ person.knowledge }}</span>
@@ -114,39 +100,28 @@
       </div>
     </div>
 
+    <!-- right column (content area) -->
     <div class="rightCol">
+
+      <!-- name, position, about -->
       <div class="title">
-        <h2>
-          {{ person.name.first }} {{ person.name.middle }}
-          {{ person.name.last }}
-        </h2>
+        <h2>{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</h2>
         <div class="description">{{ person.position }}</div>
         <span class="about">{{ person.about }}</span>
       </div>
-
+      <!-- experience blocks -->
       <div class="section-headline experience">{{ lang.experience }}</div>
-      <div
-        class="block"
-        v-for="experience in person.experience"
-        :key="experience.company"
-      >
+      <div v-for="experience in person.experience" :key="experience.company" class="block">
         <a :href="experience.website" target="_blank">
           <div class="block-helper"></div>
-          <h3 class="headline">
-            {{ experience.position }} - {{ experience.company }}
-          </h3>
+          <h3 class="headline">{{ experience.position }} - {{ experience.company }}</h3>
           <div class="subheadline">{{ experience.timeperiod }}</div>
-          <p class="info">
-            {{ experience.description }}
-          </p>
+          <p class="info">{{ experience.description }}</p>
         </a>
       </div>
+      <!-- education block -->
       <div class="section-headline">{{ lang.education }}</div>
-      <div
-        class="block"
-        v-for="education in person.education"
-        :key="education.degree"
-      >
+      <div v-for="education in person.education" :key="education.degree" class="block">
         <a :href="education.website" target="_blank">
           <div class="block-helper"></div>
           <h3 class="headline">{{ education.description }}</h3>
@@ -206,7 +181,7 @@ a {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    color: white;
+    // color: white;
     color: rgba(0, 0, 0, 0.7);
     padding-top: 0;
     margin-top: 0;
@@ -215,25 +190,25 @@ a {
   }
 
   div {
-    margin-top: -5px;
-    margin-top: 0;
+    // margin-top: -5px;
+    // margin-top: 0;
     margin: 0;
     padding: 0;
     line-height: 15pt;
-    font-weight: 300;
+    // font-weight: 300;
     font-weight: 500;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
     letter-spacing: 3px;
-    color: white;
-    color: #16151c;
+    // color: white;
+    // color: #16151c;
     color: rgba(63, 61, 60, 0.71);
     display: block;
-    font-size: 0.67em;
+    // font-size: 0.67em;
     font-size: 10pt;
     -webkit-margin-before: 2.33em;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    padding-top: 0;
+    // padding-top: 0;
     text-transform: uppercase;
     opacity: 0.8;
   }
@@ -276,10 +251,11 @@ ul {
 p {
   margin-top: 0;
   margin-bottom: 25px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 10pt;
-  line-height: 17pt;
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 300;
+  // font-size: 10pt;
+  // line-height: 17pt;
+  font: normal 300 10pt/17pt "Roboto", sans-serif;
 }
 
 .m_box {
@@ -295,6 +271,7 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 26px;
+  font: normal normal 26px/1;
 }
 
 h1,
@@ -306,9 +283,8 @@ h6 {
 }
 
 h2 {
-  font-weight: 400;
+  // font-weight: 400;
   font-weight: 500;
-  margin: 0;
   margin: 0;
   font-size: 22pt;
   line-height: 37pt;
@@ -424,7 +400,6 @@ h4 {
 
       .item:last-of-type {
         border-bottom-style: none;
-        border-bottom-style: none;
       }
     }
   }
@@ -437,7 +412,7 @@ h4 {
   float: left;
   padding: 0;
   text-align: left;
-  color: #ffffff;
+  // color: #ffffff;
   color: rgba(255, 255, 255, 0.59);
   background-color: #16151c;
   overflow: hidden;
