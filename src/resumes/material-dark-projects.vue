@@ -111,9 +111,19 @@
           {{ experience.position }} - {{ experience.company }}
         </h3>
         <div class="subheadline">{{ experience.timeperiod }}</div>
-        <p class="info">
+        <!-- <p class="info">
           {{ experience.description }}
-        </p>
+        </p> -->
+        <div class="bullet-list">
+          <div v-for="item in experience.description" :key="item" class="item">
+            <div class="icon bullet-icon">
+              <!-- <i class="material-icons">add_circle_outline</i> -->
+              <!-- <i class="material-icons">remove</i> -->
+              <i class="material-icons">chevron_right</i>
+            </div>
+            <div class="text">{{ item.bullet }}</div>
+          </div>
+        </div>
       </div>
 
       <!-- note: education block -->
@@ -161,9 +171,11 @@ export default Vue.component(name, getVueOptions(name));
   font-family: "Roboto" !important;
   background: #cccccc;
 }
+
 a {
   cursor: pointer;
 }
+
 .description-personal {
   margin-left: 20px;
   margin-top: 20px;
@@ -171,11 +183,13 @@ a {
   text-align: justify;
   font-family: Roboto;
 }
+
 .title {
   right: 25px;
   padding-left: 20px;
   padding-top: 20px;
   bottom: 25px;
+
   h2 {
     text-transform: uppercase;
     display: block;
@@ -191,19 +205,15 @@ a {
     letter-spacing: 10px;
     font-weight: 400;
   }
+
   div {
     margin: 0;
     padding: 0;
     line-height: 15pt;
-    font-weight: 300;
     font-weight: 500;
     letter-spacing: 2px;
-    letter-spacing: 3px;
-    color: white;
-    color: #16151c;
     color: rgba(63, 61, 60, 0.71);
     display: block;
-    font-size: 0.67em;
     font-size: 10pt;
     -webkit-margin-before: 2.33em;
     -webkit-margin-start: 0;
@@ -213,6 +223,7 @@ a {
     opacity: 0.8;
   }
 }
+
 .section-headline {
   text-transform: uppercase;
   font-weight: 500;
@@ -224,20 +235,24 @@ a {
   margin-bottom: 20px;
   color: #3f3d3c;
 }
+
 .c {
   clear: both;
 }
+
 li {
   margin: 0;
   padding: 0;
   list-style-type: none;
   padding-top: 9px;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
 p {
   margin-top: 0;
   margin-bottom: 25px;
@@ -246,9 +261,11 @@ p {
   font-size: 10pt;
   line-height: 17pt;
 }
+
 .m_box {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
 .fa,
 .material-icons {
   display: inline-block;
@@ -259,6 +276,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   font-size: 26px;
 }
+
 h1,
 h3,
 h5,
@@ -266,13 +284,14 @@ h6 {
   font-weight: 400;
   margin: 0;
 }
+
 h2 {
-  font-weight: 400;
   font-weight: 500;
   margin: 0;
   font-size: 22pt;
   line-height: 37pt;
 }
+
 h4 {
   font-weight: 400;
   margin: 0;
@@ -280,6 +299,7 @@ h4 {
   line-height: 20pt;
   opacity: 1;
 }
+
 .farRightCol {
   width: 30%;
   height: 100%;
@@ -287,6 +307,7 @@ h4 {
   display: flex;
   margin-top: 120px;
   flex-direction: column;
+
   .block {
     width: 90%;
     position: relative;
@@ -295,28 +316,46 @@ h4 {
     margin-top: 5px;
     margin-bottom: 5px;
     display: inline-block;
+
     .headline {
       font-weight: 300;
       display: block;
       font-size: 15px;
       color: rgba(0, 0, 0, 0.870588);
     }
+
     .subheadline {
       color: rgba(0, 0, 0, 0.541176);
       display: block;
       font-size: 14px;
       font-weight: 300;
     }
+
+    .bullet-list {
+      padding: 20px 0 8px;
+      font-weight: 300;
+
+      .item {
+        padding: 4px 0;
+      }
+
+      .text {
+        overflow: auto;
+      }
+    }
+
     .info {
       font-size: 14px;
       color: rgba(0, 0, 0, 0.870588);
       margin-bottom: 0;
       padding-top: 20px;
     }
+
     .icon {
       width: 16%;
       float: left;
       margin-left: 0;
+
       .fa,
       .material-icons {
         text-align: center;
@@ -324,6 +363,12 @@ h4 {
         font-size: 30pt;
       }
     }
+
+    .icon.bullet-icon {
+      width: 6%;
+      padding-top: 2px;
+    }
+
     .content {
       width: 80%;
       position: absolute;
@@ -333,6 +378,7 @@ h4 {
       text-align: left;
       display: flex;
       flex-direction: column;
+
       .item {
         border-bottom: 1px solid #bdbdbd;
         flex: 1;
@@ -342,23 +388,26 @@ h4 {
         flex-direction: column;
         text-align: left;
         padding-top: 0;
+
         span {
           color: #d8ab94;
           margin-top: 0;
           font-size: 10pt;
           line-height: 16pt;
         }
+
         p {
           margin-top: 5px;
         }
       }
+
       .item:last-of-type {
-        border-bottom-style: none;
         border-bottom-style: none;
       }
     }
   }
 }
+
 .rightCol {
   width: 30%;
   height: 100%;
@@ -366,6 +415,7 @@ h4 {
   display: flex;
   padding-left: 10px;
   flex-direction: column;
+
   .block {
     width: 90%;
     position: relative;
@@ -374,28 +424,33 @@ h4 {
     margin-top: 5px;
     margin-bottom: 5px;
     display: inline-block;
+
     .headline {
       font-weight: 300;
       display: block;
       font-size: 15px;
       color: rgba(0, 0, 0, 0.870588);
     }
+
     .subheadline {
       color: rgba(0, 0, 0, 0.541176);
       display: block;
       font-size: 14px;
       font-weight: 300;
     }
+
     .info {
       font-size: 14px;
       color: rgba(0, 0, 0, 0.870588);
       margin-bottom: 0;
       padding-top: 20px;
     }
+
     .icon {
       width: 16%;
       float: left;
       margin-left: 0;
+
       .fa,
       .material-icons {
         text-align: center;
@@ -403,6 +458,7 @@ h4 {
         font-size: 30pt;
       }
     }
+
     .content {
       width: 80%;
       position: absolute;
@@ -412,6 +468,7 @@ h4 {
       text-align: left;
       display: flex;
       flex-direction: column;
+
       .item {
         border-bottom: 1px solid #bdbdbd;
         flex: 1;
@@ -421,41 +478,46 @@ h4 {
         flex-direction: column;
         text-align: left;
         padding-top: 0;
+
         span {
           color: #d8ab94;
           margin-top: 0;
           font-size: 10pt;
           line-height: 16pt;
         }
+
         p {
           margin-top: 5px;
         }
       }
+
       .item:last-of-type {
-        border-bottom-style: none;
         border-bottom-style: none;
       }
     }
   }
 }
+
 .leftCol {
   width: 35%;
   height: 100%;
   float: left;
   padding: 0;
   text-align: left;
-  color: #ffffff;
   color: rgba(255, 255, 255, 0.59);
   background-color: #16151c;
   overflow: hidden;
   display: block;
+
   .section-headline {
     color: rgba(255, 255, 255, 0.54);
   }
+
   a {
     color: rgba(255, 255, 255, 0.59);
     text-decoration: none;
   }
+
   .heading {
     background-color: white;
     background-repeat: no-repeat;
@@ -465,19 +527,23 @@ h4 {
     width: 100%;
     height: 277px;
   }
+
   .item {
     width: 100%;
     margin-top: 13px;
     float: left;
+
     .fa,
     .material-icons {
       display: inherit;
       text-align: center;
     }
+
     .icon {
       width: 20%;
       float: left;
     }
+
     .text {
       float: right;
       width: 69%;
@@ -486,6 +552,7 @@ h4 {
       display: block;
       font-size: 15px;
       font-weight: 300;
+
       li {
         padding-top: 0;
         display: block;
@@ -493,25 +560,31 @@ h4 {
         font-weight: 300;
       }
     }
+
     span {
       font-weight: 300;
     }
+
     .skill {
       clear: both;
       width: 97%;
       padding-top: 4px;
+
       .left {
         float: left;
         width: 10%;
         padding-top: 3px;
+
         i:nth-child(2) {
           float: left;
           padding-top: 4px;
         }
       }
+
       .right {
         float: right;
         width: 93%;
+
         .progress {
           float: left;
           position: relative;
@@ -523,11 +596,13 @@ h4 {
           margin: 0.5rem 0 1rem;
           overflow: visible;
           margin-bottom: 10px;
+
           .determinate {
             background-color: #78909c;
             position: absolute;
             top: 0;
             bottom: 0;
+
             .fa,
             .material-icons {
               font-size: 13px;
@@ -542,15 +617,18 @@ h4 {
       }
     }
   }
+
   .item.last .text {
     border-bottom-style: none;
     padding-bottom: 0;
   }
 }
+
 #myselfpic {
   background-image: url("../../resume/id.jpg");
   color: black;
 }
+
 #githubIcon {
   width: 25px;
   padding-left: 17px;

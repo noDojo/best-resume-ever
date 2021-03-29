@@ -115,9 +115,10 @@
 
     <!-- right column (content area) -->
     <div class="rightCol">
+
       <!-- note: name, position, about -->
       <div class="title">
-        <h2>
+        <h2 class="name">
           {{ person.name.first }} {{ person.name.middle }}
           {{ person.name.last }}
         </h2>
@@ -133,11 +134,13 @@
         class="block"
       >
         <a :href="experience.website" target="_blank">
-          <div class="block-helper"></div>
-          <h3 class="headline">
-            {{ experience.position }} - {{ experience.company }}
-          </h3>
-          <div class="subheadline">{{ experience.timeperiod }}</div>
+          <div class="experience-header">
+            <div class="block-helper"></div>
+            <div class="headline float-left">
+              {{ experience.position }} - {{ experience.company }}
+            </div>
+            <i class="subheadline float-right">{{ experience.timeperiod }}</i>
+          </div>
           <div class="bullet-list">
             <div
               v-for="item in experience.description"
@@ -164,8 +167,8 @@
       >
         <a :href="education.website" target="_blank">
           <div class="block-helper"></div>
-          <h3 class="headline">{{ education.description }}</h3>
-          <div class="subheadline">{{ education.timeperiod }}</div>
+          <h3 class="headline float-left">{{ education.description }}</h3>
+          <i class="subheadline float-right">{{ education.timeperiod }}</i>
           <p class="info">{{ education.major }}<br />{{ education.minor }}</p>
         </a>
       </div>
@@ -208,10 +211,16 @@ a {
 }
 
 .title {
-  right: 25px;
-  padding-left: 20px;
-  padding-top: 10px;
-  bottom: 25px;
+  // right: 25px;
+  // padding-left: 20px;
+  // padding-top: 10px;
+  // bottom: 25px;
+  padding-top: 2%;
+
+  .name {
+    letter-spacing: 6px;
+    font-size: 1.8em;
+  }
 
   h2 {
     text-transform: uppercase;
@@ -351,6 +360,10 @@ h4 {
     display: inline-block;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
       0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    .experience-header {
+      padding-bottom: 24px;
+    }
 
     .headline {
       font-weight: 400;
@@ -578,6 +591,14 @@ h4 {
       margin-top: 0 !important;
     }
   }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 #myselfpic {
