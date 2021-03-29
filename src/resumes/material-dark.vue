@@ -5,7 +5,7 @@
       <div class="shadow"></div>
       <div class="heading" id="myselfpic"></div>
 
-      <!-- contact info -->
+      <!-- note: contact info -->
       <div class="section-headline">{{ lang.contact }}</div>
       <!-- name -->
       <div v-if="person.name.first || person.name.last" class="item">
@@ -85,7 +85,7 @@
         </div>
       </a>
 
-      <!-- skills -->
+      <!-- note: skills -->
       <div class="item">
         <div class="section-headline">{{ lang.skills }}</div>
         <div class="skill" v-for="skill in person.skills" :key="skill.name">
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <!-- additional skills -->
+      <!-- note: additional skills -->
       <div class="item last">
         <div v-if="person.knowledge" class="section-headline">
           {{ lang.additionalSkills }}
@@ -115,7 +115,7 @@
 
     <!-- right column (content area) -->
     <div class="rightCol">
-      <!-- name, position, about -->
+      <!-- note: name, position, about -->
       <div class="title">
         <h2>
           {{ person.name.first }} {{ person.name.middle }}
@@ -124,7 +124,8 @@
         <div class="description">{{ person.position }}</div>
         <span class="about">{{ person.about }}</span>
       </div>
-      <!-- experience blocks -->
+
+      <!-- note: experience blocks -->
       <div class="section-headline experience">{{ lang.experience }}</div>
       <div
         v-for="experience in person.experience"
@@ -137,12 +138,24 @@
             {{ experience.position }} - {{ experience.company }}
           </h3>
           <div class="subheadline">{{ experience.timeperiod }}</div>
-          <div v-for="item in experience.description" :key="item" class="">
-            <p>{{ item.bullet }}</p>
+          <div class="bullet-list">
+            <div
+              v-for="item in experience.description"
+              :key="item"
+              class="item"
+            >
+              <div class="icon bullet-icon">
+                <!-- <i class="material-icons">add_circle_outline</i> -->
+                <!-- <i class="material-icons">remove</i> -->
+                <i class="material-icons">chevron_right</i>
+              </div>
+              <div class="text">{{ item.bullet }}</div>
+            </div>
           </div>
         </a>
       </div>
-      <!-- education block -->
+
+      <!-- note: education block -->
       <div class="section-headline">{{ lang.education }}</div>
       <div
         v-for="education in person.education"
@@ -208,7 +221,6 @@ a {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    // color: white;
     color: rgba(0, 0, 0, 0.7);
     padding-top: 0;
     margin-top: 0;
@@ -217,25 +229,17 @@ a {
   }
 
   div {
-    // margin-top: -5px;
-    // margin-top: 0;
     margin: 0;
     padding: 0;
     line-height: 15pt;
-    // font-weight: 300;
     font-weight: 500;
-    // letter-spacing: 2px;
     letter-spacing: 3px;
-    // color: white;
-    // color: #16151c;
     color: rgba(63, 61, 60, 0.71);
     display: block;
-    // font-size: 0.67em;
     font-size: 10pt;
     -webkit-margin-before: 2.33em;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    // padding-top: 0;
     text-transform: uppercase;
     opacity: 0.8;
   }
@@ -278,10 +282,6 @@ ul {
 p {
   margin-top: 0;
   margin-bottom: 25px;
-  // font-family: "Roboto", sans-serif;
-  // font-weight: 300;
-  // font-size: 10pt;
-  // line-height: 17pt;
   font: normal 300 10pt/17pt "Roboto", sans-serif;
 }
 
@@ -292,12 +292,8 @@ p {
 .fa,
 .material-icons {
   display: inline-block;
-  // font-style: normal;
-  // font-weight: normal;
-  // line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // font-size: 26px;
   font: normal normal 26px/1;
 }
 
@@ -310,7 +306,6 @@ h6 {
 }
 
 h2 {
-  // font-weight: 400;
   font-weight: 500;
   margin: 0;
   font-size: 22pt;
@@ -359,7 +354,6 @@ h4 {
       0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
     .headline {
-      // font-weight: 300;
       font-weight: 400;
       display: block;
       font-size: 15px;
@@ -371,6 +365,19 @@ h4 {
       display: block;
       font-size: 14px;
       font-weight: 300;
+    }
+
+    .bullet-list {
+      padding: 20px 0 8px;
+      font-weight: 300;
+
+      .item {
+        padding: 4px 0;
+      }
+
+      .text {
+        overflow: auto;
+      }
     }
 
     .info {
@@ -389,8 +396,14 @@ h4 {
       .material-icons {
         text-align: center;
         display: block;
-        font-size: 30pt;
+        // font-size: 30pt;
+        font-size: 12pt;
       }
+    }
+
+    .icon.bullet-icon {
+      width: 6%;
+      padding-top: 2px;
     }
 
     .content {
@@ -439,7 +452,6 @@ h4 {
   float: left;
   padding: 0;
   text-align: left;
-  // color: #ffffff;
   color: rgba(255, 255, 255, 0.59);
   background-color: #16151c;
   overflow: hidden;
