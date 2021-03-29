@@ -321,7 +321,6 @@ h4 {
 }
 
 .rightCol {
-  // width: 63.5%;
   width: 68%;
   height: 100%;
   float: right;
@@ -396,7 +395,6 @@ h4 {
       .material-icons {
         text-align: center;
         display: block;
-        // font-size: 30pt;
         font-size: 12pt;
       }
     }
@@ -446,7 +444,6 @@ h4 {
 }
 
 .leftCol {
-  // width: 35%;
   width: 24%;
   height: 100%;
   float: left;

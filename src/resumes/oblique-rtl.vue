@@ -197,7 +197,7 @@ export default Vue.component(name, getVueOptions(name));
         margin-top: 50px;
         a,
         span {
-            display: inline-block;
+            // display: inline-block;
             font-size: 20px;
             list-style: none;
             margin-top: 0;

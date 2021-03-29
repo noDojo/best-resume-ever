@@ -165,7 +165,7 @@ a {
   cursor: pointer;
 }
 .description-personal {
-  margin-let: 20px;
+  margin-left: 20px;
   margin-top: 20px;
   padding-right: 40px;
   text-align: justify;
