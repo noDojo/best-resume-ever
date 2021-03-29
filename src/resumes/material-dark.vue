@@ -19,7 +19,10 @@
         </div>
       </div>
       <!-- location -->
-      <div v-if="person.contact.citystate || person.contact.zipcode" class="item">
+      <div
+        v-if="person.contact.citystate || person.contact.zipcode"
+        class="item"
+      >
         <div class="icon">
           <i class="material-icons">location_city</i>
         </div>
@@ -52,7 +55,11 @@
         </div>
       </a>
       <!-- github -->
-      <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
+      <a
+        v-if="person.contact.github"
+        :href="contactLinks.github"
+        target="_blank"
+      >
         <div class="item">
           <div class="icon">
             <i class="fa fa-github"></i>
@@ -63,7 +70,11 @@
         </div>
       </a>
       <!-- personal website -->
-      <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
+      <a
+        v-if="person.contact.website"
+        :href="person.contact.website"
+        target="_blank"
+      >
         <div class="item">
           <div class="icon">
             <i class="material-icons">language</i>
@@ -91,7 +102,9 @@
 
       <!-- additional skills -->
       <div class="item last">
-        <div v-if="person.knowledge" class="section-headline">{{ lang.additionalSkills }}</div>
+        <div v-if="person.knowledge" class="section-headline">
+          {{ lang.additionalSkills }}
+        </div>
         <div v-if="person.knowledge" class="skill">
           <div class="right">
             <span>{{ person.knowledge }}</span>
@@ -102,31 +115,45 @@
 
     <!-- right column (content area) -->
     <div class="rightCol">
-
       <!-- name, position, about -->
       <div class="title">
-        <h2>{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</h2>
+        <h2>
+          {{ person.name.first }} {{ person.name.middle }}
+          {{ person.name.last }}
+        </h2>
         <div class="description">{{ person.position }}</div>
         <span class="about">{{ person.about }}</span>
       </div>
       <!-- experience blocks -->
       <div class="section-headline experience">{{ lang.experience }}</div>
-      <div v-for="experience in person.experience" :key="experience.company" class="block">
+      <div
+        v-for="experience in person.experience"
+        :key="experience.company"
+        class="block"
+      >
         <a :href="experience.website" target="_blank">
           <div class="block-helper"></div>
-          <h3 class="headline">{{ experience.position }} - {{ experience.company }}</h3>
+          <h3 class="headline">
+            {{ experience.position }} - {{ experience.company }}
+          </h3>
           <div class="subheadline">{{ experience.timeperiod }}</div>
-          <p class="info">{{ experience.description }}</p>
+          <div v-for="item in experience.description" :key="item" class="">
+            <p>{{ item.bullet }}</p>
+          </div>
         </a>
       </div>
       <!-- education block -->
       <div class="section-headline">{{ lang.education }}</div>
-      <div v-for="education in person.education" :key="education.degree" class="block">
+      <div
+        v-for="education in person.education"
+        :key="education.degree"
+        class="block"
+      >
         <a :href="education.website" target="_blank">
           <div class="block-helper"></div>
           <h3 class="headline">{{ education.description }}</h3>
           <div class="subheadline">{{ education.timeperiod }}</div>
-          <p class="info">{{ education.major }}<br/>{{ education.minor }}</p>
+          <p class="info">{{ education.major }}<br />{{ education.minor }}</p>
         </a>
       </div>
     </div>
@@ -136,9 +163,9 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import { getVueOptions } from './options';
-const name = 'material-dark';
+import Vue from "vue";
+import { getVueOptions } from "./options";
+const name = "material-dark";
 
 export default Vue.component(name, getVueOptions(name));
 </script>

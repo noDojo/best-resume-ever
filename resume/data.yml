@@ -17,18 +17,28 @@ experience:
 - company: ACS Technologies
   position: Software Engineer
   timeperiod: July 2017 - present
-  description: Programming and watching cute cat videos.
   website: https://www.acstechnologies.com/
+  description:
+  - bullet: Developed a single sign-on authentication layer which provided a centralized integration point for products both future and present and also handled accounts management.
+  - bullet: Built multiple single-page applications and their integrations with various products (internal and external).
+  - bullet: Hosted open invitation technical talks (presented at many). Mentored onboarding developers and designed curriculums to introduce tech stacks. Helped lead a front-end developer community of practice.
+  - bullet: Built and maintained various microservices and end points.
+  - bullet: Created a universal components library for use across multiple applications. The components could be easily consumed by any application via npm.
+  - bullet: Presented team progress to stakeholders at the close of each sprint.
 
 - company: ACS Technologies
   position: Software Engineer-Associate
   timeperiod: July 2016 - July 2017
-  description: Fulfillment of extremely important tasks.
+  description:
+  - bullet: Removed all front-end components and global styles from a primary application and moved them to a separate repository. These assets were made available to multiple applications via CDN.
+  - bullet: Developed, documented, and maintained a library of Vue components for global use.
 
 - company: ACS Technologies
   position: Software Development Apprentice
   timeperiod: August 2015 - July 2016
-  description: Making coffee and baking cookies.
+  description:
+  - bullet: Developed, documented, and maintained a library of jQuery plugins for global use.
+  - bullet: Collaborated with multiple teams to arrange implementation and testing for global front-end changes.
 
 - company: ACS Technologies
   position: Intern
