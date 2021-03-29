@@ -14,7 +14,7 @@
   <div class="left half">
     <div class="experience">
       <h3>Experience</h3>
-      <div class="experience-block" v-for="experience in person.experience">
+      <div class="experience-block" v-for="experience in person.experience" :key="experience.company">
         <span class="company"> {{experience.company}} </span>
         <span class="job-title"> {{experience.position}} </span>
         <span class="time-period"> {{experience.timeperiod}}</span>
@@ -50,7 +50,7 @@
   <div class="right half">
     <div class="education">
       <h3>Education</h3>
-      <div class="education-block" v-for="education in person.education">
+      <div class="education-block" v-for="education in person.education" :key="education.degree">
         <span class="degree">{{education.degree}}</span>
         <span class="timeperiod">{{education.timeperiod}}</span>
         <span class="degree-description">{{education.description}}</span>
@@ -58,7 +58,7 @@
     </div>
     <h3>Skills</h3>
     <div class="skills">
-      <div class="skill-block" v-for="skill in person.skills">
+      <div class="skill-block" v-for="skill in person.skills" :key="skill.name">
         <span class="skill">{{skill.name}}</span>
         <div class="skill-bar">
           <div :style="'width: '+skill.level+'%'" class="level"> </div>
@@ -69,7 +69,7 @@
   </div>
   <div class="projects">
     <h3>Projects</h3>
-    <div class="project-block" v-for="project in person.projects">
+    <div class="project-block" v-for="project in person.projects" :key="project.name">
       <span class="project">{{project.name}}</span>
       <br>
       <span class="project-description">{{project.description}}</span>
