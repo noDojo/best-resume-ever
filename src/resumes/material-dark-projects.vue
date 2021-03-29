@@ -1,12 +1,12 @@
 <template>
 <div class="resume">
+    <!-- left column -->
   <div class="leftCol m_box">
     <div class="shadow"></div>
-    <div class="heading" id="myselfpic">
-    </div>
-    <div class="section-headline">
-      Contact
-    </div>
+    <div class="heading" id="myselfpic"></div>
+
+    <!-- note: contact info -->
+    <div class="section-headline">Contact</div>
     <div class="item">
       <div class="icon">
         <i class="material-icons">account_circle</i>
@@ -17,7 +17,7 @@
         </ul>
       </div>
     </div>
-
+    <!-- location -->
     <div class="item">
       <div class="icon">
         <i class="material-icons">location_city</i>
@@ -29,7 +29,7 @@
         </ul>
       </div>
     </div>
-
+    <!-- phone -->
     <a :href="'tel:'+person.contact.phone">
       <div class="item">
         <div class="icon">
@@ -40,7 +40,7 @@
         </div>
       </div>
     </a>
-
+    <!-- email -->
     <a :href="'mailto:'+person.contact.email">
       <div class="item">
         <div class="icon">
@@ -51,7 +51,7 @@
         </div>
       </div>
     </a>
-
+      <!-- github -->
     <a :href="'https://github.com/'+person.contact.github" target="_blank">
       <div class="item">
         <div class="icon">
@@ -63,7 +63,7 @@
         </div>
       </div>
     </a>
-
+    <!-- personal website -->
     <a :href="person.contact.website" target="_blank">
       <div class="item">
         <div class="icon">
@@ -75,11 +75,10 @@
       </div>
     </a>
 
+      <!-- note: skills -->
     <div class="item last">
-      <div class="section-headline">
-        Skills
-      </div>
-      <div class="skill" v-for="skill in person.skills">
+      <div class="section-headline">Skills</div>
+      <div class="skill" v-for="skill in person.skills" :key="skill.name">
         <div class="right">
           <span>{{skill.name}}</span>
           <div class="progress">
@@ -92,16 +91,19 @@
     </div>
   </div>
 
+  <!-- right column (content area) -->
   <div class="rightCol">
+    <!-- note: name, position, about -->
     <div class="title">
       <h2>{{person.name.first}}  {{person.name.last}}</h2>
       <div>{{person.position}}</div>
     </div>
 
+    <!-- note: experience blocks -->
     <div class="section-headline">Working experience</div>
-    <div class="block" v-for="experience in person.experience">
+    <div class="block" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
-      <div class="headline">{{experience.position}} - {{experience.company}}</h3>
+      <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
         <p class="info">
           {{experience.description}}
@@ -109,8 +111,9 @@
       </div>
     </div>
 
+    <!-- note: education block -->
     <div class="section-headline">Education</div>
-    <div class="block" v-for="education in person.education">
+    <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
       <div class="headline">{{education.degree}}</div>
       <p class="info">
@@ -118,17 +121,19 @@
       </p>
     </div>
   </div>
+
+  <!-- far right column -->
   <div class="farRightCol">
+    <!-- note: projects -->
     <div class="section-headline">Projects</div>
-    <div class="block" v-for="project in person.projects">
+    <div class="block" v-for="project in person.projects" :key="project.name">
       <div class="block-helper"></div>
-      <div class="headline">{{project.name}}</h3>
+      <h3 class="headline">{{project.name}}</h3>
         <div class="subheadline">{{project.timeperiod}}</div>
         <p class="info">{{project.description}}</p>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
-
 
   <div style="clear:both;"></div>
 </div>
