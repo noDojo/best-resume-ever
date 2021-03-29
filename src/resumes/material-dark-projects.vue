@@ -7,13 +7,14 @@
 
       <!-- note: contact info -->
       <div class="section-headline">Contact</div>
-      <div class="item">
+            <!-- name -->
+      <div v-if="person.name.first || person.name.last" class="item">
         <div class="icon">
           <i class="material-icons">account_circle</i>
         </div>
         <div class="text">
           <ul>
-            <li>Born {{ person.birth.year }} in {{ person.birth.location }}</li>
+            <li>{{ person.name.first }} {{ person.name.last }}</li>
           </ul>
         </div>
       </div>
@@ -111,9 +112,6 @@
           {{ experience.position }} - {{ experience.company }}
         </h3>
         <div class="subheadline">{{ experience.timeperiod }}</div>
-        <!-- <p class="info">
-          {{ experience.description }}
-        </p> -->
         <div class="bullet-list">
           <div v-for="item in experience.description" :key="item" class="item">
             <div class="icon bullet-icon">
