@@ -7,7 +7,7 @@
 
       <!-- note: contact info -->
       <div class="section-headline">Contact</div>
-            <!-- name -->
+      <!-- name -->
       <div v-if="person.name.first || person.name.last" class="item">
         <div class="icon">
           <i class="material-icons">account_circle</i>
@@ -305,6 +305,99 @@ h4 {
   display: flex;
   margin-top: 120px;
   flex-direction: column;
+  padding-right: 1%;
+
+  .block {
+    width: 90%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+
+    .headline {
+      font-weight: 300;
+      display: block;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.870588);
+    }
+
+    .subheadline {
+      color: rgba(0, 0, 0, 0.541176);
+      display: block;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .info {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.870588);
+      margin-bottom: 0;
+      padding-top: 20px;
+    }
+
+    .icon {
+      width: 16%;
+      float: left;
+      margin-left: 0;
+
+      .fa,
+      .material-icons {
+        text-align: center;
+        display: block;
+        font-size: 30pt;
+      }
+    }
+
+    .content {
+      width: 80%;
+      position: absolute;
+      height: 96%;
+      left: 17%;
+      padding-right: 3%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        border-bottom: 1px solid #bdbdbd;
+        flex: 1;
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 0;
+
+        span {
+          color: #d8ab94;
+          margin-top: 0;
+          font-size: 10pt;
+          line-height: 16pt;
+        }
+
+        p {
+          margin-top: 5px;
+        }
+      }
+
+      .item:last-of-type {
+        border-bottom-style: none;
+      }
+    }
+  }
+}
+
+.rightCol {
+  // width: 30%;
+  width: 44%;
+  height: 100%;
+  float: left;
+  display: flex;
+  // padding-left: 10px;
+  padding-left: 1%;
+  flex-direction: column;
 
   .block {
     width: 90%;
@@ -358,7 +451,7 @@ h4 {
       .material-icons {
         text-align: center;
         display: block;
-        font-size: 30pt;
+        font-size: 12pt;
       }
     }
 
@@ -406,98 +499,9 @@ h4 {
   }
 }
 
-.rightCol {
-  width: 30%;
-  height: 100%;
-  float: left;
-  display: flex;
-  padding-left: 10px;
-  flex-direction: column;
-
-  .block {
-    width: 90%;
-    position: relative;
-    background-color: #ffffff;
-    padding: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
-
-    .headline {
-      font-weight: 300;
-      display: block;
-      font-size: 15px;
-      color: rgba(0, 0, 0, 0.870588);
-    }
-
-    .subheadline {
-      color: rgba(0, 0, 0, 0.541176);
-      display: block;
-      font-size: 14px;
-      font-weight: 300;
-    }
-
-    .info {
-      font-size: 14px;
-      color: rgba(0, 0, 0, 0.870588);
-      margin-bottom: 0;
-      padding-top: 20px;
-    }
-
-    .icon {
-      width: 16%;
-      float: left;
-      margin-left: 0;
-
-      .fa,
-      .material-icons {
-        text-align: center;
-        display: block;
-        font-size: 30pt;
-      }
-    }
-
-    .content {
-      width: 80%;
-      position: absolute;
-      height: 96%;
-      left: 17%;
-      padding-right: 3%;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-
-      .item {
-        border-bottom: 1px solid #bdbdbd;
-        flex: 1;
-        width: 97%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: left;
-        padding-top: 0;
-
-        span {
-          color: #d8ab94;
-          margin-top: 0;
-          font-size: 10pt;
-          line-height: 16pt;
-        }
-
-        p {
-          margin-top: 5px;
-        }
-      }
-
-      .item:last-of-type {
-        border-bottom-style: none;
-      }
-    }
-  }
-}
-
 .leftCol {
-  width: 35%;
+  // width: 35%;
+  width: 24%;
   height: 100%;
   float: left;
   padding: 0;
