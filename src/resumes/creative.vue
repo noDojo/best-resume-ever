@@ -214,7 +214,6 @@ export default Vue.component(name, getVueOptions(name));
 .resume {
   display: flex;
   position: relative;
-
   font-family:'Roboto' !important;
   font-size: 0.9em;
 }
@@ -225,14 +224,11 @@ export default Vue.component(name, getVueOptions(name));
   padding: 30px;
   padding-top: 45px;
   text-align: left;
-
-  color: #ffffff;
   color:rgba(255,255,255,0.59);
   background-color: @accent-color;
   overflow: hidden;
   display: block;
   z-index: 2;
-
   opacity: 1; // lower this value (0.7 approx.) to see the cover image
   position: absolute;
 }
@@ -247,12 +243,10 @@ export default Vue.component(name, getVueOptions(name));
   background-size: cover;
   background-position: 25% 25%;
   opacity: .4; // up this value to contrast the cover image
-
   height: 100%;
   width: 35%;
   padding: 30px;
   padding-top: 45px;
-
   display: block;
   overflow: hidden;
   position: relative;
@@ -264,7 +258,6 @@ export default Vue.component(name, getVueOptions(name));
   display: flex;
   flex-direction: column;
   padding: 30px;
-
   height: 100%;
   width: 65%;
 }
@@ -300,7 +293,6 @@ a {
   color: white;
   font-size: 1.5em;
   margin-right: 10px;
-
   top: 2px;
   position: relative;
 }
@@ -308,9 +300,7 @@ a {
 .contact-icon-svg {
   margin-top: -2.5px;
   margin-right: 10px;
-
   transform: scale(1);
-
   top: 5px;
   position: relative;
 }
@@ -381,7 +371,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 32px;
@@ -393,22 +382,17 @@ a {
 
 .section-content__header {
   display: block;
-
   font-size: 1.1em;
   font-weight: 500;
 }
 
 .squarred-grid-item {
   display: block;
-
   border: 1px solid @accent-color;
-
   background-color: @accent-color;
   color: white;
-
   margin-top: 5px;
   padding: 5px;
-
   transition: .5s;
 
   &:hover {
@@ -465,12 +449,9 @@ a {
 .hobby-item {
   display: grid;
   grid-template-columns: 30px auto;
-
   color: rgba(255, 255, 255, .6);
-
   margin-right: 25px;
   margin-bottom: 10px;
-
   transition: .5s;
 
   &:hover {
@@ -491,9 +472,7 @@ a {
 .subheadline {
   color: rgba(255, 255, 255, .8);
   font-size: 1.2em;
-
   display: block;
   margin-bottom: 10px;
 }
-
 </style>
