@@ -470,6 +470,7 @@ h4 {
 
   .section-headline {
     color: rgba(255, 255, 255, 0.54);
+    margin-top: 40px;
   }
 
   a {
@@ -485,6 +486,7 @@ h4 {
     position: relative;
     width: 100%;
     height: 277px;
+    margin-bottom: 40px;
   }
 
   .item {
@@ -582,7 +584,7 @@ h4 {
     }
   }
 
-  .item.last {
+  .item.last {    
     .text {
       border-bottom-style: none;
       padding-bottom: 0;
