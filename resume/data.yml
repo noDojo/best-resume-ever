@@ -3,10 +3,11 @@ name:
   first: Jamie
   middle:
   last: Leviner
-about: For the past 5 years, I have worked as a full stack software engineer with a concentration
-  on front-end architecture, frameworks, and tooling. I am strongly interested in becoming part of
-  a development culture that improves and enables its people, and I am looking forward to facing
-  some new challenges.
+about: For the past 6 years, I have worked as a full stack software engineer with a concentration
+  on front-end architecture, frameworks, and tooling. I am interested in becoming part of
+  a development culture that actively seeks to improve and enable its people. My goal is to 
+  find a place where there is plenty of room to grow. I prefer to work remotely and I am only
+  interested in exploring full-time positions.
 position: Software Engineer
 
 birth:
@@ -19,19 +20,33 @@ experience:
   timeperiod: July 2017 - present
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Developed a single sign-on authentication layer which provided a centralized integration point for products both future and present and also handled accounts management.
-  - bullet: Built multiple single-page applications and their integrations with various products (internal and external).
-  - bullet: Hosted open invitation technical talks (presented at many). Mentored onboarding developers and designed curriculums to introduce tech stacks. Helped lead a front-end developer community of practice.
-  - bullet: Built and maintained various microservices and end points.
-  - bullet: Created a universal components library for use across multiple applications. The components could be easily consumed by any application via npm.
-  - bullet: Presented team progress to stakeholders at the close of each sprint.
+  - bullet: Create multiple single-page applications that leverage modern functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, Vuetify, and other various tools.
+  - bullet: Frequently handle integrations between internal projects written in Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as with third-party services and external API's.
+  - bullet: Create tools to standardize and improve developer experience and accelerate the rate of development (enum/JavaScript generator, dynamic link builders with permissions levels set via JWT, etc.)
+  - bullet: Developed an SSO authentication layer to provide a centralized integration point for internal and external products both future and present.
+  - bullet: Designed and created a component library using Vue.js SFC's, Rollup, npm, and Github Packages that generates npm packages and is being used in multiple projects with more to come.
+  - bullet: Develop, design, implement, and maintain new and existing CRUD API endpoints using Golang.
+  - bullet: Designed and implemented new databases and schemas using PostgreSQL for account management and authentication across multiple products.
+  - bullet: Regularly meet with the UX design team to assess designs for technical feasibility, identify and step through user workflows, scope project requirements, and estimate level of effort (LOE)/required working hours before the active phase of development.
+  - bullet: Designed and developed a tool that is used as a sandbox for rapid prototyping and also helps in facilitating UX/UI A/B testing.
+  - bullet: Generate and present reports around team progress and project development status to management and stakeholders at the close of each sprint.
+  - bullet: Regularly host and present at open invitation technical talks with an attendance of 20-30 representing individuals from multiple departments with varying levels of technical experience.
+  - bullet: Mentor new and existing developers on a daily basis. Help lead a front-end developer community of practice with over 30 members.
+  - bullet: Introduced updated testing procedures (BDD) and implemented tools to generate tests by translating Cucumber's Gherkin syntax.
+  - bullet: Oversee and support contract work on a variety of projects such as a website builder and publisher, a streaming platform, and a portal to assist and provide documentation to a high-volume .NET web application with xxx unique visitors each month.
+  - bullet: Provide leadership as a subject matter expert (SME) in analytics and styling languages (CSS/SCSS/LESS).
 
 - company: ACS Technologies
   position: Software Engineer-Associate
   timeperiod: July 2016 - July 2017
   description:
-  - bullet: Removed all front-end components and global styles from a primary application and moved them to a separate repository. These assets were made available to multiple applications via CDN.
-  - bullet: Developed, documented, and maintained a library of Vue components for global use.
+  - bullet: Developed, documented, and maintained a library used globally by a high-volume .NET web application with 50+ jQuery plugins and over 40 Vue.js components for 5+ years resulting in improved code stability and code reusability.
+  - bullet: Migrated all global front-end components, plugins, and styles to the cloud from a high-volume .NET web application with over 600k unique visitors per month.
+  - bullet: Actively participated (more than a few times) in all phases of the software development life cycle, from architectural planning to development and testing to release and maintenance.
+  - bullet: Collaborate with stakeholders to develop clear, unambiguous technical requirements and establish a consistent feed-back loop during all phases of the development life cycle.
+  - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
+  - bullet: Standardize, develop, document, and maintain a flexible, extensive design system that promotes design consistency, reduces the need for boilerplate code, and prevents code duplication.
+  - bullet: Redesigned a reporting engine to mitigate serious performance issues and increase its capacity to generate client data in multiple formats.
 
 - company: ACS Technologies
   position: Software Development Apprentice
@@ -69,7 +84,7 @@ skills:
   level: 93
 - name: C#/ASP.NET MVC
   level: 80
-- name: Go
+- name: Golang
   level: 60
 - name: Intercom
   level: 77

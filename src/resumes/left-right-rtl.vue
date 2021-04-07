@@ -83,40 +83,50 @@ export default Vue.component(name, getVueOptions(name));
   font-size:20px;
   padding-bottom:50px;
   direction: rtl;
+
   a, a:focus, a:hover, a:visited {
     color:#616161;
   }
+
   h3 {
     margin-bottom:0;
   }
+
   span {
     display:inline-block;
   }
+  
   .row {
     width:100%;
   }
+
   .half {
     width:44%;
   }
+
   .half.left {
     float:left;
     text-align:right;
     padding-left:4%;
     padding-right:2%;
   }
+
   .half.right {
     float:right;
     text-align:right;
     padding-right:4%;
     padding-left:2%;
   }
+
   .center {
     margin-left:auto;
     margin-right:auto;
   }
+
   .text-center {
     text-align:center;
   }
+
   .name {
     border:1px solid black;
     text-transform:uppercase;
@@ -128,6 +138,7 @@ export default Vue.component(name, getVueOptions(name));
     font-weight:600;
     letter-spacing:10px;
   }
+  
   .position {
     text-transform:uppercase;
     font-family:'Open Sans', sans-serif;
@@ -135,11 +146,13 @@ export default Vue.component(name, getVueOptions(name));
     color:#757575;
     margin-bottom:40px;
   }
+
   .image {
     width:100px;
     height:100px;
     margin-top:50px;
     margin-bottom:50px;
+
     .img {
       width:100%;
       height:100%;
@@ -150,27 +163,33 @@ export default Vue.component(name, getVueOptions(name));
       background-size:cover;
     }
   }
+
   .contact {
     width:100%;
+
     table {
       text-align:right;
       float:right;
       margin-top:5px;
       color:#616161;
       font-size:20px;
+
       i {
         padding:2px;
         color:#616161;
       }
+
       tr td:nth-child(2) {
         vertical-align:top;
       }
     }
   }
+
   .experience .experience-block span {
     width:100%;
     color:#616161;
   }
+  
   .experience .experience-block span.company {
     font-weight:bold;
     padding-bottom:5px;
