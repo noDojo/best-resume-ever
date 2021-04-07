@@ -129,9 +129,10 @@
       <!-- note: experience blocks -->
       <div class="section-headline experience">{{ lang.experience }}</div>
       <div
-        v-for="experience in person.experience"
+        v-for="(experience, index) in person.experience"
         :key="experience.company"
         class="block"
+        :class="{ 'vertical-card-spacing' : index !== 0 }"
       >
         <a :href="experience.website" target="_blank">
           <div class="experience-header">
@@ -148,8 +149,6 @@
               class="item"
             >
               <div class="icon bullet-icon">
-                <!-- <i class="material-icons">add_circle_outline</i> -->
-                <!-- <i class="material-icons">remove</i> -->
                 <i class="material-icons">chevron_right</i>
               </div>
               <div class="text">{{ item.bullet }}</div>
@@ -348,6 +347,7 @@ h4 {
     font-weight: 375;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.541176);
+    width: 90%;
   }
 
   .block {
@@ -368,7 +368,8 @@ h4 {
     .headline {
       font-weight: 400;
       display: block;
-      font-size: 15px;
+      // font-size: 15px;
+      font-size: 20px;
       color: rgba(0, 0, 0, 0.870588);
     }
 
@@ -599,6 +600,10 @@ h4 {
 
 .float-right {
   float: right;
+}
+
+.block.vertical-card-spacing {
+  margin-top: 3%;
 }
 
 #myselfpic {

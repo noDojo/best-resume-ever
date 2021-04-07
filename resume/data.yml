@@ -37,8 +37,8 @@ experience:
   - bullet: Provide leadership as a subject matter expert (SME) in analytics and styling languages (CSS/SCSS/LESS).
 
 - company: ACS Technologies
-  position: Software Engineer-Associate
-  timeperiod: July 2016 - July 2017
+  position: Junior Software Engineer
+  timeperiod: May 2015 - July 2017
   description:
   - bullet: Developed, documented, and maintained a library used globally by a high-volume .NET web application with 50+ jQuery plugins and over 40 Vue.js components for 5+ years resulting in improved code stability and code reusability.
   - bullet: Migrated all global front-end components, plugins, and styles to the cloud from a high-volume .NET web application with over 600k unique visitors per month.
@@ -47,17 +47,6 @@ experience:
   - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
   - bullet: Standardize, develop, document, and maintain a flexible, extensive design system that promotes design consistency, reduces the need for boilerplate code, and prevents code duplication.
   - bullet: Redesigned a reporting engine to mitigate serious performance issues and increase its capacity to generate client data in multiple formats.
-
-- company: ACS Technologies
-  position: Software Development Apprentice
-  timeperiod: August 2015 - July 2016
-  description:
-  - bullet: Developed, documented, and maintained a library of jQuery plugins for global use.
-  - bullet: Collaborated with multiple teams to arrange implementation and testing for global front-end changes.
-
-- company: ACS Technologies
-  position: Intern
-  timeperiod: May 2015 - August 2016
 
 education:
 - degree: B.S. in Computer Science, Minor in Applied Mathematics
