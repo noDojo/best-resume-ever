@@ -16,8 +16,15 @@ birth:
 
 experience:
 - company: ACS Technologies
+  position: Senior Software Engineer
+  timeperiod: April 2021 - present
+  website: https://www.acstechnologies.com/
+  description:
+  - bullet: Front-end lead on the development of a greenfield business intelligence tool. This includes architectural planning, estimation of effort, and project development where optimized performance is a requirement.
+
+- company: ACS Technologies
   position: Software Engineer
-  timeperiod: July 2017 - present
+  timeperiod: July 2017 - April 2021
   website: https://www.acstechnologies.com/
   description:
   - bullet: Create multiple single-page applications that leverage modern functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, Vuetify, and other various tools.
