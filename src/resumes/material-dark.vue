@@ -381,7 +381,7 @@ h4 {
     }
 
     .bullet-list {
-      padding: 20px 0 8px;
+      padding: 20px 14px 8px;
       font-weight: 300;
 
       .item {
