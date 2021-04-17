@@ -16,6 +16,7 @@ birth:
 
 experience:
 - company: ACS Technologies
+  key: 6A9FD6C2-9D86-4BEE-A470-FCF9F95CB344
   position: Senior Software Engineer
   timeperiod: April 2021 - present
   website: https://www.acstechnologies.com/
@@ -25,6 +26,7 @@ experience:
       project development where optimized performance is a requirement.
 
 - company: ACS Technologies
+  key: 93A06C53-4D1C-4FA7-99C8-6AB5E76BD636
   position: Software Engineer
   timeperiod: July 2017 - April 2021
   website: https://www.acstechnologies.com/
@@ -65,6 +67,7 @@ experience:
       styling languages (CSS/SCSS/LESS).
 
 - company: ACS Technologies
+  key: CC3677EF-CB76-497C-A746-2B911ADC6701
   position: Junior Software Engineer
   timeperiod: May 2015 - July 2017
   description:
@@ -86,6 +89,7 @@ experience:
 
 education:
 - degree: B.S. in Computer Science, Minor in Applied Mathematics
+  key: CB1E18BC-1A86-4CA2-85A8-C9DD2A856FFD
   school: Francis Marion University
   major: Bachelor of Science in Computer Science
   minor: Minor in Applied Mathematics
@@ -95,20 +99,28 @@ education:
 
 skills:
 - name: JavaScript
+  key: 754591BB-2272-4B7B-9270-F32E06A72566
   level: 99
 - name: jQuery
+  key: D0D8E800-FA67-4F33-8A4E-379C14160ACD
   level: 95
 - name: VueJS
+  key: A9E68D66-C354-41FC-8A71-CFDCF59C30F2
   level: 97
 - name: CSS/SCSS/LESS
+  key: 453CD4F6-75B8-4239-BED5-B69D52C66101
   level: 93
 - name: C#/ASP.NET MVC
+  key: 6F255EB9-92BB-462D-A553-EE3ED279F6CF
   level: 80
 - name: Golang
+  key: F0A3B526-96D1-4D11-B308-7FA0A003BE77
   level: 60
 - name: Intercom
+  key: 5BF827EB-3ACB-4CBC-A136-12F8C337D960
   level: 77
 - name: PostgreSQL
+  key: 838FBE71-29B0-4F1A-BD92-892C1791BC9A
   level: 40
 
 # knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual

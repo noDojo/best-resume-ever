@@ -1,13 +1,10 @@
 <template>
   <div class="resume">
-    <!-- left column -->
     <div class="leftCol m_box">
       <div class="shadow"></div>
       <div class="heading" id="myselfpic"></div>
 
-      <!-- note: contact info -->
       <div class="section-headline">{{ lang.contact }}</div>
-      <!-- name -->
       <div v-if="person.name.first || person.name.last" class="item">
         <div class="icon">
           <i class="material-icons">account_circle</i>
@@ -18,7 +15,6 @@
           </ul>
         </div>
       </div>
-      <!-- location -->
       <div
         v-if="person.contact.citystate || person.contact.zipcode"
         class="item"
@@ -32,7 +28,6 @@
           </ul>
         </div>
       </div>
-      <!-- phone -->
       <a :href="contactLinks.phone" target="_blank">
         <div class="item">
           <div class="icon">
@@ -43,7 +38,6 @@
           </div>
         </div>
       </a>
-      <!-- email -->
       <a :href="contactLinks.email" target="_blank">
         <div class="item">
           <div class="icon">
@@ -54,7 +48,6 @@
           </div>
         </div>
       </a>
-      <!-- github -->
       <a
         v-if="person.contact.github"
         :href="contactLinks.github"
@@ -69,7 +62,6 @@
           </div>
         </div>
       </a>
-      <!-- personal website -->
       <a
         v-if="person.contact.website"
         :href="person.contact.website"
@@ -85,10 +77,9 @@
         </div>
       </a>
 
-      <!-- note: skills -->
       <div class="item">
         <div class="section-headline">{{ lang.skills }}</div>
-        <div class="skill" v-for="skill in person.skills" :key="skill.name">
+        <div class="skill" v-for="skill in person.skills" :key="skill.key">
           <div class="right">
             <span>{{ skill.name }}&nbsp;</span>
             <div class="progress">
@@ -100,7 +91,6 @@
         </div>
       </div>
 
-      <!-- note: additional skills -->
       <div class="item last">
         <div v-if="person.knowledge" class="section-headline">
           {{ lang.additionalSkills }}
@@ -113,10 +103,7 @@
       </div>
     </div>
 
-    <!-- right column (content area) -->
     <div class="rightCol">
-
-      <!-- note: name, position, about -->
       <div class="title">
         <h2 class="name">
           {{ person.name.first }} {{ person.name.middle }}
@@ -126,13 +113,12 @@
         <span class="about">{{ person.about }}</span>
       </div>
 
-      <!-- note: experience blocks -->
       <div class="section-headline experience">{{ lang.experience }}</div>
       <div
         v-for="(experience, index) in person.experience"
-        :key="experience.company"
+        :key="experience.key"
         class="block"
-        :class="{ 'vertical-card-spacing' : index !== 0 }"
+        :class="{ 'vertical-card-spacing': index !== 0 }"
       >
         <a :href="experience.website" target="_blank">
           <div class="experience-header">
@@ -145,7 +131,7 @@
           <div class="bullet-list">
             <div
               v-for="item in experience.description"
-              :key="item"
+              :key="item.bullet"
               class="item"
             >
               <div class="icon bullet-icon">
@@ -156,19 +142,19 @@
           </div>
         </a>
       </div>
-
-      <!-- note: education block -->
       <div class="section-headline">{{ lang.education }}</div>
       <div
         v-for="education in person.education"
-        :key="education.degree"
+        :key="education.key"
         class="block"
       >
         <a :href="education.website" target="_blank">
-          <div class="block-helper"></div>
-          <h3 class="headline float-left">{{ education.description }}</h3>
-          <i class="subheadline float-right">{{ education.timeperiod }}</i>
-          <p class="info">{{ education.major }}<br />{{ education.minor }}</p>
+          <div class="experience-header">
+            <div class="block-helper"></div>
+            <h3 class="headline float-left">{{ education.description }}</h3>
+            <i class="subheadline float-right">{{ education.timeperiod }}</i>
+          </div>
+          <p class="info">{{ education.major }}<br/>{{ education.minor }}</p>
         </a>
       </div>
     </div>
@@ -210,10 +196,6 @@ a {
 }
 
 .title {
-  // right: 25px;
-  // padding-left: 20px;
-  // padding-top: 10px;
-  // bottom: 25px;
   padding-top: 2%;
 
   .name {
@@ -360,6 +342,7 @@ h4 {
     display: inline-block;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
       0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 
     .experience-header {
       padding-bottom: 24px;
@@ -584,7 +567,7 @@ h4 {
     }
   }
 
-  .item.last {    
+  .item.last {
     .text {
       border-bottom-style: none;
       padding-bottom: 0;
