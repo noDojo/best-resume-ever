@@ -5,6 +5,9 @@ import App from './App';
 import router from './router';
 import '@/styles/main.less';
 
+// register shared components globally
+// import '@/components/_global/register';
+
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
