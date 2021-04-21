@@ -94,7 +94,7 @@
         </ul>
       </div>
     </div>
-    <div id="resume-footer">
+    <div id="resume-footer" class="hidden">
       <div v-if="person.about">
         <h2>{{ lang.about }}</h2>
         <p>{{ person.about }}</p>
@@ -112,7 +112,6 @@ export default Vue.component(name, getVueOptions(name));
 </script>
 
 <style lang="less" scoped>
-@text-green: #008000;
 #template {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -120,7 +119,6 @@ export default Vue.component(name, getVueOptions(name));
   h1,
   h2 {
     margin: 0;
-    color: @text-green;
     color: rgba(0, 0, 0, 0.7);
   }
 
@@ -130,13 +128,12 @@ export default Vue.component(name, getVueOptions(name));
   }
 
   ul li {
-    color: @text-green;
     color: rgba(0, 0, 0, 0.7);
     font-size: 12px;
   }
 
   a {
-    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
   }
 
@@ -145,10 +142,8 @@ export default Vue.component(name, getVueOptions(name));
   }
 
   #resume-header {
-    color: white;
+    color: rgba(0, 0, 0, 0.7);
     height: 136px;
-    // background-color: green;
-    box-shadow: inset 0px 0px 200px #301030;
     padding: 40px 100px 25px;
 
     #header-left {
@@ -158,14 +153,14 @@ export default Vue.component(name, getVueOptions(name));
 
       h1 {
         font-size: 56px;
-        color: white;
+        color: rgba(0, 0, 0, 0.7);
         text-transform: uppercase;
         line-height: 56px;
       }
 
       h2 {
         font-size: 22px;
-        color: white;
+        color: rgba(0, 0, 0, 0.7);
       }
 
       #info-flex {
@@ -195,7 +190,7 @@ export default Vue.component(name, getVueOptions(name));
     }
 
     .experience {
-      margin: 10px 0 10px 50px;
+      margin: 10px 0 10px 30px;
 
       ul {
         margin: 5px 0 0 0;
@@ -214,20 +209,19 @@ export default Vue.component(name, getVueOptions(name));
     .job-title,
     .degree {
       font-weight: 700;
-      color: @text-green;
+      // color: rgba(0, 0, 0, 0.9);
       font-size: 16px;
     }
 
     .experience-timeperiod,
     .education-timeperiod {
       font-weight: 100;
-      color: @text-green;
       color: rgba(0, 0, 0, 0.7);
       font-size: 16px;
     }
 
     .education {
-      margin: 10px 0 10px 50px;
+      margin: 10px 0 10px 30px;
     }
 
     #skill-list {
@@ -248,7 +242,6 @@ export default Vue.component(name, getVueOptions(name));
   #resume-footer {
     padding: 20px 100px;
     height: 135px;
-    // background-color: green;
     box-shadow: inset 0px 0px 100px #301030;
     box-sizing: border-box;
     position: absolute;
@@ -257,14 +250,14 @@ export default Vue.component(name, getVueOptions(name));
 
     h2,
     p {
-      color: white;
+      color: rgba(0, 0, 0, 0.7);
     }
   }
 }
 
 .spacer {
   width: 100%;
-  border-bottom: 1px solid @text-green;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   margin: 5px 0 10px;
 }
 
