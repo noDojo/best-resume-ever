@@ -50,12 +50,14 @@
       <div class="skills-block">
         <h3>Skills</h3>
         <div class="skills">
-          <div class="skill" v-for="skill in person.skills" :key="skill.name">
-            <div class="icon circle-icon">
+          <div class="skill" v-for="skill in person.skills" :key="skill.name" style="padding:4px 0;">
+            <div class="icon circle-icon"
+              style="color:rgba(153, 153, 153, 0.6);font-size:8px;padding-top:3px;"
+            >
               <i
                 class="fa fa-circle"
                 aria-hidden="true"
-                style="color:rgba(153, 153, 153, 0.6);font-size:10px;padding-top:2px;"
+                style="color:rgba(153, 153, 153, 0.6);font-size:8px;padding-top:3px;"
               ></i>
             </div>
             <div>{{ skill.name }}</div>
@@ -102,7 +104,7 @@
           v-for="project in person.projects"
           :key="project.name"
         >
-          <div class="row name">{{ project.name }}</div>
+          <div class="row name md-bold-text">{{ project.name }}</div>
           <div class="row">
             <div class="bullet-list">
               <div class="icon bullet-icon">
@@ -313,16 +315,6 @@ export default Vue.component(name, getVueOptions(name));
           margin: 3px;
           float: left;
           font-size: 13px;
-
-          .skill-name {
-            padding: 4px 0;
-            overflow: auto;
-            // text-align: center;
-            // position: absolute;
-            // top: 50%;
-            // transform: translateY(-50%);
-            // width: 100%;
-          }
         }
 
         .skills-other {
