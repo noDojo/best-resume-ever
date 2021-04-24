@@ -287,36 +287,5 @@ export default Vue.component(name, getVueOptions(name));
       }
     }
   }
-
-  .bullet-list {
-    padding-bottom: 10px;
-    font-weight: 300;
-
-    .item {
-      padding: 4px 0;
-    }
-
-    .text {
-      overflow: auto;
-    }
-  }
-
-  .icon {
-    width: 16%;
-    float: left;
-    margin-left: 0;
-
-    .fa,
-    .material-icons {
-      text-align: center;
-      display: block;
-      font-size: 12pt;
-    }
-  }
-
-  .icon.bullet-icon {
-    width: 6%;
-    padding-top: 2px;
-  }
 }
 </style>

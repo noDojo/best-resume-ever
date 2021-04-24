@@ -362,18 +362,18 @@ h4 {
       font-weight: 300;
     }
 
-    .bullet-list {
-      padding: 20px 14px 8px;
-      font-weight: 300;
+    // .bullet-list {
+    //   padding: 20px 14px 8px;
+    //   font-weight: 300;
 
-      .item {
-        padding: 4px 0;
-      }
+    //   .item {
+    //     padding: 4px 0;
+    //   }
 
-      .text {
-        overflow: auto;
-      }
-    }
+    //   .text {
+    //     overflow: auto;
+    //   }
+    // }
 
     .info {
       font-size: 14px;
@@ -382,23 +382,23 @@ h4 {
       padding-top: 20px;
     }
 
-    .icon {
-      width: 16%;
-      float: left;
-      margin-left: 0;
+    // .icon {
+    //   width: 16%;
+    //   float: left;
+    //   margin-left: 0;
 
-      .fa,
-      .material-icons {
-        text-align: center;
-        display: block;
-        font-size: 12pt;
-      }
-    }
+    //   .fa,
+    //   .material-icons {
+    //     text-align: center;
+    //     display: block;
+    //     font-size: 12pt;
+    //   }
+    // }
 
-    .icon.bullet-icon {
-      width: 6%;
-      padding-top: 2px;
-    }
+    // .icon.bullet-icon {
+    //   width: 6%;
+    //   padding-top: 2px;
+    // }
 
     .content {
       width: 80%;
