@@ -39,9 +39,9 @@ export default Vue.component('resume', {
 .page {
   background: white;
   position: relative;
-  width: 35cm;
-  /* appropriate height seems to vary */
-  height: 50cm;
+  /* width and height for basic.pdf */
+  width: 21cm;
+  height: 55cm;
   display: block;
   page-break-after: auto;
   overflow: hidden;
