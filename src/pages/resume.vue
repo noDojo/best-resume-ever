@@ -43,7 +43,7 @@ export default Vue.component('resume', {
   /* correct height for basic.pdf */
   /* height: 55cm; */
   /* correct height for left-right.pdf */
-  height: 103cm;
+  height: 106cm;
   display: block;
   page-break-after: auto;
   overflow: hidden;
