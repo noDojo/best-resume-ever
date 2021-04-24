@@ -145,10 +145,8 @@ export default Vue.component(name, getVueOptions(name));
     color: rgba(0, 0, 0, 0.7);
     height: 136px;
     padding: 20px 40px;
-    // padding: 40px 100px 25px;
 
     #header-left {
-      /*width: 465px;*/
       width: 100%;
       float: left;
 
@@ -182,7 +180,6 @@ export default Vue.component(name, getVueOptions(name));
 
   #resume-body {
     padding: 20px 40px;
-    // padding: 40px 100px;
 
     #experience-title,
     #education-title,
@@ -192,8 +189,6 @@ export default Vue.component(name, getVueOptions(name));
     }
 
     .experience {
-      // margin: 10px 0 10px 30px;
-
       ul {
         margin: 5px 0 0 0;
       }
@@ -211,7 +206,6 @@ export default Vue.component(name, getVueOptions(name));
     .job-title,
     .degree {
       font-weight: 700;
-      // color: rgba(0, 0, 0, 0.9);
       font-size: 16px;
     }
 
@@ -243,7 +237,6 @@ export default Vue.component(name, getVueOptions(name));
 
   #resume-footer {
     padding: 40px;
-    // padding: 20px 100px;
     height: 135px;
     box-shadow: inset 0px 0px 100px #301030;
     box-sizing: border-box;
@@ -265,7 +258,6 @@ export default Vue.component(name, getVueOptions(name));
 }
 
 .bullet-list {
-  // padding: 20px 14px 8px;
   padding-bottom: 10px;
   font-weight: 300;
 

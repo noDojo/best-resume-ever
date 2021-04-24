@@ -351,7 +351,6 @@ h4 {
     .headline {
       font-weight: 400;
       display: block;
-      // font-size: 15px;
       font-size: 20px;
       color: rgba(0, 0, 0, 0.870588);
     }

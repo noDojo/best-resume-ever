@@ -85,8 +85,8 @@
           :key="education.degree"
         >
           <div class="row">
-            <strong class="degree">{{ education.major }}</strong>
-            <strong class="degree">{{ education.minor }}</strong>
+            <div class="degree md-bold-text">{{ education.major }}</div>
+            <div class="degree md-bold-text">{{ education.minor }}</div>
           </div>
           <div class="row">
             <span class="degree-description">{{ education.description }}</span>
@@ -237,7 +237,6 @@ export default Vue.component(name, getVueOptions(name));
 
         .degree {
           font-size: 19px;
-          // text-transform: uppercase;
           margin-bottom: 3px;
         }
       }
@@ -248,7 +247,6 @@ export default Vue.component(name, getVueOptions(name));
       position: relative;
 
       .skills {
-        margin-bottom: 10px;
         margin-bottom: 20px;
         position: relative;
         margin-left: auto;
@@ -284,7 +282,6 @@ export default Vue.component(name, getVueOptions(name));
   }
 
   .bullet-list {
-    // padding: 20px 14px 8px;
     padding-bottom: 10px;
     font-weight: 300;
 

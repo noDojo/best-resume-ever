@@ -40,12 +40,16 @@ export default Vue.component('resume', {
   background: white;
   position: relative;
   width: 21cm;
+  /* company name and position don't have to be stacked at this width */
+  width: 22cm;
   /* correct height for basic.pdf */
   /* height: 55cm; */
   /* correct height for left-right.pdf */
   /* height: 106cm; */
   /* correct height for side-bar.pdf */
   height: 80cm;
+  /* correct height for side-bar-rtl.pdf */
+  height: 84cm;
   display: block;
   page-break-after: auto;
   overflow: hidden;
