@@ -83,8 +83,6 @@
           </div>
       </div>
   </div>
-
-  </div>
 </template>
 
 <script>
@@ -102,9 +100,11 @@ export default Vue.component(name, getVueOptions(name));
   padding-bottom:50px;
   text-align:right;
   direction: rtl;
+
   a, a:focus, a:hover, a:visited {
     text-decoration:none;
   }
+
   h3 {
     text-transform:uppercase;
     padding-top:0;
@@ -112,35 +112,42 @@ export default Vue.component(name, getVueOptions(name));
     letter-spacing:5px;
     font-weight:400;
   }
+
   .top-row {
     width:100%;
     padding-top:100px;
     padding-bottom:100px;
+
     span {
       width:100%;
       display:block;
       text-align:center;
       font-weight:normal;
     }
+
     span.person-name {
       text-transform:uppercase;
       font-size:50px;
       letter-spacing:10px;
     }
+
     span.person-position {
       letter-spacing:5px;
     }
   }
+
   .right-col {
     width:26%;
     float:right;
     padding-right:8%;
     padding-left:4%;
+
     .person-image .image-centerer {
       display:flex;
       justify-content:center;
       height:auto;
       overflow:hidden;
+
       .img {
         flex:none;
         background:url('../../resume/id.jpg');
@@ -150,22 +157,27 @@ export default Vue.component(name, getVueOptions(name));
         width:100%;
       }
     }
+
     .contact h3 {
       text-align:center;
       margin-top:20px;
     }
+
     .contact .contact-row {
       text-align:center;
       letter-spacing:2px;
       margin-bottom:3px;
       direction: ltr;
+
       a {
         color:black;
       }
     }
+
     .contact .contact-row:first-of-type {
       margin-top:50px;
     }
+
     .contact .contact-row.dots {
       margin-top:20px;
       margin-bottom:15px;
@@ -173,28 +185,36 @@ export default Vue.component(name, getVueOptions(name));
       color:rgba(153,153,153,0.6);
     }
   }
+
   .left-col {
     width:50%;
     float:left;
     padding-right:4%;
     padding-left:8%;
+
     .experience-block {
       margin-bottom:10px;
+
       .row:first-child {
         margin-bottom:3px;
       }
+
       .row .company {
         text-transform:uppercase;
         font-size:19px;
       }
+
       .row .job-title {
         font-size:19px;
       }
     }
+
     .education {
       margin-top:50px;
+
       .education-block {
         margin-bottom:10px;
+
         .degree {
           font-size:19px;
           text-transform:uppercase;
@@ -202,9 +222,11 @@ export default Vue.component(name, getVueOptions(name));
         }
       }
     }
+
     .skills-block {
       margin-top:50px;
       position:relative;
+
       .skills {
         margin-bottom:10px;
         margin-bottom:20px;
@@ -212,6 +234,7 @@ export default Vue.component(name, getVueOptions(name));
         margin-left:auto;
         margin-right:auto;
         display:inline-block;
+
         .skill {
           width:80px;
           height:80px;
@@ -221,6 +244,7 @@ export default Vue.component(name, getVueOptions(name));
           margin:3px;
           float:right;
           font-size:13px;
+
           .skill-name {
             text-align:center;
             position:absolute;
@@ -229,6 +253,7 @@ export default Vue.component(name, getVueOptions(name));
             width:100%;
           }
         }
+
         .skills-other {
           display:inline-block;
           width:100%;

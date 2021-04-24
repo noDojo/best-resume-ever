@@ -92,7 +92,7 @@ education:
   key: CB1E18BC-1A86-4CA2-85A8-C9DD2A856FFD
   school: Francis Marion University
   location: Florence, SC 29501
-  major: Bachelor of Science in Computer Science
+  major: B.S. in Computer Science
   minor: Minor in Applied Mathematics
   timeperiod: Jan 2011 - Dec 2014
   description: Francis Marion University, Florence, SC 29501
@@ -108,9 +108,12 @@ skills:
 - name: VueJS
   key: A9E68D66-C354-41FC-8A71-CFDCF59C30F2
   level: 97
-- name: CSS/SCSS/LESS
+- name: CSS
   key: 453CD4F6-75B8-4239-BED5-B69D52C66101
   level: 93
+- name: SCSS/LESS
+  key: 0B891C2D-F056-4C4E-9273-7644C19302C6
+  level: 91
 - name: C#/ASP.NET MVC
   key: 6F255EB9-92BB-462D-A553-EE3ED279F6CF
   level: 80
