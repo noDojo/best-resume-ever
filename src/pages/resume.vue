@@ -52,7 +52,7 @@ export default Vue.component('resume', {
   /* height: 84cm; */
   /* correct height for side-bar-projects.pdf */
   /* height: 78cm; */
-  /* correct height for oblique.pdf */
+  /* correct height for oblique.pdf, oblique-rtl.pdf */
   height: 58cm;
   display: block;
   page-break-after: auto;
