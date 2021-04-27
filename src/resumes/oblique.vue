@@ -6,8 +6,7 @@
         <div class="person-wrapper">
           <div class="person">
             <div class="name">
-              {{ person.name.first }} {{ person.name.middle }}
-              {{ person.name.last }}
+              {{ person.name.first }} {{ person.name.last }}
             </div>
             <div class="position">{{ person.position }}</div>
           </div>
@@ -19,20 +18,19 @@
       <div class="about">{{ person.about }}</div>
       <div class="experience">
         <h3>{{ lang.experience }}</h3>
-
         <div
           class="experience-block"
           v-for="experience in person.experience"
-          :key="experience.company"
+          :key="experience.key"
         >
           <div class="row">
-            <span class="job-title"> {{ experience.position }} </span>
+            <span class="job-title">{{ experience.position }} </span>
             <i class="material-icons">details</i>
-            <span class="company"> {{ experience.company }} </span>
+            <span class="company">{{ experience.company }} </span>
           </div>
 
           <div class="row">
-            <span class="time-period"> {{ experience.timeperiod }}</span>
+            <span class="time-period">{{ experience.timeperiod }}</span>
             <div class="bullet-list">
               <div
                 v-for="item in experience.description"
@@ -78,15 +76,13 @@
       <div class="contact">
         <h3>{{ lang.contact }}</h3>
         <a :href="contactLinks.email"> {{ person.contact.email }}</a>
-        <span>;&nbsp;</span>
+        <span class="bold-text"> | </span>
         <a :href="contactLinks.phone">{{ person.contact.phone }}</a>
-        <span>;&nbsp;</span>
-        <span>{{ person.contact.street }}, {{ person.contact.city }}</span>
-        <span>;&nbsp;</span>
+        <span class="bold-text"> | </span>
         <a v-if="person.contact.website" :href="person.contact.website">
           {{ person.contact.website }}</a
         >
-        <span v-if="person.contact.website">;&nbsp;</span>
+        <span class="bold-text"> | </span>
         <a v-if="person.contact.github" :href="contactLinks.github">
           {{ contactLinks.github }}</a
         >
@@ -248,16 +244,15 @@ export default Vue.component(name, getVueOptions(name));
   }
 
   .contact {
-    margin-top: 0px;
+    margin-top: 40px;
 
     a,
     span {
-      // display: inline-block;
+      display: inline-block;
       font-size: 20px;
       list-style: none;
       margin-top: 0;
       line-height: 1;
-      float: left;
       padding-left: 0;
       margin-left: 0;
     }
@@ -265,6 +260,13 @@ export default Vue.component(name, getVueOptions(name));
 
   div.bullet-list .text {
     overflow: visible;
+  }
+
+  .contact .contact-row.dots {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    color: rgba(153, 153, 153, 0.6);
   }
 }
 </style>
