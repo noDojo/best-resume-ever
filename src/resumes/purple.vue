@@ -49,9 +49,18 @@
               experience.timeperiod
             }}</span>
           </p>
-          <p class="job-description" v-if="experience.description">
-            {{ experience.description }}
-          </p>
+          <div class="bullet-list">
+            <div
+              v-for="item in experience.description"
+              :key="item.bullet"
+              class="item"
+            >
+              <div class="icon bullet-icon">
+                <i class="material-icons">chevron_right</i>
+              </div>
+              <div class="text">{{ item.bullet }}</div>
+            </div>
+          </div>
           <ul v-if="experience.list">
             <li v-for="(item, index) in experience.list" :key="index">
               <span class="list-item-black">
@@ -108,15 +117,15 @@ const name = "purple";
 export default Vue.component(name, getVueOptions(name));
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 @text-purple: #680568;
+
 #template {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+
   h1,
   h2 {
-    /*font-family:'Open Sans Condensed', sans-serif;*/
     margin: 0;
     color: @text-purple;
   }
@@ -145,22 +154,26 @@ export default Vue.component(name, getVueOptions(name));
     height: 136px;
     background-color: purple;
     box-shadow: inset 0px 0px 200px #301030;
-    padding: 40px 100px 25px;
+    padding: 40px;
+    // padding: 40px 100px 25px;
 
     #header-left {
       /*width: 465px;*/
       width: 100%;
       float: left;
+
       h1 {
         font-size: 56px;
         color: white;
         text-transform: uppercase;
         line-height: 56px;
       }
+
       h2 {
         font-size: 22px;
         color: white;
       }
+
       #info-flex {
         display: flex;
         margin-top: 20px;
@@ -169,32 +182,18 @@ export default Vue.component(name, getVueOptions(name));
         span {
           margin-right: 25px;
         }
+
         i {
           margin-right: 5px;
         }
       }
     }
-
-    /*#header-right {
-            width: 125px;
-            float: right;
-            margin: 0px;
-            box-sizing: border-box;
-            height: 140px;
-            background-color: #FFF;
-            padding: 5px;
-            #headshot {
-                width: 100%;
-                height: 100%;
-                background:url('../../resume/id.jpg');
-                background-position:center;
-                background-size:cover;
-            }
-        }*/
   }
 
   #resume-body {
-    padding: 40px 100px;
+    // padding: 40px;
+    padding: 40px 40px 20px;
+    // padding: 40px 100px;
 
     #experience-title,
     #education-title,
@@ -204,7 +203,9 @@ export default Vue.component(name, getVueOptions(name));
     }
 
     .experience {
-      margin: 10px 0 10px 50px;
+      margin: 10px 0 10px;
+      // margin: 10px 0 10px 50px;
+
       ul {
         margin: 5px 0 0 0;
       }
@@ -234,12 +235,14 @@ export default Vue.component(name, getVueOptions(name));
     }
 
     .education {
-      margin: 10px 0 10px 50px;
+      margin: 10px 0 10px;
+      // margin: 10px 0 10px 50px;
     }
 
     #skill-list {
       column-count: 3;
       list-style-position: inside;
+
       ul li {
         font-size: 14px;
       }
@@ -250,15 +253,18 @@ export default Vue.component(name, getVueOptions(name));
       margin-top: 20px;
     }
   }
+
   #resume-footer {
-    padding: 20px 100px;
+    // padding: 20px 100px;
+    padding: 20px;
     height: 135px;
     background-color: purple;
     box-shadow: inset 0px 0px 100px #301030;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0px;
+    // position: absolute;
+    // bottom: 0px;
     width: 100%;
+
     h2,
     p {
       color: white;
