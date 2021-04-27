@@ -210,10 +210,6 @@ export default Vue.component(name, getVueOptions(name));
         }
       }
     }
-
-    .experience .experience-block:first-of-type {
-      width: 80%;
-    }
   }
 
   .education-block {
