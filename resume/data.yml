@@ -17,52 +17,57 @@ birth:
 experience:
 - company: ACS Technologies
   key: 6A9FD6C2-9D86-4BEE-A470-FCF9F95CB344
-  position: Senior Software Engineer
-  timeperiod: April 2021 - present
+  position: Senior Software Engineer/Front-End Lead
+  timeperiod: March 2021 - present
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Front-end lead on the development of a business intelligence
-      tool. This includes architectural planning, estimation of effort, and 
-      project development where optimized performance is a requirement.
+  - bullet: Lead a team of front-end developers responsible for producing, 
+      maintaining, and modifying a business intelligence solution where where 
+      usability and optimized performance are crucial.
 
 - company: ACS Technologies
   key: 93A06C53-4D1C-4FA7-99C8-6AB5E76BD636
   position: Software Engineer
-  timeperiod: July 2017 - April 2021
+  timeperiod: July 2017 - February 2021
   website: https://www.acstechnologies.com/
   description:
   - bullet: Create multiple single-page applications that leverage modern 
-      functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, 
-      Vuetify, and other various tools.
+      functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, Vuetify, 
+      and other various tools.
   - bullet: Frequently handle integrations between internal projects written in 
-      Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as with third-party 
-      services and external API's.
-  - bullet: Create tools to standardize and improve developer experience and accelerate 
-      the rate of development (enum/JavaScript generator, dynamic link builders with 
-      permissions levels set via JWT, etc.).
+      Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as with 
+      third-party services and external API's.
+  - bullet: Create tools to standardize and improve developer experience and 
+      accelerate the rate of development (enum/JavaScript generator, dynamic link 
+      builders with permissions set via JWT, etc).
   - bullet: Developed an SSO authentication layer to provide a centralized integration 
       point for internal and external products both future and present.
-  - bullet: Designed and created a component library using Vue.js SFC's, Rollup, npm, and Github Packages 
-      that generates npm packages and is being used in multiple projects with more to come.
-  - bullet: Develop, design, implement, and maintain new and existing CRUD API endpoints using Golang.
-  - bullet: Designed and implemented new databases and schemas using PostgreSQL for 
-      account management and authentication across multiple products.
-  - bullet: Regularly meet with the UX design team to assess designs for technical feasibility, 
-      identify and step through user workflows, scope project requirements, and estimate level of 
-      effort (LOE)/required working hours before the active phase of development.
-  - bullet: Designed and developed a tool that is used as a sandbox for rapid prototyping 
-      and also helps in facilitating UX/UI A/B testing.
+  - bullet: Designed and created a component library using Vue.js SFC's, Rollup, 
+      npm, and Github Packages that generates npm packages and is being used in 
+      multiple projects with more to come.
+  - bullet: Develop, design, implement, and maintain new and existing CRUD API 
+      endpoints using Golang.
+  - bullet: Designed and implemented new databases and schemas using PostgreSQL 
+      for account management and authentication across multiple products.
+  - bullet: Regularly meet with the UX design team to assess designs for technical 
+      feasibility, identify and step through user workflows, scope project 
+      requirements, and estimate level of effort (LOE)/required working hours 
+      before the active phase of development.
+  - bullet: Designed and developed a tool that is used as a sandbox for rapid 
+      prototyping and also helps in facilitating UX/UI A/B testing.
   - bullet: Generate and present reports around team progress and project development 
       status to management and stakeholders at the close of each sprint.
-  - bullet: Regularly host and present at open invitation technical talks with an attendance of 20-30 
-      representing individuals from multiple departments with varying levels of technical experience.
-  - bullet: Mentor new and existing developers on a daily basis. Help lead a front-end developer 
-      community of practice with over 30 members.
-  - bullet: Introduced updated testing procedures (BDD) and implemented tools to generate tests 
-      by translating Cucumber's Gherkin syntax.
-  - bullet: Oversee and support contract work on a variety of projects such as a website builder 
-      and publisher, a streaming platform, and a portal to assist and provide documentation to a 
-      high-volume .NET web application with xxx unique visitors each month.
+  - bullet: Regularly host and present at open invitation technical talks with 
+      an attendance of 20-30 representing individuals from multiple departments 
+      with varying levels of technical experience.
+  - bullet: Mentor new and existing developers on a daily basis. Help lead a 
+      front-end developer community of practice with over 30 members.
+  - bullet: Introduced updated testing procedures (BDD) and implemented tools to 
+      generate tests by translating Cucumber's Gherkin syntax.
+  - bullet: Oversee and support contract work on a variety of projects such as a 
+      website builder and publisher, a streaming platform, and a portal to assist 
+      and provide documentation to a high-volume .NET web application with xxx 
+      unique visitors each month.
   - bullet: Provide leadership as a subject matter expert (SME) in analytics and 
       styling languages (CSS/SCSS/LESS).
 
@@ -79,13 +84,15 @@ experience:
   - bullet: Actively participated (more than a few times) in all phases of the 
       software development life cycle, from architectural planning to development 
       and testing to release and maintenance.
-  - bullet: Collaborate with stakeholders to develop clear, unambiguous technical requirements 
-      and establish a consistent feed-back loop during all phases of the development life cycle.
+  - bullet: Collaborate with stakeholders to develop clear, unambiguous technical 
+      requirements and establish a consistent feed-back loop during all phases of 
+      the development life cycle.
   - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
-  - bullet: Standardize, develop, document, and maintain a flexible, extensive design system that 
-      promotes design consistency, reduces the need for boilerplate code, and prevents code duplication.
-  - bullet: Redesigned a reporting engine to mitigate serious performance issues and increase 
-      its capacity to generate client data in multiple formats.
+  - bullet: Standardize, develop, document, and maintain a flexible, extensive design 
+      system that promotes design consistency, reduces the need for boilerplate code, 
+      and prevents code duplication.
+  - bullet: Redesigned a reporting engine to mitigate serious performance issues 
+      and increase its capacity to generate client data in multiple formats.
 
 education:
 - degree: B.S. in Computer Science, Minor in Applied Mathematics
