@@ -32,7 +32,7 @@ experience:
   website: https://www.acstechnologies.com/
   description:
   - bullet: Create multiple single-page applications that leverage modern 
-      functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, Vuetify, 
+      functionality (code-splitting, etc) using Vue.js, Vue CLI, Vuex, Vuetify, 
       and other various tools.
   - bullet: Frequently handle integrations between internal projects written in 
       Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as with 
@@ -133,6 +133,9 @@ skills:
 - name: PostgreSQL
   key: 838FBE71-29B0-4F1A-BD92-892C1791BC9A
   level: 40
+- name: Sisense - Data Analytics
+  key: 13A71558-3BC5-45BC-AF45-DF7D189A287A
+  level: 82
 
 # knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
 #   (English and Klingon).
