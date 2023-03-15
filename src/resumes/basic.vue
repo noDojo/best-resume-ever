@@ -11,9 +11,15 @@
               {{ person.contact.email }}</a
             ></span
           >
-          <span id="phone"
+          <!-- <span id="phone"
             ><i class="fa fa-phone-square" aria-hidden="true"></i>
             {{ person.contact.phone }}</span
+          > -->
+          <span v-if="person.contact.linkedin" id="website"
+            ><a :href="person.contact.linkedinurl"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              {{ person.contact.linkedin }}</a
+            ></span
           >
           <span v-if="person.contact.website" id="website"
             ><a :href="person.contact.website"
@@ -22,7 +28,7 @@
             ></span
           >
           <span v-if="person.contact.github" id="github"
-            ><a :href="contactLinks.github"
+            ><a :href="'https://github.com/' + person.contact.github"
               ><i class="fa fa-github" aria-hidden="true"></i>
               {{ person.contact.github }}</a
             ></span
@@ -42,7 +48,7 @@
           v-for="experience in person.experience"
           :key="experience.key"
         >
-          <h2 class="company">{{ experience.company }}</h2>
+          <h2 class="company">{{ experience.product }}</h2>
           <p class="job-info">
             <span class="job-title">{{ experience.position }} | </span
             ><span class="experience-timeperiod">{{
