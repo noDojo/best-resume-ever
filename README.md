@@ -94,6 +94,8 @@ git clone https://github.com/salomonelli/best-resume-ever.git
 
 All resumes will be exported to the `pdf/` folder.
 
+⭐️ If `npm run export` doesn't work, you can run `npm run dev` and `npm run pdf` to achieve the same result.
+
 <br>
 
 ## Creating and Updating Templates
