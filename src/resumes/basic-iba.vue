@@ -113,7 +113,7 @@
 import Vue from "vue";
 import { getVueOptions } from "./options";
 
-const name = "basic";
+const name = "basic-iba";
 export default Vue.component(name, getVueOptions(name));
 </script>
 
