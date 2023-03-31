@@ -2,8 +2,9 @@
   <div class="resume" id="template">
     <div id="resume-header">
       <div id="header-left">
+        <div class="headline">{{ person.name.first }} {{ person.name.last }}</div>
         <h2 id="position">{{ person.position }}</h2>
-        <h1 id="name">{{ person.name.first }} {{ person.name.last }}</h1>
+        <h1 id="name" class="headline">{{ person.name.first }} {{ person.name.last }}</h1>
         <div id="info-flex">
           <span id="email"
             ><a :href="'mailto:' + person.contact.email">
@@ -292,5 +293,11 @@ export default Vue.component(name, getVueOptions(name));
 .icon.bullet-icon {
   width: 6%;
   padding-top: 2px;
+}
+
+.headline {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.3em;
+  font-weight: bold;
 }
 </style>
