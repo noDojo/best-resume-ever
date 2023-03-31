@@ -157,6 +157,14 @@
           </div>
         </router-link>
       </div>
+      <div class="preview">
+        <router-link v-bind:to="'/resume/basic-iba'">
+          <div class="preview-wrapper">
+            <img src="../assets/preview/resume-basic-iba.png" />
+            <span>basic-iba</span>
+          </div>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
