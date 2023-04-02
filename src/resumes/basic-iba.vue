@@ -73,7 +73,7 @@
           v-for="experience in person.experience"
           :key="experience.key"
         >
-          <h2 class="company">{{ experience.product }}</h2>
+          <h2 class="company">{{ experience.company }}</h2>
           <p class="job-info">
             <span class="job-title">{{ experience.position }} | </span
             ><span class="experience-timeperiod">{{
