@@ -3,19 +3,18 @@
     <div id="resume-header">
       <div id="header-left">
         <div class="headline">{{ person.name.first }} {{ person.name.last }}</div>
-        <h2 id="position">{{ person.position }}</h2>
-        <h1 id="name" class="headline">{{ person.name.first }} {{ person.name.last }}</h1>
-        <div id="info-flex">
+        <div>{{ person.position }}</div>
+        <!-- <div id="info-flex">
           <span id="email"
             ><a :href="'mailto:' + person.contact.email">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               {{ person.contact.email }}</a
             ></span
           >
-          <!-- <span id="phone"
+          <span id="phone"
             ><i class="fa fa-phone-square" aria-hidden="true"></i>
             {{ person.contact.phone }}</span
-          > -->
+          >
           <span v-if="person.contact.linkedin" id="website"
             ><a :href="person.contact.linkedinurl"
               ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -34,10 +33,7 @@
               {{ person.contact.github }}</a
             ></span
           >
-        </div>
-      </div>
-      <div id="header-right">
-        <div id="headshot"></div>
+        </div> -->
       </div>
     </div>
     <div id="resume-body">
@@ -150,7 +146,8 @@ export default Vue.component(name, getVueOptions(name));
 
   #resume-header {
     color: rgba(0, 0, 0, 0.7);
-    height: 136px;
+    // height: 136px;
+    height: 60px;
     padding: 20px 40px;
 
     #header-left {
