@@ -39,9 +39,7 @@
     <div id="resume-body">
       <!-- PROFESSIONAL PROFILE -->
       <div id="profile-container" v-if="person.skills != []">
-        <h2 id="profile-title">PROFESSIONAL PROFILE</h2>
-        <div class="spacer"></div>
-        <p id="profile-description">{{ person.knowledge }}</p>
+        <div class="section-title">PROFESSIONAL PROFILE</div>
         <div class="bullet-list">
           <div
             v-for="profile in person.profile"
@@ -57,8 +55,7 @@
       </div>
       <!-- SKILLS SUMMARY -->
       <div id="skills-container" v-if="person.skills != []">
-        <h2 id="skills-title">{{ lang.skills }}</h2>
-        <div class="spacer"></div>
+        <div class="section-title">SKILLS SUMMARY</div>
         <p id="skill-description">{{ person.knowledge }}</p>
         <ul id="skill-list">
           <li class="skill" v-for="skill in person.skills" :key="skill.name">
@@ -70,8 +67,7 @@
       </div>
       <!-- PROFESSIONAL EXPERIENCE -->
       <div id="experience-container">
-        <h2 id="experience-title">{{ lang.experience }}</h2>
-        <div class="spacer"></div>
+        <div class="section-title">PROFESSIONAL EXPERIENCE</div>
         <div
           class="experience"
           v-for="experience in person.experience"
@@ -100,8 +96,7 @@
       </div>
       <!-- EDUCATION AND QUALIFICATION -->
       <div id="education-container">
-        <h2 id="education-title">{{ lang.education }}</h2>
-        <div class="spacer"></div>
+        <div class="section-title">EDUCATION AND QUALIFICATION</div>
         <div
           class="education"
           v-for="education in person.education"
@@ -205,7 +200,13 @@ export default Vue.component(name, getVueOptions(name));
   #resume-body {
     padding: 20px 40px;
 
-    #profile-title,
+    #profile-title {
+      padding: 2px 4px;
+      background-color: lightgray;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
     #experience-title,
     #education-title,
     #skills-title {
@@ -259,6 +260,13 @@ export default Vue.component(name, getVueOptions(name));
     #skills-container {
       margin-top: 20px;
     }
+  }
+
+  .section-title {
+    padding: 2px 4px;
+    background-color: lightgray;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
   }
 
   #resume-footer {
