@@ -37,6 +37,33 @@
       </div>
     </div>
     <div id="resume-body">
+      <!-- PROFESSIONAL PROFILE -->
+      <div id="profile-container" v-if="person.skills != []">
+        <h2 id="profile-title">PROFESSIONAL PROFILE</h2>
+        <div class="spacer"></div>
+        <p id="profile-description">{{ person.knowledge }}</p>
+        <ul id="profile-list">
+          <li class="skill" v-for="skill in person.skills" :key="skill.name">
+            <span class="list-item-black">
+              {{ skill.name }}
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- SKILLS SUMMARY -->
+      <div id="skills-container" v-if="person.skills != []">
+        <h2 id="skills-title">{{ lang.skills }}</h2>
+        <div class="spacer"></div>
+        <p id="skill-description">{{ person.knowledge }}</p>
+        <ul id="skill-list">
+          <li class="skill" v-for="skill in person.skills" :key="skill.name">
+            <span class="list-item-black">
+              {{ skill.name }}
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- PROFESSIONAL EXPERIENCE -->
       <div id="experience-container">
         <h2 id="experience-title">{{ lang.experience }}</h2>
         <div class="spacer"></div>
@@ -66,7 +93,7 @@
           </div>
         </div>
       </div>
-
+      <!-- EDUCATION AND QUALIFICATION -->
       <div id="education-container">
         <h2 id="education-title">{{ lang.education }}</h2>
         <div class="spacer"></div>
@@ -83,18 +110,6 @@
             }}</span>
           </p>
         </div>
-      </div>
-      <div id="skills-container" v-if="person.skills != []">
-        <h2 id="skills-title">{{ lang.skills }}</h2>
-        <div class="spacer"></div>
-        <p id="skill-description">{{ person.knowledge }}</p>
-        <ul id="skill-list">
-          <li class="skill" v-for="skill in person.skills" :key="skill.name">
-            <span class="list-item-black">
-              {{ skill.name }}
-            </span>
-          </li>
-        </ul>
       </div>
     </div>
     <div id="resume-footer" class="hidden">
@@ -185,6 +200,7 @@ export default Vue.component(name, getVueOptions(name));
   #resume-body {
     padding: 20px 40px;
 
+    #profile-title,
     #experience-title,
     #education-title,
     #skills-title {
@@ -233,6 +249,7 @@ export default Vue.component(name, getVueOptions(name));
       }
     }
 
+    #profile-container,
     #education-container,
     #skills-container {
       margin-top: 20px;
