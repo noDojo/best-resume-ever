@@ -14,6 +14,10 @@ birth:
   year: 1980
   location: Florence, SC
 
+profile:
+- item: Software engineer with 8+ years of experience in software application development.
+  key: AF418A0E-4C34-4BF1-93AA-CF47812D3483
+
 experience:
 - key: 179EB26D-B6B5-4475-B7C1-C9F55D665D87
   position: Lead Software Engineer

@@ -42,13 +42,25 @@
         <h2 id="profile-title">PROFESSIONAL PROFILE</h2>
         <div class="spacer"></div>
         <p id="profile-description">{{ person.knowledge }}</p>
-        <ul id="profile-list">
+        <!-- <ul id="profile-list">
           <li class="skill" v-for="skill in person.skills" :key="skill.name">
             <span class="list-item-black">
               {{ skill.name }}
             </span>
           </li>
-        </ul>
+        </ul> -->
+        <div class="bullet-list">
+          <div
+            v-for="profile in person.profile"
+            :key="profile.item"
+            class="item"
+          >
+            <div class="icon bullet-icon">
+              <i class="material-icons">chevron_right</i>
+            </div>
+            <div class="text">{{ profile.item }}</div>
+          </div>
+        </div>
       </div>
       <!-- SKILLS SUMMARY -->
       <div id="skills-container" v-if="person.skills != []">
