@@ -176,6 +176,39 @@ skills:
 - vsc: Git
 - other: Jira
 
+languages:
+- item: JavaScript
+- item: C#
+- item: Golang
+
+webtechnologies:
+- item: VueJS
+- item: jQuery
+- item: CSS/Less/SCSS/Stylus
+- item: Angular
+- item: NPM
+- item: Webpack
+- item: Gulp
+- item: Grunt
+
+applicationservers:
+- item: IIS
+- item: Kestrel
+
+database:
+- item: MS SQL
+- item: PostgreSQL
+- item: Couchbase
+
+operatingsystems:
+- item: Windows
+- item: MacOS
+- item: Linux
+
+other:
+- item: Git
+- item: Jira
+
 # SKILL SUMMARY #
 # skills:
 # - name: C# / .NET MVC / .NET Core
@@ -221,8 +254,8 @@ skills:
 #   key: 1075F595-FDA1-4226-ABB9-D4B0E1AD7F1A
 #   level: 82
 # - name: Bash / PowerShell
-  key: 7FD4810B-4A9F-4668-856B-5ED93B9C61A1
-  level: 82
+#   key: 7FD4810B-4A9F-4668-856B-5ED93B9C61A1
+#   level: 82
 
 # knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
 #   (English and Klingon).

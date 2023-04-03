@@ -2,7 +2,9 @@
   <div class="resume" id="template">
     <div id="resume-header">
       <div id="header-left">
-        <div class="headline">{{ person.name.first }} {{ person.name.last }}</div>
+        <div class="headline">
+          {{ person.name.first }} {{ person.name.last }}
+        </div>
         <div>{{ person.position }}</div>
         <!-- <div id="info-flex">
           <span id="email"
@@ -38,7 +40,7 @@
     </div>
     <div id="resume-body">
       <!-- PROFESSIONAL PROFILE -->
-      <div id="profile-container" v-if="person.skills != []">
+      <div id="profile-container" v-if="person.profile != []">
         <div class="section-title">PROFESSIONAL PROFILE</div>
         <div class="bullet-list">
           <div
@@ -53,8 +55,8 @@
           </div>
         </div>
       </div>
-      <!-- SKILLS SUMMARY -->
-      <div id="skills-container" v-if="person.skills != []">
+      <!-- SKILLS SUMMARY - ORIGINAL -->
+      <!-- <div id="skills-container" v-if="person.skills != []">
         <div class="section-title">SKILLS SUMMARY</div>
         <p id="skill-description">{{ person.knowledge }}</p>
         <ul id="skill-list">
@@ -64,8 +66,123 @@
             </span>
           </li>
         </ul>
-      </div>
-      <!-- PROFESSIONAL EXPERIENCE -->
+      </div> -->
+      <!-- SKILLS SUMMARY - NEW -->
+      <div id="skills-container">
+        <div class="section-title">SKILLS SUMMARY</div>
+        <!-- todo: these need to loop on an additional layer in the yaml hierarchy -->
+        <!-- PROGRAMMING LANGUAGES -->
+        <!-- <div class="bullet-list">
+          <div class="icon bullet-icon">
+            <i class="material-icons">chevron_right</i>
+          </div>
+          <span class="md-bold-text">Programming Languages:</span>
+          <span
+            v-for="language in person.languages"
+            :key="language.item"
+            class="item"
+          >
+            {{ language.item }}
+            <span
+              v-if="language !== person.languages[person.languages.length - 1]"
+              >,
+            </span>
+          </span>
+        </div> -->
+        <!-- WEB TECHNOLOGIES -->
+        <!-- <div class="bullet-list">
+          <div class="icon bullet-icon">
+            <i class="material-icons">chevron_right</i>
+          </div>
+          <span class="md-bold-text">Web Technologies:</span>
+          <span
+            v-for="tech in person.webtechnologies"
+            :key="tech.item"
+            class="item"
+          >
+            {{ tech.item }}
+            <span
+              v-if="tech !== person.webtechnologies[person.webtechnologies.length - 1]"
+              >,
+            </span>
+          </span>
+        </div>
+      </div> -->
+      <!-- APPLICATION SERVERS -->
+      <!-- <div class="bullet-list">
+        <div class="icon bullet-icon">
+          <i class="material-icons">chevron_right</i>
+        </div>
+        <span class="md-bold-text">Application Servers:</span>
+        <span
+          v-for="appserver in person.applicationservers"
+          :key="appserver.item"
+          class="item"
+        >
+          {{ appserver.item }}
+          <span
+            v-if="appserver !== person.applicationservers[person.applicationservers.length - 1]"
+            >,
+          </span>
+        </span>
+      </div> -->
+      <!-- DATABASE -->
+      <!-- <div class="bullet-list">
+        <div class="icon bullet-icon">
+          <i class="material-icons">chevron_right</i>
+        </div>
+        <span class="md-bold-text">Database:</span>
+        <span
+          v-for="db in person.database"
+          :key="db.item"
+          class="item"
+        >
+          {{ db.item }}
+          <span
+            v-if="db !== person.database[person.database.length - 1]"
+            >,
+          </span>
+        </span>
+      </div> -->
+      <!-- OPERATING SYSTEMS -->
+      <!-- <div class="bullet-list">
+        <div class="icon bullet-icon">
+          <i class="material-icons">chevron_right</i>
+        </div>
+        <span class="md-bold-text">Operating Systems:</span>
+        <span
+          v-for="os in person.operatingsystems"
+          :key="os.item"
+          class="item"
+        >
+          {{ os.item }}
+          <span
+            v-if="os !== person.operatingsystems[person.operatingsystems.length - 1]"
+            >,
+          </span>
+        </span>
+      </div> -->
+      <!-- OTHER -->
+      <!-- <div class="bullet-list">
+        <div class="icon bullet-icon">
+          <i class="material-icons">chevron_right</i>
+        </div>
+        <span class="md-bold-text">Other:</span>
+        <span
+          v-for="other in person.other"
+          :key="other.item"
+          class="item"
+        >
+          {{ other.item }}
+          <span
+            v-if="other !== person.other[person.other.length - 1]"
+            >,
+          </span>
+        </span>
+      </div> -->
+      <!-- SKILLS SUMMARY - NEW LOOP -->
+      
+      <!-- PROFESSIONAL EXPERIENCE-->
       <div id="experience-container">
         <div class="section-title">PROFESSIONAL EXPERIENCE</div>
         <div
