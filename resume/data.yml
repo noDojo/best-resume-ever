@@ -14,6 +14,7 @@ birth:
   year: 1980
   location: Florence, SC
 
+# PROFESSIONAL PROFILE #
 profile:
 - item: Software engineer with 8+ years of experience in software application development.
   key: AF418A0E-4C34-4BF1-93AA-CF47812D3483
@@ -26,17 +27,19 @@ profile:
 - item: Skilled in design/architecture, data modeling, and translating customer needs into software solutions.
   key: 82CA345C-40BE-486B-BD52-D45FD829A338
 
+# PROFESSIONAL EXPERIENCE #
+# LEAD | 03.21.2022 - present #
 experience:
-- key: 179EB26D-B6B5-4475-B7C1-C9F55D665D87
+- company: ACS Technologies
+  key: 179EB26D-B6B5-4475-B7C1-C9F55D665D87
   position: Lead Software Engineer
-  product: MissionInsite
   timeperiod: September 2021 - present
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Established a tagging and release process. Set and followed a
-      regular release cycle.
-  - bullet: Rewrote the developer setup documentation.
+  - bullet: Formalized and documented the tagging and release process.
+  - bullet: Set a monthly cadence for production releases where before releases were only taking place twice a year (approximately).
   - bullet: Instituted scrum ceremonies and promoted their adoption by the team.
+  - bullet: Rewrote the developer setup documentation.
   - bullet: Enabled the use of the Help Portal within MissionInsite.
   - bullet: Integrated with IT to allow the auto-provisioning of new clients and
       client activation/deactivation.
@@ -45,6 +48,7 @@ experience:
   - bullet: Integrated the Giving Dashboard Pilot (Tableau) into Realm (work
       unassociated with MissionInsite).
 
+# SENIOR | 04.19.2021 - 03.20.2022 #
 - company: ACS Technologies
   key: 6A9FD6C2-9D86-4BEE-A470-FCF9F95CB344
   position: Senior Software Engineer / Front-End Lead
@@ -58,72 +62,99 @@ experience:
   - bullet: Embedded the analytics and data visualizations from Sisense into a Vue SPA.
   - bullet: Integrated the stand-alone Vue SPA into Realm (as a Vue SPA).
 
-- key: 71CB07B6-20DD-437A-83B6-E4FA762E0116
+# INTERMEDIATE | 07.03.2017 - 04.18.2021 #
+- company: ACS Technologies
+  key: 93A06C53-4D1C-4FA7-99C8-6AB5E76BD636
   position: Software Engineer
-  product: Universal Services
-  timeperiod: March 2019 - February 2021
+  timeperiod: July 2017 - February 2021
   website: https://www.acstechnologies.com/
   description:
+  - bullet: Create multiple single-page applications that leverage modern 
+      functionality (code-splitting, etc) using Vue.js, Vue CLI, Vuex, Vuetify, 
+      and other various tools.
+  - bullet: Frequently handle integrations between internal projects written in 
+      Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as with 
+      third-party services and external API's.
+  - bullet: Create tools to standardize and improve developer experience and 
+      accelerate the rate of development (enum/JavaScript generator, dynamic link 
+      builders with permissions set via JWT, etc).
+  - bullet: Developed an SSO authentication layer to provide a centralized integration 
+      point for internal and external products both future and present.
+  - bullet: Designed and created a component library using Vue.js SFC's, Rollup, 
+      npm, and Github Packages that generated npm packages.
+  - bullet: Developed, designed, implemented, and maintained CRUD API endpoints using Golang.
+  - bullet: Designed and implemented new databases and schemas using PostgreSQL 
+      for account management and authentication across multiple products.
+  - bullet: Regularly meet with the UX design team to assess designs for technical 
+      feasibility, identify and step through user workflows, scope project 
+      requirements, and estimate level of effort (LOE)/required working hours 
+      before the active phase of development.
+  - bullet: Designed and developed a tool that is used as a sandbox for rapid 
+      prototyping and also helps in facilitating UX/UI A/B testing.
+  - bullet: Generate and present reports around team progress and project development 
+      status to management and stakeholders at the close of each sprint.
+  - bullet: Regularly hosted and presented at open invitation technical talks with 
+      an attendance of 20-30 representing individuals from multiple departments 
+      with varying levels of technical experience.
+  - bullet: Mentor new and existing developers on a daily basis. Help lead a 
+      front-end developer community of practice with over 30 members.
+  - bullet: Introduced updated testing procedures (BDD) and implemented tools to 
+      generate tests by translating Cucumber's Gherkin syntax.
+  - bullet: Oversee and support contract work on a variety of projects such as a 
+      website builder and publisher, a streaming platform, and a portal to assist 
+      and provide documentation to a high-volume .NET web application with xxx 
+      unique visitors each month.
+  - bullet: Provide leadership as a subject matter expert (SME) in analytics and 
+      styling languages (CSS/SCSS/LESS).
   - bullet: Introduced updated testing procedures (BDD) and implemented tools to 
       generate tests by translating Cucumber's Gherkin syntax.
   - bullet: Oversaw and supported contract work on a variety of projects such as a 
       website builder and publisher, a streaming platform, and a portal to assist 
       and provide documentation to Realm.
-  - bullet: Regularly hosted and presented at open invitation technical talks with 
-      an attendance of 20-30 representing individuals from multiple departments 
-      with varying levels of technical experience.
-  - bullet: Developed, designed, implemented, and maintained CRUD API endpoints using Golang.
   - bullet: Designed and implemented new databases and schemas using PostgreSQL 
       for account management and authentication across multiple products.
-  - bullet: Designed and developed a tool that is used as a sandbox for rapid 
-      prototyping and also helps in facilitating UX/UI A/B testing.
-
-- key: 1787EC33-1CEB-4892-83E5-E30EF3F9CC6B
-  position: Software Engineer
-  product: Universal Services (continued)
-  timeperiod: March 2019 - February 2021
-  website: https://www.acstechnologies.com/
-  description:
-  - bullet: Developed an SSO authentication layer to provide a centralized integration 
-      point for internal and external products both future and present.
-  # - bullet: Designed and created a component library using Vue.js SFC's, Rollup, 
-  #     npm, and Github Packages that generated npm packages.
-
-- key: 9F58BA49-0C4B-460F-AFC5-04F8D131900A
-  position: Software Engineer
-  product: Abundant
-  timeperiod: May 2018 - February 2019
-  website: https://www.acstechnologies.com/
-  description:
   - bullet: Contributed to all phases of product development, from architectural planning
       to development to the release.
-  # - bullet: Created a Vue SPA that allowed users to give to a church or organization.
-  # - bullet: Developed and maintained API's using Golang.
-  # - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
+  - bullet: Created a Vue SPA that allowed users to give to a church or organization.
+  - bullet: Developed and maintained API's using Golang.
+  - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
+  - bullet: Redesigned a reporting engine to mitigate serious performance issues 
+      and increase its capacity to generate client data in multiple formats.
 
-- key: 93A06C53-4D1C-4FA7-99C8-6AB5E76BD636
-  position: Junior Software Engineer / Software Engineer
-  product: Realm
-  timeperiod: August 2017 - April 2018
+# JUNIOR | 05.11.2015 - 07.02.2017 #
+- company: ACS Technologies
+  key: CC3677EF-CB76-497C-A746-2B911ADC6701
+  position: Junior Software Engineer
+  timeperiod: May 2015 - July 2017
   website: https://www.acstechnologies.com/
   description:
   - bullet: Developed and maintained a global library with 50+ jQuery plugins
       and 40+ Vue.js components.
-  # - bullet: Standardized and maintained a global front-end design system for Realm.
-  # - bullet: Built a tool (Particle) to organize, minify, bundle, and serve (via CDN)
-  #     all global front-end components, plugins, and styles used by Realm.
-  # - bullet: Migrated all global front-end components, plugins, and styles from Realm
-  #     into Particle.
-  # - bullet: Frequently handled integrations between internal projects written in 
-  #     Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as integrations with 
-  #     third-party services and external API's.
-  # - bullet: Created tools to standardize and improve developer experience and 
-  #     accelerate the rate of development (enum/JavaScript generator, dynamic link 
-  #     builders with permissions set via JWT, etc).
-  # - bullet: Built the Realm Help Center, a SPA written purely in JavaScript and jQuery.
-  # - bullet: Subject Matter Expert (SME) for analytics (Segment, Intercom) and 
-  #     styling languages (CSS/SCSS/LESS).
+  - bullet: Standardized and maintained a global front-end design system for Realm.
+  - bullet: Built a tool (Particle) to organize, minify, bundle, and serve (via CDN)
+      all global front-end components, plugins, and styles used by Realm.
+  - bullet: Migrated all global front-end components, plugins, and styles to the cloud 
+      from a high-volume .NET web application with over 600k unique visitors per month.
+  - bullet: Frequently handled integrations between internal projects written in 
+      Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as integrations with 
+      third-party services and external API's.
+  - bullet: Created tools to standardize and improve developer experience and 
+      accelerate the rate of development (enum/JavaScript generator, dynamic link 
+      builders with permissions set via JWT, etc).
+  - bullet: Built the Realm Help Center, a SPA written purely in JavaScript and jQuery.
+  - bullet: Subject Matter Expert (SME) for analytics (Segment, Intercom) and 
+      styling languages (CSS/SCSS/LESS).
+  - bullet: Actively participated (more than a few times) in all phases of the 
+      software development life cycle, from architectural planning to development 
+      and testing to release and maintenance.
+  - bullet: Collaborate with stakeholders to develop clear, unambiguous technical 
+      requirements and establish a consistent feed-back loop during all phases of 
+      the development life cycle.
+  - bullet: Standardize, develop, document, and maintain a flexible, extensive design 
+      system that promotes design consistency, reduces the need for boilerplate code, 
+      and prevents code duplication.
 
+# EDUCATION AND QUALIFICATION #
 education:
 - degree: B.S. in Computer Science, Minor in Applied Mathematics
   key: CB1E18BC-1A86-4CA2-85A8-C9DD2A856FFD
@@ -135,6 +166,7 @@ education:
   description: Francis Marion University, Florence, SC 29501
   website: https://www.fmarion.edu/computerscience/
 
+# SKILL SUMMARY #
 skills:
 - name: C# / .NET MVC / .NET Core
   key: 6F255EB9-92BB-462D-A553-EE3ED279F6CF
