@@ -168,49 +168,59 @@ education:
 
 # SKILL SUMMARY #
 skills:
-- name: C# / .NET MVC / .NET Core
-  key: 6F255EB9-92BB-462D-A553-EE3ED279F6CF
-  level: 80
-- name: JavaScript
-  key: 754591BB-2272-4B7B-9270-F32E06A72566
-  level: 99
-- name: jQuery
-  key: D0D8E800-FA67-4F33-8A4E-379C14160ACD
-  level: 95
-- name: VueJS
-  key: A9E68D66-C354-41FC-8A71-CFDCF59C30F2
-  level: 97
-- name: CSS / SCSS / LESS
-  key: 0B891C2D-F056-4C4E-9273-7644C19302C6
-  level: 91
-- name: Golang
-  key: F0A3B526-96D1-4D11-B308-7FA0A003BE77
-  level: 60
-- name: Docker
-  key: 5BF827EB-3ACB-4CBC-A136-12F8C337D960
-  level: 77
-- name: SQL Server
-  key: 838FBE71-29B0-4F1A-BD92-892C1791BC9A
-  level: 40
-- name: Angular
-  key: 13A71558-3BC5-45BC-AF45-DF7D189A287A
-  level: 82
-- name: NPM
-  key: 2903A297-1F79-4087-981A-68FF79364369
-  level: 82
-- name: Webpack
-  key: A835B724-0B7D-46AE-BCD5-B96440D52A53
-  level: 82
-- name: Grunt / Gulp
-  key: 9DF6EEB9-C269-42EB-B839-EDF25D4F1F5A
-  level: 82
-- name: Team City / Octopus / Jenkins
-  key: 80D2EC6A-4AD7-4123-88F2-71E877A13638
-  level: 82
-- name: Git
-  key: 1075F595-FDA1-4226-ABB9-D4B0E1AD7F1A
-  level: 82
-- name: Bash / PowerShell
+- languages: JavaScript, C#, Golang
+- webtechnologies: VueJS, jQuery, CSS/Less/SCSS/Stylus, Angular, NPM, Webpack, Gulp, Grunt
+- applicationservers: IIS, Kestrel
+- database: MS SQL, PostgreSQL, Couchbase
+- operatingsystems: Windows, MacOS, Linux
+- vsc: Git
+- other: Jira
+
+# SKILL SUMMARY #
+# skills:
+# - name: C# / .NET MVC / .NET Core
+#   key: 6F255EB9-92BB-462D-A553-EE3ED279F6CF
+#   level: 80
+# - name: JavaScript
+#   key: 754591BB-2272-4B7B-9270-F32E06A72566
+#   level: 99
+# - name: jQuery
+#   key: D0D8E800-FA67-4F33-8A4E-379C14160ACD
+#   level: 95
+# - name: VueJS
+#   key: A9E68D66-C354-41FC-8A71-CFDCF59C30F2
+#   level: 97
+# - name: CSS / SCSS / LESS
+#   key: 0B891C2D-F056-4C4E-9273-7644C19302C6
+#   level: 91
+# - name: Golang
+#   key: F0A3B526-96D1-4D11-B308-7FA0A003BE77
+#   level: 60
+# - name: Docker
+#   key: 5BF827EB-3ACB-4CBC-A136-12F8C337D960
+#   level: 77
+# - name: SQL Server
+#   key: 838FBE71-29B0-4F1A-BD92-892C1791BC9A
+#   level: 40
+# - name: Angular
+#   key: 13A71558-3BC5-45BC-AF45-DF7D189A287A
+#   level: 82
+# - name: NPM
+#   key: 2903A297-1F79-4087-981A-68FF79364369
+#   level: 82
+# - name: Webpack
+#   key: A835B724-0B7D-46AE-BCD5-B96440D52A53
+#   level: 82
+# - name: Grunt / Gulp
+#   key: 9DF6EEB9-C269-42EB-B839-EDF25D4F1F5A
+#   level: 82
+# - name: Team City / Octopus / Jenkins
+#   key: 80D2EC6A-4AD7-4123-88F2-71E877A13638
+#   level: 82
+# - name: Git
+#   key: 1075F595-FDA1-4226-ABB9-D4B0E1AD7F1A
+#   level: 82
+# - name: Bash / PowerShell
   key: 7FD4810B-4A9F-4668-856B-5ED93B9C61A1
   level: 82
 
