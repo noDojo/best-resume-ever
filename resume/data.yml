@@ -40,13 +40,15 @@ experience:
   - bullet: Set a monthly cadence for production releases where before releases were only taking place twice a year (approximately).
   - bullet: Instituted scrum ceremonies and promoted their adoption by the team.
   - bullet: Rewrote the developer setup documentation.
-  - bullet: Enabled the use of the Help Portal within MissionInsite.
-  - bullet: Integrated with IT to allow the auto-provisioning of new clients and
+  - bullet: Integrated the Help Portal (a site to provide user documentation) with a .NET Core / Angular / TypeScript application.
+  - bullet: Created API endpoints in a .NET Core application to be used by the IT department for auto-provisioning new clients and
       client activation/deactivation.
-  - bullet: Performed system-wide data updates with SQL Server using large third-party data sets.
-  - bullet: Diagnosed and corrected issues preventing code generation between projects.
+  - bullet: Used massive third-party data sets to perform system-wide data updates using MS SQL Server.
+  - bullet: Generated international vector Mapbox tilesets (mbtiles) using MS SQL Server, WSL, Tippecanoe, and an Ogr2Ogr GDAL (translator library for geospatila data formats).
+  - bullet: Diagnosed and corrected issues preventing code generation between projects and documented how to use it.
   - bullet: Integrated the Giving Dashboard Pilot (Tableau) into Realm (work
       unassociated with MissionInsite).
+  - bullet: Integrated Tableau dashboards, analytics, and other data visualizations into a .NET MVC application.
 
 # SENIOR | 04.19.2021 - 03.20.2022 #
 - company: ACS Technologies
