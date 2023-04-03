@@ -36,19 +36,16 @@ experience:
   timeperiod: September 2021 - present
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Standardized and documented the tagging and release process.
-  - bullet: Set a monthly cadence for production releases where before releases were only taking place two or three times annually.
-  - bullet: Instituted scrum ceremonies and promoted their adoption by the team.
-  - bullet: Rewrote the developer setup documentation (originally a 43 page Google document), reducing its size by ~50%, and moved it into version control.
-  - bullet: Integrated the Help Portal (a site to provide user documentation) with a .NET Core / Angular / TypeScript application.
-  - bullet: Created API endpoints in a .NET Core application to be used by the IT department for auto-provisioning new clients and
-      client activation/deactivation.
   - bullet: Used massive third-party data sets to perform system-wide data updates using MS SQL Server.
   - bullet: Generated international vector Mapbox tilesets (mbtiles) using MS SQL Server, WSL, Tippecanoe, and an Ogr2Ogr GDAL (translator library for geospatila data formats).
-  - bullet: Diagnosed and corrected issues preventing code generation between projects and documented how to use it.
-  - bullet: Integrated the Giving Dashboard Pilot (Tableau) into Realm (work
-      unassociated with MissionInsite).
-  - bullet: Integrated Tableau dashboards, analytics, and other data visualizations into a .NET MVC application.
+  - bullet: Standardized and documented the tagging and release process.
+  - bullet: Set a monthly cadence for production releases where before releases were only taking place two or three times annually.
+  - bullet: Integrated Tableau dashboards, analytics, and other data visualizations into a large .NET MVC application.
+  - bullet: Instituted scrum ceremonies and promoted their adoption by the team.
+  - bullet: Rewrote the developer setup documentation (originally a 43 page Google document), reducing its size by ~50%, and moved it into version control.
+  - bullet: Created API endpoints in a .NET Core application to be used by the IT department for auto-provisioning new clients and client activation/deactivation.
+  - bullet: Integrated the Help Portal (a site to provide user documentation) with a .NET Core / Angular / TypeScript application.
+  - bullet: Diagnosed and corrected issues preventing code generation between projects and documented instructions for use.
 
 # SENIOR | 04.19.2021 - 03.20.2022 #
 - company: ACS Technologies
@@ -57,12 +54,10 @@ experience:
   timeperiod: March 2021 - August 2021
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Led a small team of developers tasked with building an analytics dashboard
-      using Snowflake and the Sisense business intelligence tool.
-  - bullet: Created a Vue SPA as a POC to assess the various embedding techniques
-      offered by Sisense.
+  - bullet: Led a small team of developers tasked with building an analytics dashboard using Snowflake and the Sisense business intelligence tool.
+  - bullet: Created a Vue SPA as a POC to assess the various embedding techniques offered by Sisense.
   - bullet: Embedded the analytics and data visualizations from Sisense into a Vue SPA.
-  - bullet: Integrated the stand-alone Vue SPA into Realm (as a Vue SPA).
+  - bullet: Integrated the stand-alone Vue SPA into a large .NET MVC application (as a Vue SPA).
 
 # INTERMEDIATE | 07.03.2017 - 04.18.2021 #
 - company: ACS Technologies
