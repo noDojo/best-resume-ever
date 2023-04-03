@@ -36,10 +36,10 @@ experience:
   timeperiod: September 2021 - present
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Formalized and documented the tagging and release process.
-  - bullet: Set a monthly cadence for production releases where before releases were only taking place twice a year (approximately).
+  - bullet: Standardized and documented the tagging and release process.
+  - bullet: Set a monthly cadence for production releases where before releases were only taking place two or three times annually.
   - bullet: Instituted scrum ceremonies and promoted their adoption by the team.
-  - bullet: Rewrote the developer setup documentation.
+  - bullet: Rewrote the developer setup documentation (originally a 43 page Google document), reducing its size by ~50%, and moved it into version control.
   - bullet: Integrated the Help Portal (a site to provide user documentation) with a .NET Core / Angular / TypeScript application.
   - bullet: Created API endpoints in a .NET Core application to be used by the IT department for auto-provisioning new clients and
       client activation/deactivation.
