@@ -68,8 +68,8 @@
         </ul>
       </div> -->
       <!-- SKILLS SUMMARY - NEW -->
-      <div id="skills-container">
-        <div class="section-title">SKILLS SUMMARY</div>
+      <!-- <div id="skills-container">
+        <div class="section-title">SKILLS SUMMARY</div> -->
         <!-- todo: these need to loop on an additional layer in the yaml hierarchy -->
         <!-- PROGRAMMING LANGUAGES -->
         <!-- <div class="bullet-list">
