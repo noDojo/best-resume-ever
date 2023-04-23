@@ -1,7 +1,7 @@
 import yaml from 'js-yaml';
 import {
     PERSON
-} from '../../resume/data.yml';
+} from '../../resume/external-data.yml';
 // uncomment for internal positions
 // } from '../../resume/internal-data.yml';
 import {
