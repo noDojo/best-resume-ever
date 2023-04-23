@@ -345,7 +345,7 @@ export default Vue.component(name, getVueOptions(name));
 }
 
 .bullet-list {
-  padding-bottom: 10px;
+  padding: 10px 0;
   font-weight: 300;
 
   .item {
