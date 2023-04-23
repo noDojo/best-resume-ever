@@ -276,6 +276,7 @@ export default Vue.component(name, getVueOptions(name));
     .company,
     .education-description {
       font-size: 20px;
+      padding-left: 4px;
     }
 
     .job-info {
@@ -286,12 +287,14 @@ export default Vue.component(name, getVueOptions(name));
     .degree {
       font-weight: 700;
       font-size: 16px;
+      color: rgba(0, 0, 0, 0.8);
+      padding-left: 4px;
     }
 
     .experience-timeperiod,
     .education-timeperiod {
       font-weight: 100;
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(0, 0, 0, 0.8);
       font-size: 16px;
     }
 
@@ -333,7 +336,7 @@ export default Vue.component(name, getVueOptions(name));
 
     h2,
     p {
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(0, 0, 0, 0.8);
     }
   }
 }
@@ -376,7 +379,7 @@ export default Vue.component(name, getVueOptions(name));
 }
 
 .headline {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 1.3em;
   font-weight: bold;
 }
