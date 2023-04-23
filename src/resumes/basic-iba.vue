@@ -7,34 +7,34 @@
         </div>
         <div>{{ person.position }}</div>
         <!-- <div id="info-flex">
-          <span id="email"
-            ><a :href="'mailto:' + person.contact.email">
+          <span id="email">
+            <a :href="'mailto:' + person.contact.email">
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              {{ person.contact.email }}</a
-            ></span
-          >
-          <span id="phone"
-            ><i class="fa fa-phone-square" aria-hidden="true"></i>
-            {{ person.contact.phone }}</span
-          >
-          <span v-if="person.contact.linkedin" id="website"
-            ><a :href="person.contact.linkedinurl"
-              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              {{ person.contact.linkedin }}</a
-            ></span
-          >
-          <span v-if="person.contact.website" id="website"
-            ><a :href="person.contact.website"
-              ><i class="fa fa-home" aria-hidden="true"></i>
-              {{ person.contact.website }}</a
-            ></span
-          >
-          <span v-if="person.contact.github" id="github"
-            ><a :href="'https://github.com/' + person.contact.github"
-              ><i class="fa fa-github" aria-hidden="true"></i>
-              {{ person.contact.github }}</a
-            ></span
-          >
+              {{ person.contact.email }}
+            </a>
+          </span>
+          <span id="phone">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            {{ person.contact.phone }}
+          </span>
+          <span v-if="person.contact.linkedin" id="website">
+            <a :href="person.contact.linkedinurl">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              {{ person.contact.linkedin }}
+            </a>
+          </span>
+          <span v-if="person.contact.website" id="website">
+            <a :href="person.contact.website">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              {{ person.contact.website }}
+            </a>
+          </span>
+          <span v-if="person.contact.github" id="github">
+            <a :href="'https://github.com/' + person.contact.github">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              {{ person.contact.github }}
+            </a>
+          </span>
         </div> -->
       </div>
     </div>
@@ -43,11 +43,7 @@
       <div id="profile-container" v-if="person.profile != []">
         <div class="section-title">PROFESSIONAL PROFILE</div>
         <div class="bullet-list">
-          <div
-            v-for="profile in person.profile"
-            :key="profile.item"
-            class="item"
-          >
+          <div v-for="profile in person.profile" :key="profile.item" class="item">
             <div class="icon bullet-icon">
               <i class="material-icons">chevron_right</i>
             </div>
@@ -61,9 +57,7 @@
         <p id="skill-description">{{ person.knowledge }}</p>
         <ul id="skill-list">
           <li class="skill" v-for="skill in person.skills" :key="skill.name">
-            <span class="list-item-black">
-              {{ skill.name }}
-            </span>
+            <span class="list-item-black">{{ skill.name }}</span>
           </li>
         </ul>
       </div> -->
@@ -77,16 +71,9 @@
             <i class="material-icons">chevron_right</i>
           </div>
           <span class="md-bold-text">Programming Languages:</span>
-          <span
-            v-for="language in person.languages"
-            :key="language.item"
-            class="item"
-          >
+          <span v-for="language in person.languages" :key="language.item" class="item">
             {{ language.item }}
-            <span
-              v-if="language !== person.languages[person.languages.length - 1]"
-              >,
-            </span>
+            <span v-if="language !== person.languages[person.languages.length - 1]">,</span>
           </span>
         </div> -->
         <!-- WEB TECHNOLOGIES -->
@@ -95,16 +82,9 @@
             <i class="material-icons">chevron_right</i>
           </div>
           <span class="md-bold-text">Web Technologies:</span>
-          <span
-            v-for="tech in person.webtechnologies"
-            :key="tech.item"
-            class="item"
-          >
+          <span v-for="tech in person.webtechnologies" :key="tech.item" class="item">
             {{ tech.item }}
-            <span
-              v-if="tech !== person.webtechnologies[person.webtechnologies.length - 1]"
-              >,
-            </span>
+            <span v-if="tech !== person.webtechnologies[person.webtechnologies.length - 1]">,</span>
           </span>
         </div>
       </div> -->
@@ -114,16 +94,9 @@
           <i class="material-icons">chevron_right</i>
         </div>
         <span class="md-bold-text">Application Servers:</span>
-        <span
-          v-for="appserver in person.applicationservers"
-          :key="appserver.item"
-          class="item"
-        >
+        <span v-for="appserver in person.applicationservers" :key="appserver.item" class="item">
           {{ appserver.item }}
-          <span
-            v-if="appserver !== person.applicationservers[person.applicationservers.length - 1]"
-            >,
-          </span>
+          <span v-if="appserver !== person.applicationservers[person.applicationservers.length - 1]">,</span>
         </span>
       </div> -->
       <!-- DATABASE -->
@@ -132,16 +105,9 @@
           <i class="material-icons">chevron_right</i>
         </div>
         <span class="md-bold-text">Database:</span>
-        <span
-          v-for="db in person.database"
-          :key="db.item"
-          class="item"
-        >
+        <span v-for="db in person.database" :key="db.item" class="item">
           {{ db.item }}
-          <span
-            v-if="db !== person.database[person.database.length - 1]"
-            >,
-          </span>
+          <span v-if="db !== person.database[person.database.length - 1]">,</span>
         </span>
       </div> -->
       <!-- OPERATING SYSTEMS -->
@@ -150,16 +116,9 @@
           <i class="material-icons">chevron_right</i>
         </div>
         <span class="md-bold-text">Operating Systems:</span>
-        <span
-          v-for="os in person.operatingsystems"
-          :key="os.item"
-          class="item"
-        >
+        <span v-for="os in person.operatingsystems" :key="os.item" class="item">
           {{ os.item }}
-          <span
-            v-if="os !== person.operatingsystems[person.operatingsystems.length - 1]"
-            >,
-          </span>
+          <span v-if="os !== person.operatingsystems[person.operatingsystems.length - 1]">,</span>
         </span>
       </div> -->
       <!-- OTHER -->
@@ -168,16 +127,9 @@
           <i class="material-icons">chevron_right</i>
         </div>
         <span class="md-bold-text">Other:</span>
-        <span
-          v-for="other in person.other"
-          :key="other.item"
-          class="item"
-        >
+        <span v-for="other in person.other" :key="other.item" class="item">
           {{ other.item }}
-          <span
-            v-if="other !== person.other[person.other.length - 1]"
-            >,
-          </span>
+          <span v-if="other !== person.other[person.other.length - 1]">,</span>
         </span>
       </div> -->
       <!-- SKILLS SUMMARY - NEW LOOP -->
@@ -185,24 +137,14 @@
       <!-- PROFESSIONAL EXPERIENCE-->
       <div id="experience-container">
         <div class="section-title">PROFESSIONAL EXPERIENCE</div>
-        <div
-          class="experience"
-          v-for="experience in person.experience"
-          :key="experience.key"
-        >
+        <div v-for="experience in person.experience" :key="experience.key" class="experience">
           <h2 class="company">{{ experience.company }}</h2>
           <p class="job-info">
-            <span class="job-title">{{ experience.position }} | </span
-            ><span class="experience-timeperiod">{{
-              experience.timeperiod
-            }}</span>
+            <span class="job-title">{{ experience.position }} | </span>
+            <span class="experience-timeperiod">{{ experience.timeperiod }}</span>
           </p>
           <div class="bullet-list">
-            <div
-              v-for="item in experience.description"
-              :key="item.bullet"
-              class="item"
-            >
+            <div v-for="item in experience.description" :key="item.bullet" class="item">
               <div class="icon bullet-icon">
                 <i class="material-icons">chevron_right</i>
               </div>
@@ -214,17 +156,11 @@
       <!-- EDUCATION AND QUALIFICATION -->
       <div id="education-container">
         <div class="section-title">EDUCATION AND QUALIFICATION</div>
-        <div
-          class="education"
-          v-for="education in person.education"
-          :key="education.degree"
-        >
+        <div v-for="education in person.education" :key="education.degree" class="education">
           <h2 class="education-description">{{ education.description }}</h2>
           <p>
-            <span class="degree">{{ education.degree }} | </span
-            ><span class="education-timeperiod">{{
-              education.timeperiod
-            }}</span>
+            <span class="degree">{{ education.degree }} | </span>
+            <span class="education-timeperiod">{{ education.timeperiod }}</span>
           </p>
         </div>
       </div>
@@ -436,7 +372,7 @@ export default Vue.component(name, getVueOptions(name));
 
 .icon.bullet-icon {
   width: 6%;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .headline {
