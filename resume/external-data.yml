@@ -57,14 +57,13 @@ experience:
   - bullet: Led a small team of developers tasked with building an analytics dashboard using Snowflake and the Sisense business intelligence tool.
   - bullet: Created a Vue SPA as a POC to assess the various embedding techniques offered by Sisense.
   - bullet: Embedded the analytics and data visualizations from Sisense into a Vue SPA.
-  - bullet: Integrated the stand-alone Vue SPA into a large .NET MVC application (as a Vue SPA).
+  - bullet: Integrated the stand-alone Vue SPA into a large, traffic heavy .NET MVC application (as a Vue SPA).
   - bullet: Implemented and automated version control in the Sisense development console (a feature not supported at the time).
-  - bullet: Worked closely with UX / design to determine technical feasibility of figma design mockups and negotiate changes when necessary.
-      Joined with UX / design to conduct multiple user sessions to test the solution's viability.
-# UPDATE THE TWO BULLETS BELOW #
-  - bullet: Trained all team members how to edit and build the advanced analytics project in realm, how to deploy realm to the proper testing environment using team city, and how to
-      change the data source for one of the Sisense dashboards. Had each team member demonstrate that they could complete the tasks from our training, thus increasing the bus factor.
-  - bullet: Removed all code in realm (authored by a previous team) from the previous iteration of the advanced analytics project after verifying that it was not being used
+  - bullet: Worked closely with UX / Design to determine technical feasibility of figma design mockups and negotiate changes when necessary.
+      Joined with UX / Design to conduct multiple user sessions to test the solution's viability.
+  - bullet: Trained all team members to edit and build the project from within the .NET MVC application and deploy the application to the testing environment using Team City.
+      Had each team member demonstrate that they could complete the tasks from our training (increasing the bus factor).
+  - bullet: Removed all code in the .NET MVC application (authored by a previous team) from the previous iteration of the advanced analytics project after verifying that it was not being used
 
 # INTERMEDIATE | 07.03.2017 - 04.18.2021 #
 - company: ACS Technologies

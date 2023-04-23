@@ -135,13 +135,13 @@
       <!-- SKILLS SUMMARY - NEW LOOP -->
       
       <!-- PROFESSIONAL EXPERIENCE-->
-      <div id="experience-container">
+      <!-- <div id="experience-container">
         <div class="section-title">PROFESSIONAL EXPERIENCE</div>
         <div v-for="experience in person.experience" :key="experience.key" class="experience">
           <h2 class="company">{{ experience.company }}</h2>
           <p class="job-info">
             <span class="job-title">{{ experience.position }} | </span>
-            <span class="experience-timeperiod">{{ experience.timeperiod }}</span>
+            <span class="job-title">{{ experience.timeperiod }}</span>
           </p>
           <div class="bullet-list">
             <div v-for="item in experience.description" :key="item.bullet" class="item">
@@ -152,9 +152,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- EDUCATION AND QUALIFICATION -->
-      <div id="education-container">
+      <!-- <div id="education-container">
         <div class="section-title">EDUCATION AND QUALIFICATION</div>
         <div v-for="education in person.education" :key="education.degree" class="education">
           <h2 class="education-description">{{ education.description }}</h2>
@@ -163,7 +163,7 @@
             <span class="education-timeperiod">{{ education.timeperiod }}</span>
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
     <div id="resume-footer" class="hidden">
       <div v-if="person.about">
@@ -291,15 +291,10 @@ export default Vue.component(name, getVueOptions(name));
       padding-left: 4px;
     }
 
-    .experience-timeperiod,
     .education-timeperiod {
       font-weight: 100;
       color: rgba(0, 0, 0, 0.8);
       font-size: 16px;
-    }
-
-    .education {
-      margin: 10px 0 10px 30px;
     }
 
     #skill-list {
@@ -320,6 +315,7 @@ export default Vue.component(name, getVueOptions(name));
 
   .section-title {
     padding: 2px 4px;
+    margin: 10px 0;
     background-color: lightgray;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.8);
@@ -348,7 +344,6 @@ export default Vue.component(name, getVueOptions(name));
 }
 
 .bullet-list {
-  padding: 10px 0;
   font-weight: 300;
 
   .item {
