@@ -57,7 +57,7 @@ experience:
   - bullet: Led a small team of developers tasked with building an analytics dashboard using Snowflake and the Sisense business intelligence tool.
   - bullet: Created a Vue SPA as a POC to assess the various embedding techniques offered by Sisense.
   - bullet: Embedded the analytics and data visualizations from Sisense into a Vue SPA.
-  - bullet: Integrated the stand-alone Vue SPA into a large, traffic heavy .NET MVC application (as a Vue SPA).
+  - bullet: Integrated the stand-alone Vue SPA into a large, high-volume .NET MVC application (as a Vue SPA).
   - bullet: Implemented and automated version control in the Sisense development console (a feature not supported at the time).
   - bullet: Worked closely with UX / Design to determine technical feasibility of figma design mockups and negotiate changes when necessary.
       Joined with UX / Design to conduct multiple user sessions to test the solution's viability.
@@ -72,57 +72,25 @@ experience:
   timeperiod: July 2017 - February 2021
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Create multiple single-page applications that leverage modern 
-      functionality (code-splitting, etc) using Vue.js, Vue CLI, Vuex, Vuetify, 
-      and other various tools.
-  - bullet: Frequently handle integrations between internal projects written in 
-      Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as with 
-      third-party services and external API's.
-  - bullet: Create tools to standardize and improve developer experience and 
-      accelerate the rate of development (enum/JavaScript generator, dynamic link 
-      builders with permissions set via JWT, etc).
-  - bullet: Developed an SSO authentication layer to provide a centralized integration 
-      point for internal and external products both future and present.
-  - bullet: Designed and created a component library using Vue.js SFC's, Rollup, 
-      npm, and Github Packages that generated npm packages.
+  - bullet: Frequently handled integrations between internal projects written in Vue.js, C#/.NET MVC, and Golang as well as integrations with third-party services and external API's.
+  - bullet: Created tools to standardize and improve developer experience and accelerate the rate of development (enum/JavaScript generator, dynamic link builders with permissions set via JWT, etc).
+  - bullet: Developed an SSO authentication layer to provide a centralized integration point for internal and external products both future and present.
+  - bullet: Designed and created a component library using Vue.js SFC's, Rollup, npm, and Github Packages that generated npm packages.
   - bullet: Developed, designed, implemented, and maintained CRUD API endpoints using Golang.
-  - bullet: Designed and implemented new databases and schemas using PostgreSQL 
-      for account management and authentication across multiple products.
-  - bullet: Regularly meet with the UX design team to assess designs for technical 
-      feasibility, identify and step through user workflows, scope project 
-      requirements, and estimate level of effort (LOE)/required working hours 
-      before the active phase of development.
-  - bullet: Designed and developed a tool that is used as a sandbox for rapid 
-      prototyping and also helps in facilitating UX/UI A/B testing.
-  - bullet: Generate and present reports around team progress and project development 
-      status to management and stakeholders at the close of each sprint.
-  - bullet: Regularly hosted and presented at open invitation technical talks with 
-      an attendance of 20-30 representing individuals from multiple departments 
-      with varying levels of technical experience.
-  - bullet: Mentor new and existing developers on a daily basis. Help lead a 
-      front-end developer community of practice with over 30 members.
-  - bullet: Introduced updated testing procedures (BDD) and implemented tools to 
-      generate tests by translating Cucumber's Gherkin syntax.
-  - bullet: Oversee and support contract work on a variety of projects such as a 
-      website builder and publisher, a streaming platform, and a portal to assist 
-      and provide documentation to a high-volume .NET web application with xxx 
-      unique visitors each month.
-  - bullet: Provide leadership as a subject matter expert (SME) in analytics and 
-      styling languages (CSS/SCSS/LESS).
-  - bullet: Introduced updated testing procedures (BDD) and implemented tools to 
-      generate tests by translating Cucumber's Gherkin syntax.
-  - bullet: Oversaw and supported contract work on a variety of projects such as a 
-      website builder and publisher, a streaming platform, and a portal to assist 
-      and provide documentation to Realm.
-  - bullet: Designed and implemented new databases and schemas using PostgreSQL 
-      for account management and authentication across multiple products.
-  - bullet: Contributed to all phases of product development, from architectural planning
-      to development to the release.
+  - bullet: Designed and implemented new databases and schemas for account management and authentication across multiple products using PostgreSQL.
+  - bullet: Regularly met with the UX team to assess designs for technical feasibility, identify and step through user workflows, scope project requirements, and estimate effort prior to development.
+  - bullet: Designed and developed a tool for rapid prototyping and also helps in facilitating UX/UI A/B testing.
+  - bullet: Reported team progress and project development status to management and stakeholders at the close of each sprint.
+  - bullet: Regularly hosted and presented open invitation technical talks with an attendance of 20-30 representing individuals from multiple departments with varying levels of technical experience.
+  - bullet: Mentored new and existing developers on a daily basis. Helped lead a front-end developer community of practice with over 30 members.
+  - bullet: Introduced updated testing procedures (BDD) and implemented a tool that generated tests by translating Cucumber's Gherkin syntax.
+  - bullet: Oversaw and supported contract work on a variety of projects such as a website builder / publisher, a streaming platform, and a help documentation portal to assist for a high-volume .NET web application.
+  - bullet: Provided leadership as a subject matter expert (SME) in analytics and styling languages (CSS/SCSS/LESS).
   - bullet: Created a Vue SPA that allowed users to give to a church or organization.
-  - bullet: Developed and maintained API's using Golang.
+  - bullet: Actively participated in all phases of the software development life cycle, from architectural planning and requirements gathering to development and testing to release and maintenance.
   - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
-  - bullet: Redesigned a reporting engine to mitigate serious performance issues 
-      and increase its capacity to generate client data in multiple formats.
+  - bullet: Redesigned a reporting engine to mitigate serious performance issues and increase its capacity to generate client data in multiple formats.
+  - bullet: Created multiple SPA's by leveraging modern functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, Vuetify, and other various tools.
 
 # JUNIOR | 05.11.2015 - 07.02.2017 #
 - company: ACS Technologies
@@ -131,31 +99,11 @@ experience:
   timeperiod: May 2015 - July 2017
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Developed and maintained a global library with 50+ jQuery plugins
-      and 40+ Vue.js components.
-  - bullet: Standardized and maintained a global front-end design system for Realm.
-  - bullet: Built a tool (Particle) to organize, minify, bundle, and serve (via CDN)
-      all global front-end components, plugins, and styles used by Realm.
-  - bullet: Migrated all global front-end components, plugins, and styles to the cloud 
-      from a high-volume .NET web application with over 600k unique visitors per month.
-  - bullet: Frequently handled integrations between internal projects written in 
-      Vue.js/modern JavaScript, C#/.NET MVC, and Golang as well as integrations with 
-      third-party services and external API's.
-  - bullet: Created tools to standardize and improve developer experience and 
-      accelerate the rate of development (enum/JavaScript generator, dynamic link 
-      builders with permissions set via JWT, etc).
-  - bullet: Built the Realm Help Center, a SPA written purely in JavaScript and jQuery.
-  - bullet: Subject Matter Expert (SME) for analytics (Segment, Intercom) and 
-      styling languages (CSS/SCSS/LESS).
-  - bullet: Actively participated (more than a few times) in all phases of the 
-      software development life cycle, from architectural planning to development 
-      and testing to release and maintenance.
-  - bullet: Collaborate with stakeholders to develop clear, unambiguous technical 
-      requirements and establish a consistent feed-back loop during all phases of 
-      the development life cycle.
-  - bullet: Standardize, develop, document, and maintain a flexible, extensive design 
-      system that promotes design consistency, reduces the need for boilerplate code, 
-      and prevents code duplication.
+  - bullet: Developed and maintained a global library with 50+ jQuery plugins and 40+ Vue.js components.
+  - bullet: Standardized and maintained a global front-end design system for a large, high-volume .NET MVC application.
+  - bullet: Built a tool to organize, minify, bundle, and serve (via CDN) all global front-end components, plugins, and styles used by a large, high-volume .NET MVC application.
+  - bullet: Migrated all global front-end components, plugins, and styles to the cloud from a high-volume .NET web application with over 600k unique visitors per month.
+  - bullet: Built a SPA that provided help documentation for users written purely in JavaScript and jQuery (no frameworks).
 
 # EDUCATION AND QUALIFICATION #
 education:
