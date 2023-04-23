@@ -36,7 +36,7 @@ experience:
   timeperiod: September 2021 - present
   website: https://www.acstechnologies.com/
   description:
-  - bullet: Used massive third-party data sets to perform system-wide data updates using MS SQL Server.
+  - bullet: Performed system-wide data updates using large third-party data sets and MS SQL Server.
   - bullet: Generated international vector Mapbox tilesets (mbtiles) using MS SQL Server, WSL, Tippecanoe, and an Ogr2Ogr GDAL (translator library for geospatila data formats).
   - bullet: Standardized and documented the tagging and release process.
   - bullet: Set a monthly cadence for production releases where before releases were only taking place two or three times annually.
@@ -59,11 +59,9 @@ experience:
   - bullet: Embedded the analytics and data visualizations from Sisense into a Vue SPA.
   - bullet: Integrated the stand-alone Vue SPA into a large, high-volume .NET MVC application (as a Vue SPA).
   - bullet: Implemented and automated version control in the Sisense development console (a feature not supported at the time).
-  - bullet: Worked closely with UX / Design to determine technical feasibility of figma design mockups and negotiate changes when necessary.
-      Joined with UX / Design to conduct multiple user sessions to test the solution's viability.
-  - bullet: Trained all team members to edit and build the project from within the .NET MVC application and deploy the application to the testing environment using Team City.
-      Had each team member demonstrate that they could complete the tasks from our training (increasing the bus factor).
-  - bullet: Removed all code in the .NET MVC application (authored by a previous team) from the previous iteration of the advanced analytics project after verifying that it was not being used
+  - bullet: Worked closely with UX / Design to determine technical feasibility of figma design mockups and negotiate changes when necessary. Joined with UX / Design to conduct multiple user sessions to test the solution's viability.
+  - bullet: Trained all team members to edit and build the project from within the .NET MVC application and deploy the application to the testing environment using Team City. Had each team member demonstrate that they could complete the tasks from our training (increasing the bus factor).
+  - bullet: Removed all code authored during the previous iterations of the Advanced Analytics project from the .NET MVC application.
 
 # INTERMEDIATE | 07.03.2017 - 04.18.2021 #
 - company: ACS Technologies

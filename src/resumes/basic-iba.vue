@@ -135,7 +135,7 @@
       <!-- SKILLS SUMMARY - NEW LOOP -->
       
       <!-- PROFESSIONAL EXPERIENCE-->
-      <!-- <div id="experience-container">
+      <div id="experience-container">
         <div class="section-title">PROFESSIONAL EXPERIENCE</div>
         <div v-for="experience in person.experience" :key="experience.key" class="experience">
           <h2 class="company">{{ experience.company }}</h2>
@@ -152,7 +152,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- EDUCATION AND QUALIFICATION -->
       <!-- <div id="education-container">
         <div class="section-title">EDUCATION AND QUALIFICATION</div>
