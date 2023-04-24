@@ -241,15 +241,6 @@ export default Vue.component(name, getVueOptions(name));
       font-size: 16px;
     }
 
-    // #skill-list {
-    //   // column-count: 3;
-    //   list-style-position: inside;
-
-    //   ul li {
-    //     font-size: 14px;
-    //   }
-    // }
-
     #profile-container,
     #education-container,
     #skills-container {
