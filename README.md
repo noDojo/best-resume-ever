@@ -96,6 +96,9 @@ All resumes will be exported to the `pdf/` folder.
 
 ⭐️ If `npm run export` doesn't work, you can run `npm run dev` and `npm run pdf` to achieve the same result.
 
+⭐️ If some of your data is being "cut off" it's most likely because the height of the pdf needs to be increased.
+   This can be edited in the style section of the `pages/resume.vue` file inside of the css class `.page`.
+
 <br>
 
 ## Creating and Updating Templates
