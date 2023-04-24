@@ -54,7 +54,6 @@
       <!-- SKILLS SUMMARY -->
       <div id="skills-container" v-if="person.skills != []">
         <div class="section-title">SKILLS SUMMARY</div>
-        <p id="skill-description">{{ person.knowledge }}</p>
         <ul id="skill-list">
             <li>
               <span class="list-item-black">Programming Languages: </span><span>{{ person.skills[0].languages }}</span>
