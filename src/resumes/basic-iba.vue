@@ -42,15 +42,6 @@
       <!-- PROFESSIONAL PROFILE -->
       <div id="profile-container" v-if="person.profile != []">
         <div class="section-title">PROFESSIONAL PROFILE</div>
-        <!-- <div class="bullet-list">
-          <div v-for="profile in person.profile" :key="profile.item" class="item">
-            <div class="icon bullet-icon">
-              <i class="material-icons">chevron_right</i>
-            </div>
-            <div class="text">{{ profile.item }}</div>
-          </div>
-        </div> -->
-
         <ul>
           <li v-for="profile in person.profile" :key="profile.item" class="item">
             <div class="text">{{ profile.item }}</div>
