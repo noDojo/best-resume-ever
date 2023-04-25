@@ -44,7 +44,7 @@
         <div class="section-title">PROFESSIONAL PROFILE</div>
         <ul>
           <li v-for="profile in person.profile" :key="profile.item" class="item">
-            <div class="text">{{ profile.item }}</div>
+            <div>{{ profile.item }}</div>
           </li>
         </ul>
       </div>
@@ -80,36 +80,27 @@
         <div class="section-title">PROFESSIONAL EXPERIENCE</div>
         <div v-for="experience in person.experience" :key="experience.key" class="experience">
           <h2 class="company">{{ experience.company }}</h2>
-          <p class="job-info">
-            <span class="job-title">{{ experience.position }} | </span>
-            <span class="job-title">{{ experience.timeperiod }}</span>
+          <p class="text-timespan">
+            <span>{{ experience.position }} | </span>
+            <span>{{ experience.timeperiod }}</span>
           </p>
-          <div class="bullet-list">
-            <div v-for="item in experience.description" :key="item.bullet" class="item">
-              <div class="icon bullet-icon">
-                <i class="material-icons">chevron_right</i>
-              </div>
+          <ul style="margin-bottom: 10px;">
+            <li v-for="item in experience.description" :key="item.bullet" class="item">
               <div class="text">{{ item.bullet }}</div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
       <!-- EDUCATION AND QUALIFICATION -->
       <div id="education-container">
-        <div class="section-title">EDUCATION AND QUALIFICATION</div>
+        <div class="section-title">EDUCATION</div>
         <div v-for="education in person.education" :key="education.degree" class="education">
           <h2 class="education-description">{{ education.description }}</h2>
-          <p>
-            <span class="degree">{{ education.degree }} | </span>
-            <span class="education-timeperiod">{{ education.timeperiod }}</span>
+          <p class="text-timespan">
+            <span>{{ education.degree }} | </span>
+            <span>{{ education.timeperiod }}</span>
           </p>
         </div>
-      </div>
-    </div>
-    <div id="resume-footer" class="hidden">
-      <div v-if="person.about">
-        <h2>{{ lang.about }}</h2>
-        <p>{{ person.about }}</p>
       </div>
     </div>
   </div>
@@ -131,7 +122,7 @@ export default Vue.component(name, getVueOptions(name));
   h1,
   h2 {
     margin: 0;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
   }
 
   p {
@@ -155,7 +146,6 @@ export default Vue.component(name, getVueOptions(name));
 
   #resume-header {
     color: rgba(0, 0, 0, 0.7);
-    // height: 136px;
     height: 60px;
     padding: 20px 40px;
 
@@ -220,22 +210,15 @@ export default Vue.component(name, getVueOptions(name));
       padding-left: 4px;
     }
 
-    .job-info {
+    .text-timespan {
       margin-bottom: 5px;
-    }
 
-    .job-title,
-    .degree {
-      font-weight: 700;
-      font-size: 16px;
-      color: rgba(0, 0, 0, 0.8);
-      padding-left: 4px;
-    }
-
-    .education-timeperiod {
-      font-weight: 100;
-      color: rgba(0, 0, 0, 0.8);
-      font-size: 16px;
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-left: 4px;
+      }
     }
 
     #profile-container,
@@ -252,57 +235,6 @@ export default Vue.component(name, getVueOptions(name));
     font-weight: 700;
     color: rgba(0, 0, 0, 0.8);
   }
-
-  #resume-footer {
-    padding: 40px;
-    height: 135px;
-    box-shadow: inset 0px 0px 100px #301030;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-
-    h2,
-    p {
-      color: rgba(0, 0, 0, 0.8);
-    }
-  }
-}
-
-.spacer {
-  width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-  margin: 5px 0 10px;
-}
-
-.bullet-list {
-  font-weight: 300;
-
-  .item {
-    padding: 4px 0;
-  }
-
-  .text {
-    overflow: auto;
-  }
-}
-
-.icon {
-  width: 16%;
-  float: left;
-  margin-left: 0;
-
-  .fa,
-  .material-icons {
-    text-align: center;
-    display: block;
-    font-size: 12pt;
-  }
-}
-
-.icon.bullet-icon {
-  width: 6%;
-  padding-top: 4px;
 }
 
 .headline {

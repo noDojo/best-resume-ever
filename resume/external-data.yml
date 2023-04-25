@@ -79,9 +79,8 @@ experience:
   - bullet: Regularly met with the UX team to assess designs for technical feasibility, identify and step through user workflows, scope project requirements, and estimate effort prior to development.
   - bullet: Designed and developed a tool for rapid prototyping and also helps in facilitating UX/UI A/B testing.
   - bullet: Reported team progress and project development status to management and stakeholders at the close of each sprint.
-  - bullet: Regularly hosted and presented open invitation technical talks with an attendance of 20-30 representing individuals from multiple departments with varying levels of technical experience.
-  - bullet: Mentored new and existing developers on a daily basis. Helped lead a front-end developer community of practice with over 30 members.
-  - bullet: Introduced updated testing procedures (BDD) and implemented a tool that generated tests by translating Cucumber's Gherkin syntax.
+  - bullet: Hosted (and regularly presented at) open invitation tech talks with an average attendance of 20-30 people from multiple departments and with varying levels of technical experience.
+  - bullet: Introduced new testing procedures (BDD) for department-wide use. Implemented a test generation tool written in Go that translated Cucumber's Gherkin syntax.
   - bullet: Oversaw and supported contract work on a variety of projects such as a website builder / publisher, a streaming platform, and a help documentation portal to assist for a high-volume .NET web application.
   - bullet: Provided leadership as a subject matter expert (SME) in analytics and styling languages (CSS/SCSS/LESS).
   - bullet: Created a Vue SPA that allowed users to give to a church or organization.
