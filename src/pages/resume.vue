@@ -28,6 +28,7 @@ export default Vue.component('resume', {
   margin: 0;
   padding: 0;
   -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
   box-sizing: border-box;
 }
 
