@@ -186,13 +186,6 @@ export default Vue.component(name, getVueOptions(name));
   #resume-body {
     padding: 20px;
 
-    #experience-title,
-    #education-title,
-    #skills-title {
-      font-size: 26px;
-      text-transform: uppercase;
-    }
-
     .experience {
       ul {
         margin: 5px 0 0 0;
@@ -216,15 +209,8 @@ export default Vue.component(name, getVueOptions(name));
       }
     }
 
-    #profile-container,
-    #education-container,
-    #skills-container {
-      margin-top: 20px;
-    }
-
     .section-title {
       padding: 2px 4px;
-      margin: 10px 0;
       background-color: lightgray;
       font-weight: 700;
       color: rgba(0, 0, 0, 0.8);
