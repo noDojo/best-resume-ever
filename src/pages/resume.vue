@@ -33,7 +33,8 @@ export default Vue.component('resume', {
 
 .resume {
   height: 100%;
-  width: 100%;
+  /* prevent section titles from running off on the right */
+  width: 95%;
 }
 
 .page {

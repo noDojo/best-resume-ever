@@ -182,7 +182,7 @@ export default Vue.component(name, getVueOptions(name));
   }
 
   #resume-body {
-    padding: 20px 40px;
+    padding: 20px;
 
     #profile-title {
       padding: 2px 4px;
