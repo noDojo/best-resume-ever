@@ -186,13 +186,6 @@ export default Vue.component(name, getVueOptions(name));
   #resume-body {
     padding: 20px;
 
-    #profile-title {
-      padding: 2px 4px;
-      background-color: lightgray;
-      font-weight: 700;
-      color: rgba(0, 0, 0, 0.8);
-    }
-
     #experience-title,
     #education-title,
     #skills-title {
