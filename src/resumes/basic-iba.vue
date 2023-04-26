@@ -43,7 +43,7 @@
       <div v-if="person.profile != []">
         <div class="section-title">PROFESSIONAL PROFILE</div>
         <ul>
-          <li v-for="profile in person.profile" :key="profile.item" class="item">
+          <li v-for="profile in person.profile" :key="profile.item">
             <div>{{ profile.item }}</div>
           </li>
         </ul>
@@ -85,7 +85,7 @@
             <span>{{ experience.timeperiod }}</span>
           </p>
           <ul style="margin-bottom: 10px;">
-            <li v-for="item in experience.description" :key="item.bullet" class="item">
+            <li v-for="item in experience.description" :key="item.bullet">
               <div class="text">{{ item.bullet }}</div>
             </li>
           </ul>
