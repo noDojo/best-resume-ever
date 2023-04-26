@@ -51,27 +51,27 @@
       <!-- SKILLS SUMMARY -->
       <div id="skills-container" v-if="person.skills != []">
         <div class="section-title">SKILLS SUMMARY</div>
-        <ul id="skill-list">
+        <ul class="skill-list">
             <li>
-              <span class="list-item-black">Programming Languages: </span><span>{{ person.skills[0].languages }}</span>
+              <span class="bold-text">Programming Languages: </span><span>{{ person.skills[0].languages }}</span>
             </li>
             <li>
-              <span class="list-item-black">Web Technologies: </span><span>{{ person.skills[1].webtechnologies }}</span>
+              <span class="bold-text">Web Technologies: </span><span>{{ person.skills[1].webtechnologies }}</span>
             </li>
             <li>
-              <span class="list-item-black">Application Servers: </span><span>{{ person.skills[2].applicationservers }}</span>
+              <span class="bold-text">Application Servers: </span><span>{{ person.skills[2].applicationservers }}</span>
             </li>
             <li>
-              <span class="list-item-black">Database: </span><span>{{ person.skills[3].database }}</span>
+              <span class="bold-text">Database: </span><span>{{ person.skills[3].database }}</span>
             </li>
             <li>
-              <span class="list-item-black">Operating Systems: </span><span>{{ person.skills[4].operatingsystems }}</span>
+              <span class="bold-text">Operating Systems: </span><span>{{ person.skills[4].operatingsystems }}</span>
             </li>
             <li>
-              <span class="list-item-black">VCS: </span><span>{{ person.skills[5].vsc }}</span>
+              <span class="bold-text">VCS: </span><span>{{ person.skills[5].vsc }}</span>
             </li>
             <li>
-              <span class="list-item-black">Other: </span><span>{{ person.skills[6].other }}</span>
+              <span class="bold-text">Other: </span><span>{{ person.skills[6].other }}</span>
             </li>
         </ul>
       </div>
@@ -140,10 +140,6 @@ export default Vue.component(name, getVueOptions(name));
     text-decoration: none;
   }
 
-  .list-item-black {
-    color: black;
-  }
-
   #resume-header {
     color: rgba(0, 0, 0, 0.7);
     height: 60px;
@@ -178,6 +174,12 @@ export default Vue.component(name, getVueOptions(name));
           margin-right: 5px;
         }
       }
+    }
+
+    .headline {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.3em;
+      font-weight: bold;
     }
   }
 
@@ -234,12 +236,6 @@ export default Vue.component(name, getVueOptions(name));
       font-weight: 700;
       color: rgba(0, 0, 0, 0.8);
     }
-  }
-
-  .headline {
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 1.3em;
-    font-weight: bold;
   }
 }
 </style>
