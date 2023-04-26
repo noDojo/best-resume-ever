@@ -226,20 +226,20 @@ export default Vue.component(name, getVueOptions(name));
     #skills-container {
       margin-top: 20px;
     }
+
+    .section-title {
+      padding: 2px 4px;
+      margin: 10px 0;
+      background-color: lightgray;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.8);
+    }
   }
 
-  .section-title {
-    padding: 2px 4px;
-    margin: 10px 0;
-    background-color: lightgray;
-    font-weight: 700;
+  .headline {
     color: rgba(0, 0, 0, 0.8);
+    font-size: 1.3em;
+    font-weight: bold;
   }
-}
-
-.headline {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 1.3em;
-  font-weight: bold;
 }
 </style>
