@@ -40,7 +40,7 @@
     </div>
     <div id="resume-body">
       <!-- PROFESSIONAL PROFILE -->
-      <div id="profile-container" v-if="person.profile != []">
+      <div v-if="person.profile != []">
         <div class="section-title">PROFESSIONAL PROFILE</div>
         <ul>
           <li v-for="profile in person.profile" :key="profile.item" class="item">
@@ -49,7 +49,7 @@
         </ul>
       </div>
       <!-- SKILLS SUMMARY -->
-      <div id="skills-container" v-if="person.skills != []">
+      <div v-if="person.skills != []">
         <div class="section-title">SKILLS SUMMARY</div>
         <ul class="skill-list">
             <li>
@@ -76,7 +76,7 @@
         </ul>
       </div>
       <!-- PROFESSIONAL EXPERIENCE-->
-      <div id="experience-container">
+      <div>
         <div class="section-title">PROFESSIONAL EXPERIENCE</div>
         <div v-for="experience in person.experience" :key="experience.key" class="experience">
           <h2 class="company">{{ experience.company }}</h2>
@@ -92,7 +92,7 @@
         </div>
       </div>
       <!-- EDUCATION AND QUALIFICATION -->
-      <div id="education-container">
+      <div>
         <div class="section-title">EDUCATION</div>
         <div v-for="education in person.education" :key="education.degree" class="education">
           <h2 class="education-description">{{ education.description }}</h2>
