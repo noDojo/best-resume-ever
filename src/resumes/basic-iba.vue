@@ -42,7 +42,7 @@
       <!-- PROFESSIONAL PROFILE -->
       <div v-if="person.profile != []">
         <div class="section-title">PROFESSIONAL PROFILE</div>
-        <ul>
+        <ul class="item-list">
           <li v-for="profile in person.profile" :key="profile.item">
             <div>{{ profile.item }}</div>
           </li>
@@ -51,7 +51,7 @@
       <!-- SKILLS SUMMARY -->
       <div v-if="person.skills != []">
         <div class="section-title">SKILLS SUMMARY</div>
-        <ul class="skill-list">
+        <ul class="item-list">
             <li>
               <span class="bold-text">Programming Languages: </span><span>{{ person.skills[0].languages }}</span>
             </li>
@@ -76,7 +76,7 @@
         </ul>
       </div>
       <!-- PROFESSIONAL EXPERIENCE-->
-      <div>
+      <div class="bottom-space">
         <div class="section-title">PROFESSIONAL EXPERIENCE</div>
         <div v-for="experience in person.experience" :key="experience.key" class="experience">
           <h2 class="company">{{ experience.company }}</h2>
@@ -84,7 +84,7 @@
             <span>{{ experience.position }} | </span>
             <span>{{ experience.timeperiod }}</span>
           </p>
-          <ul style="margin-bottom: 10px;">
+          <ul class="bottom-space">
             <li v-for="item in experience.description" :key="item.bullet">
               <div class="text">{{ item.bullet }}</div>
             </li>
@@ -94,7 +94,7 @@
       <!-- EDUCATION AND QUALIFICATION -->
       <div>
         <div class="section-title">EDUCATION</div>
-        <div v-for="education in person.education" :key="education.degree" class="education">
+        <div v-for="education in person.education" :key="education.degree">
           <h2 class="education-description">{{ education.description }}</h2>
           <p class="text-timespan">
             <span>{{ education.degree }} | </span>
@@ -196,6 +196,7 @@ export default Vue.component(name, getVueOptions(name));
     .education-description {
       font-size: 20px;
       padding-left: 4px;
+      margin-top: 10px;
     }
 
     .text-timespan {
@@ -214,6 +215,14 @@ export default Vue.component(name, getVueOptions(name));
       background-color: lightgray;
       font-weight: 700;
       color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .item-list {
+      margin: 10px 0;
+    }
+
+    .bottom-space {
+      margin-bottom: 10px;
     }
   }
 }
