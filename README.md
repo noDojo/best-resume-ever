@@ -90,7 +90,7 @@ git clone https://github.com/salomonelli/best-resume-ever.git
 ![Resume previews](/readme-images/resumePreviews.png)
 
 
-6. Export your resume as pdf by running the command `npm run export`. In order to avoid errors due to the concurrency of two  `npm run` commands, stop the execution of the previus `npm run dev` and then type the export command.
+6. Export your resume as pdf by running the command `npm run export`. In order to avoid errors due to the concurrency of two  `npm run` commands, stop the execution of the previous `npm run dev` and then type the export command.
 
 All resumes will be exported to the `pdf/` folder.
 
