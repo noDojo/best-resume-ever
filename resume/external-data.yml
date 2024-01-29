@@ -37,7 +37,7 @@ experience:
   website: https://www.acstechnologies.com/
   description:
   - bullet: Performed system-wide data updates using large third-party data sets and MS SQL Server.
-  - bullet: Generated international vector Mapbox tilesets (mbtiles) using MS SQL Server, WSL, Tippecanoe, and an Ogr2Ogr GDAL (translator library for geospatila data formats).
+  - bullet: Generated international vector Mapbox tilesets (mbtiles) using MS SQL Server, WSL, Tippecanoe, and an Ogr2Ogr GDAL (translator library for geospatial data formats).
   - bullet: Standardized and documented the tagging and release process.
   - bullet: Set a monthly cadence for production releases where before releases were only taking place two or three times annually.
   - bullet: Integrated Tableau dashboards, analytics, and other data visualizations into a large .NET MVC application.
