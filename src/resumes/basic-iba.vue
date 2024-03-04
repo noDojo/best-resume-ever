@@ -6,17 +6,17 @@
           {{ person.name.first }} {{ person.name.last }}
         </div>
         <div>{{ person.position }}</div>
-        <!-- <div id="info-flex">
+        <div id="info-flex">
           <span id="email">
             <a :href="'mailto:' + person.contact.email">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               {{ person.contact.email }}
             </a>
           </span>
-          <span id="phone">
+          <!-- <span id="phone">
             <i class="fa fa-phone-square" aria-hidden="true"></i>
             {{ person.contact.phone }}
-          </span>
+          </span> -->
           <span v-if="person.contact.linkedin" id="website">
             <a :href="person.contact.linkedinurl">
               <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -35,7 +35,7 @@
               {{ person.contact.github }}
             </a>
           </span>
-        </div> -->
+        </div>
       </div>
     </div>
     <div id="resume-body">
