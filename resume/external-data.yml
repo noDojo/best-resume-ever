@@ -118,7 +118,7 @@ education:
 skills:
 - languages: JavaScript, C#, TypeScript, Golang
   key: 88ADB973-397D-49BF-BDD1-7A432F315AEF
-- webtechnologies: VueJS, jQuery, .NET/Razor/MVC, CSS/Less/SCSS/Stylus, Angular, NPM, Webpack, Gulp, Grunt
+- webtechnologies: VueJS, jQuery, .NET/Razor/MVC, CSS/Less/SCSS, Angular, NPM, Webpack, Gulp, Grunt
   key: 72D90732-7E87-4C8F-AACF-21470AB1C7F0
 - applicationservers: IIS, Kestrel
   key: 81F6B599-2490-4914-BA65-F9570F57465B
@@ -128,6 +128,10 @@ skills:
   key: 6C0F064D-BAEF-43EE-B3AD-44EFE167D315
 - vsc: Git
   key: 4F46F9AB-FEDE-422C-83A8-30EAFDFD1EDA
+- cicdtools: TeamCity, Octopus Deploy, Jenkins, GitHub Actions, Azure DevOps
+  key: 9D9AC1B4-3A83-4BD4-8A26-88DCE82E70CD
+- analytics: Segment, Intercom, Google Analytics, Grafana, Datadog, New Relic
+  key: 121218AF-5165-4538-A337-AA2B3FACDBC0
 - other: Jira, Agile Methodology, Scum, Figma, InVision
   key: 65810A1C-F514-438D-80A2-6BCF55533C73
 
