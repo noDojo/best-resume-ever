@@ -33,7 +33,7 @@ experience:
 - company: ACS Technologies
   key: 179EB26D-B6B5-4475-B7C1-C9F55D665D87
   position: Lead Software Engineer
-  timeperiod: September 2021 - present
+  timeperiod: March 2022 - present
   website: https://www.acstechnologies.com/
   description:
   - bullet: Performed system-wide data updates using large third-party data sets and MS SQL Server.
@@ -51,7 +51,7 @@ experience:
 - company: ACS Technologies
   key: 6A9FD6C2-9D86-4BEE-A470-FCF9F95CB344
   position: Senior Software Engineer / Front-End Lead
-  timeperiod: March 2021 - August 2021
+  timeperiod: April 2021 - March 2022
   website: https://www.acstechnologies.com/
   description:
   - bullet: Led a small team of developers tasked with building an analytics dashboard using Snowflake and the Sisense business intelligence tool.
@@ -67,7 +67,7 @@ experience:
 - company: ACS Technologies
   key: 93A06C53-4D1C-4FA7-99C8-6AB5E76BD636
   position: Software Engineer
-  timeperiod: July 2017 - February 2021
+  timeperiod: July 2017 - April 2021
   website: https://www.acstechnologies.com/
   description:
   - bullet: Frequently handled integrations between internal projects written in Vue.js, C#/.NET MVC, and Golang as well as integrations with third-party services and external API's.

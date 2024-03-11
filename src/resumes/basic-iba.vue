@@ -6,6 +6,10 @@
           {{ person.name.first }} {{ person.name.last }}
         </div>
         <div>{{ person.position }}</div>
+        <!-- <div>
+            <span class="headline">{{ person.name.first }} {{ person.name.last }} | </span>
+            <span>{{ person.position }}</span>
+        </div> -->
         <div id="info-flex">
           <span id="email">
             <a :href="'mailto:' + person.contact.email">
@@ -163,7 +167,8 @@ export default Vue.component(name, getVueOptions(name));
 
       #info-flex {
         display: flex;
-        margin-top: 20px;
+        // margin-top: 20px;
+        margin-top: 14px;
         font-size: 14px;
 
         span {

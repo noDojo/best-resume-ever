@@ -31,8 +31,7 @@
             ><a :href="'https://github.com/' + person.contact.github"
               ><i class="fa fa-github" aria-hidden="true"></i>
               {{ person.contact.github }}</a
-            ></span
-          >
+            ></span>
         </div>
       </div>
       <div id="header-right">
