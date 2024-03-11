@@ -7,7 +7,7 @@
             <div id="info-flex">
                 <span id="email"><a :href='"mailto:" + person.contact.email'>
                   <i class="fa fa-envelope" aria-hidden="true"></i> {{person.contact.email}}</a></span>
-                <span id="phone"><i class='fa fa-phone-square' aria-hidden="true"></i> {{person.contact.phone}}</span>
+                <span v-if="person.contact.phone" id="phone"><i class='fa fa-phone-square' aria-hidden="true"></i> {{person.contact.phone}}</span>
                 <span v-if="person.contact.website" id="website"><a :href='person.contact.website'><i class="fa fa-home" aria-hidden="true"></i> {{person.contact.website}}</a></span>
                 <span v-if="person.contact.github" id="github"><a :href='contactLinks.github'><i class="fa fa-github" aria-hidden="true"></i> {{person.contact.github}}</a></span>
             </div>
@@ -23,7 +23,7 @@
             <div class="experience" v-for="experience in person.experience" :key="experience.company">
                 <h2 class="company">{{experience.company}}</h2>
                 <p class="job-info"><span class="job-title">{{experience.position}} | </span><span class="experience-timeperiod">{{experience.timeperiod}}</span></p>
-                <p class="job-description" v-if="experience.description">{{experience.description}}</p>
+                <p v-for="item in experience.description" :key="item.bullet" class="job-description">{{ item.bullet }}</p>
                 <ul v-if="experience.list" >
                     <li v-for="(item, index) in experience.list" :key="index">
                       <span class="list-item-black">

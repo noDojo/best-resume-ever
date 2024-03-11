@@ -27,7 +27,7 @@
               </span>
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
-              <span class="section-content__text--light">{{ experience.description }}</span>
+              <span v-for="item in experience.description" :key="item.bullet" class="section-content__text--light">{{ item.bullet }}</span>
             </a>
           </div>
         </div>
@@ -132,17 +132,16 @@
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
+            <div v-if="person.contact.street" class="section-link">
               <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
             </div>
 
-            <a
-              class="section-link"
+            <a class="section-link"
               :href="contactLinks.email">
               <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
             </a>
 
-            <div class="section-link">
+            <div v-if="person.contact.phone" class="section-link">
               <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
             </div>
 

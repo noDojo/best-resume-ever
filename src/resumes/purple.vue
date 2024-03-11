@@ -11,10 +11,9 @@
               {{ person.contact.email }}</a
             ></span
           >
-          <span id="phone"
-            ><i class="fa fa-phone-square" aria-hidden="true"></i>
-            {{ person.contact.phone }}</span
-          >
+          <span v-if="person.contact.phone" id="phone">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>{{ person.contact.phone }}
+          </span>
           <span v-if="person.contact.website" id="website"
             ><a :href="person.contact.website"
               ><i class="fa fa-home" aria-hidden="true"></i>

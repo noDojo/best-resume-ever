@@ -46,7 +46,7 @@
             </td>
             <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
           </tr>
-          <tr>
+          <tr v-if="person.contact.phone">
             <td>
               <a :href="contactLinks.phone">{{ person.contact.phone }}</a>
             </td>

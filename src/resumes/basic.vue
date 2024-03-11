@@ -5,33 +5,29 @@
         <h2 id="position">{{ person.position }}</h2>
         <h1 id="name">{{ person.name.first }} {{ person.name.last }}</h1>
         <div id="info-flex">
-          <span id="email"
-            ><a :href="'mailto:' + person.contact.email">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              {{ person.contact.email }}</a
-            ></span
-          >
-          <!-- <span id="phone"
-            ><i class="fa fa-phone-square" aria-hidden="true"></i>
-            {{ person.contact.phone }}</span
-          > -->
-          <span v-if="person.contact.linkedin" id="website"
-            ><a :href="person.contact.linkedinurl"
-              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              {{ person.contact.linkedin }}</a
-            ></span
-          >
-          <span v-if="person.contact.website" id="website"
-            ><a :href="person.contact.website"
-              ><i class="fa fa-home" aria-hidden="true"></i>
-              {{ person.contact.website }}</a
-            ></span
-          >
-          <span v-if="person.contact.github" id="github"
-            ><a :href="'https://github.com/' + person.contact.github"
-              ><i class="fa fa-github" aria-hidden="true"></i>
-              {{ person.contact.github }}</a
-            ></span>
+          <span id="email">
+            <a :href="'mailto:' + person.contact.email">
+              <i class="fa fa-envelope" aria-hidden="true"></i>{{ person.contact.email }}
+            </a>
+          </span>
+          <span v-if="person.contact.phone" id="phone">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>{{ person.contact.phone }}
+            </span>
+          <span v-if="person.contact.linkedin" id="website">
+            <a :href="person.contact.linkedinurl">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>{{ person.contact.linkedin }}
+            </a>
+          </span>
+          <span v-if="person.contact.website" id="website">
+            <a :href="person.contact.website">
+              <i class="fa fa-home" aria-hidden="true"></i>{{ person.contact.website }}
+            </a>
+          </span>
+          <span v-if="person.contact.github" id="github">
+            <a :href="'https://github.com/' + person.contact.github">
+              <i class="fa fa-github" aria-hidden="true"></i>{{ person.contact.github }}
+            </a>
+          </span>
         </div>
       </div>
       <div id="header-right">
@@ -42,17 +38,13 @@
       <div id="experience-container">
         <h2 id="experience-title">{{ lang.experience }}</h2>
         <div class="spacer"></div>
-        <div
-          class="experience"
-          v-for="experience in person.experience"
+        <div v-for="experience in person.experience"
           :key="experience.key"
-        >
+          class="experience">
           <h2 class="company">{{ experience.product }}</h2>
           <p class="job-info">
-            <span class="job-title">{{ experience.position }} | </span
-            ><span class="experience-timeperiod">{{
-              experience.timeperiod
-            }}</span>
+            <span class="job-title">{{ experience.position }} | </span>
+            <span class="experience-timeperiod">{{ experience.timeperiod}}</span>
           </p>
           <div class="bullet-list">
             <div
@@ -68,21 +60,16 @@
           </div>
         </div>
       </div>
-
       <div id="education-container">
         <h2 id="education-title">{{ lang.education }}</h2>
         <div class="spacer"></div>
-        <div
-          class="education"
-          v-for="education in person.education"
+        <div v-for="education in person.education"
           :key="education.degree"
-        >
+          class="education">
           <h2 class="education-description">{{ education.description }}</h2>
           <p>
-            <span class="degree">{{ education.degree }} | </span
-            ><span class="education-timeperiod">{{
-              education.timeperiod
-            }}</span>
+            <span class="degree">{{ education.degree }} | </span>
+            <span class="education-timeperiod">{{ education.timeperiod }}</span>
           </p>
         </div>
       </div>

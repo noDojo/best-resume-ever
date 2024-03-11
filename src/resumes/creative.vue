@@ -28,7 +28,7 @@
         </div>
       </a>
 
-      <div class="block-marged txt-full-white">
+      <div v-if="person.contact.phone" class="block-marged txt-full-white">
         {{ person.contact.phone }}
       </div>
 
@@ -110,7 +110,7 @@
             <span class="section-content__header"> {{ experience.position }}</span>
             <span class="section-content__subheader"> {{ experience.company }}</span>
             <div class="section-content__text"> {{ experience.timeperiod }}</div>
-            <span class="section-content__text--light"> {{ experience.description }}</span>
+            <span v-for="item in experience.description" :key="item.bullet" class="section-content__text--light">{{ item.bullet }}</span>
           </a>
         </div>
       </div>

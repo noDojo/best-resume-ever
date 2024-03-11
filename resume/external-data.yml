@@ -133,7 +133,7 @@ skills:
 
 contact:
   email: levinerjamie@gmail.com
-  phone: (843) 229-1193
+  # phone: (843) 229-1193
   city: Florence
   citystate: Florence, SC
   zipcode: 29501
@@ -142,8 +142,8 @@ contact:
   github2: noDojo
   linkedin: levinerj
   websiteurl: https://www.jamieleviner.com
-  githuburl: https://github.com/jLeviner
-  githuburl2: https://github.com/noDojo
+  #githuburl: https://github.com/jLeviner
+  #githuburl2: https://github.com/noDojo
   linkedinurl: https://www.linkedin.com/in/levinerj/
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en

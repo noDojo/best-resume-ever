@@ -28,7 +28,7 @@
           </ul>
         </div>
       </div>
-      <a :href="contactLinks.phone" target="_blank">
+      <a v-if="person.contact.phone" :href="contactLinks.phone" target="_blank">
         <div class="item">
           <div class="icon">
             <i class="material-icons">phone</i>

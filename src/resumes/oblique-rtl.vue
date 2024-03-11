@@ -76,8 +76,8 @@
         <a :href="'mailto:' + person.contact.email">
           {{ person.contact.email }}</a
         >
-        <span class="bold-text"> | </span>
-        <a :href="'tel:' + person.contact.phone">{{ person.contact.phone }}</a>
+        <span v-if="person.contact.phone" class="bold-text"> | </span>
+        <a v-if="person.contact.phone" :href="'tel:' + person.contact.phone">{{ person.contact.phone }}</a>
         <span class="bold-text"> | </span>
         <a v-if="person.contact.website" :href="person.contact.website">
           {{ person.contact.website }}</a

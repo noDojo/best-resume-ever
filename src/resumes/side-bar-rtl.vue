@@ -24,7 +24,7 @@
           <i class="fa fa-circle" aria-hidden="true"></i>
           <i class="fa fa-circle" aria-hidden="true"></i>
         </div>
-        <div class="contact-row">
+        <div v-if="person.contact.phone" class="contact-row">
           <a href="contactLinks.phone">{{ person.contact.phone }}</a>
         </div>
         <div class="contact-row dots">
@@ -32,7 +32,7 @@
           <i class="fa fa-circle" aria-hidden="true"></i>
           <i class="fa fa-circle" aria-hidden="true"></i>
         </div>
-        <div class="contact-row">
+        <div v-if="person.contact.street" class="contact-row">
           {{ person.contact.street }} <br />
           {{ person.contact.city }}
         </div>

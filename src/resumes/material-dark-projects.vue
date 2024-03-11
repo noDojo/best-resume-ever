@@ -31,7 +31,7 @@
         </div>
       </div>
       <!-- phone -->
-      <a :href="'tel:' + person.contact.phone">
+      <a v-if="person.contact.phone" :href="'tel:' + person.contact.phone">
         <div class="item">
           <div class="icon">
             <i class="material-icons">phone</i>

@@ -18,7 +18,7 @@
         <span class="company"> {{experience.company}} </span>
         <span class="job-title"> {{experience.position}} </span>
         <span class="time-period"> {{experience.timeperiod}}</span>
-        <span class="job-description"> {{experience.description}} </span>
+        <span v-for="item in experience.description" :key="item.bullet" class="job-description">{{ item.bullet }}</span>
       </div>
     </div>
     <div class="contact">
@@ -28,7 +28,7 @@
           <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
           <td><a :href="contactLinks.email">{{person.contact.email}}</a></td>
         </tr>
-        <tr>
+        <tr v-if="person.contact.phone">
           <td><i class="fa fa-phone" aria-hidden="true"></i></td>
           <td><a :href="contactLinks.phone">{{person.contact.phone}}</a></td>
         </tr>
