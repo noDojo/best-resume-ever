@@ -27,16 +27,22 @@
               {{ person.contact.linkedin }}
             </a>
           </span>
-          <span v-if="person.contact.website" id="website">
-            <a :href="person.contact.website">
-              <i class="fa fa-home" aria-hidden="true"></i>
-              {{ person.contact.website }}
-            </a>
-          </span>
           <span v-if="person.contact.github" id="github">
             <a :href="'https://github.com/' + person.contact.github">
               <i class="fa fa-github" aria-hidden="true"></i>
               {{ person.contact.github }}
+            </a>
+          </span>
+          <span v-if="person.contact.github2" id="github">
+            <a :href="'https://github.com/' + person.contact.github2">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              {{ person.contact.github2 }}
+            </a>
+          </span>
+          <span v-if="person.contact.website" id="website">
+            <a :href="person.contact.website">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              {{ person.contact.website }}
             </a>
           </span>
         </div>
@@ -62,18 +68,18 @@
             <li>
               <span class="bold-text">Web Technologies: </span><span>{{ person.skills[1].webtechnologies }}</span>
             </li>
-            <li>
+            <!-- <li>
               <span class="bold-text">Application Servers: </span><span>{{ person.skills[2].applicationservers }}</span>
-            </li>
+            </li> -->
             <li>
               <span class="bold-text">Database: </span><span>{{ person.skills[3].database }}</span>
             </li>
-            <li>
+            <!-- <li>
               <span class="bold-text">Operating Systems: </span><span>{{ person.skills[4].operatingsystems }}</span>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <span class="bold-text">VCS: </span><span>{{ person.skills[5].vsc }}</span>
-            </li>
+            </li> -->
             <li>
               <span class="bold-text">Other: </span><span>{{ person.skills[6].other }}</span>
             </li>
