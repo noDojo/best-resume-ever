@@ -68,26 +68,20 @@
             <li>
               <span class="bold-text">Web Technologies: </span><span>{{ person.skills[1].webtechnologies }}</span>
             </li>
-            <!-- <li>
-              <span class="bold-text">Application Servers: </span><span>{{ person.skills[2].applicationservers }}</span>
-            </li> -->
             <li>
-              <span class="bold-text">Database: </span><span>{{ person.skills[3].database }}</span>
+              <span class="bold-text">Database: </span><span>{{ person.skills[2].database }}</span>
             </li>
             <li>
-              <span class="bold-text">CI/CD Tools: </span><span>{{ person.skills[6].cicdtools }}</span>
+              <span class="bold-text">CI/CD Tools: </span><span>{{ person.skills[4].cicdtools }}</span>
             </li>
             <li>
-              <span class="bold-text">Monitoring & Analytics: </span><span>{{ person.skills[7].analytics }}</span>
+              <span class="bold-text">Monitoring & Analytics: </span><span>{{ person.skills[5].analytics }}</span>
             </li>
-            <!-- <li>
-              <span class="bold-text">Operating Systems: </span><span>{{ person.skills[4].operatingsystems }}</span>
-            </li> -->
             <!-- <li>
               <span class="bold-text">VCS: </span><span>{{ person.skills[5].vsc }}</span>
             </li> -->
             <li>
-              <span class="bold-text">Other: </span><span>{{ person.skills[8].other }}</span>
+              <span class="bold-text">Other: </span><span>{{ person.skills[6].other }}</span>
             </li>
         </ul>
       </div>
