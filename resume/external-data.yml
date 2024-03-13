@@ -120,7 +120,7 @@ skills:
 - languages: JavaScript, C#, TypeScript, Golang
   key: 88ADB973-397D-49BF-BDD1-7A432F315AEF
 # 2
-- webtechnologies: VueJS, jQuery, .NET/Razor/MVC, CSS/SCSS/Less, Angular, NPM, Webpack, Gulp, Grunt
+- webtechnologies: VueJS, jQuery, .NET MVC/.NET Core/Razor, CSS/SCSS/Less, Angular, NPM, Webpack, Gulp, Grunt
   key: 72D90732-7E87-4C8F-AACF-21470AB1C7F0
 # 3
 - database: MS SQL, PostgreSQL, Couchbase
