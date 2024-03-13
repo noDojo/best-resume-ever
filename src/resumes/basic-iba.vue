@@ -50,13 +50,23 @@
     </div>
     <div id="resume-body">
       <!-- PROFESSIONAL PROFILE -->
-      <div v-if="person.profile != []">
+      <!-- <div v-if="person.profile != []">
         <div class="section-title">PROFESSIONAL PROFILE</div>
         <ul class="item-list">
           <li v-for="profile in person.profile" :key="profile.item">
             <div>{{ profile.item }}</div>
           </li>
         </ul>
+      </div> -->
+      <!-- PROFESSIONAL PROFILE -->
+      <div class="bottom-space" style="margin-top: 10px;">
+        <div class="section-title">PROFESSIONAL PROFILE</div>
+        <!-- <span>{{ person.about }}</span> -->
+        <ul style="list-style-type: none; padding-left: 30px;">
+            <li>
+              <div class="text">{{ person.about }}</div>
+            </li>
+          </ul>
       </div>
       <!-- SKILLS SUMMARY -->
       <div v-if="person.skills != []">
