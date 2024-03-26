@@ -3,9 +3,10 @@ name:
   first: Jamie
   middle: # todo: remove this declaration and its references 
   last: Leviner
-about: Full-Stack Software Engineer with nine years of experience developing and maintaining scalable enterprise systems and solutions.
-  For three of those years, I led several cross-functional teams composed of both internal and external members.
-  As Lead Software Engineer, I was responsible for guiding the planning, logistics, and development of multiple products, as well as the product's deployments and maintenance.
+about: Full-Stack Software Engineer with nine years of experience building, deploying, and maintaining scalable, data-driven solutions within an Agile environment.
+  Led multiple cross-functional teams composed of both full-time and contracting team members.
+  Skilled using C# / .NET, JavaScript, VueJS, Golang, Angular, and SQL, with a solid background in source control and a concentration on front-end architecture, frameworks,
+  performance optimization, prototyping, and tooling.
 position: Lead Software Engineer
 
 birth:
@@ -14,7 +15,7 @@ birth:
 
 # PROFESSIONAL PROFILE #
 profile:
-- item: Software engineer with 8 years of experience in software application development.
+- item: Software engineer with 9 years of experience in software application development.
   key: AF418A0E-4C34-4BF1-93AA-CF47812D3483
 - item: Clear understanding of all stages of the software development process.
   key: 3FD9611C-0160-431C-B672-75C36FF49D56
@@ -53,7 +54,7 @@ experience:
   website: https://www.acstechnologies.com/
   description:
   - bullet: Led a small team of developers tasked with building an analytics dashboard using Snowflake and the Sisense business intelligence tool.
-  - bullet: Created a Vue SPA as a POC to assess the various embedding techniques offered by Sisense.
+  # - bullet: Created a Vue SPA as a POC to assess the various embedding techniques offered by Sisense.
   - bullet: Embedded the analytics and data visualizations from Sisense into a Vue SPA.
   - bullet: Integrated the stand-alone Vue SPA into a large, high-volume .NET MVC application (as a Vue SPA).
   - bullet: Implemented and automated version control in the Sisense development console (a feature not supported at the time).
@@ -70,22 +71,24 @@ experience:
   description:
   - bullet: Frequently handled integrations between internal projects written in Vue.js, C#/.NET MVC, and Golang as well as integrations with third-party services and external API's.
   - bullet: Created tools to standardize and improve developer experience and accelerate the rate of development (enum/JavaScript generator, dynamic link builders with permissions set via JWT, etc).
+  - bullet: Reported team progress and project development status to management and stakeholders at the close of each sprint.
+  - bullet: Hosted (and regularly presented at) open invitation tech talks with an average attendance of 20-30 people from multiple departments and with varying levels of technical experience.
+  # - bullet: Oversaw and supported contract work on a variety of projects such as a website builder / publisher, a streaming platform, and a help documentation portal to assist for a high-volume .NET web application.
+  - bullet: Provided leadership as a subject matter expert (SME) in analytics and styling languages (CSS/SCSS/LESS).
+  - bullet: Redesigned a reporting engine to mitigate serious performance issues and increase its capacity to generate client data in multiple formats.
+  - bullet: Created multiple SPA's by leveraging modern functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, Vuetify, and other various tools.
+  # universal services
   - bullet: Developed an SSO authentication layer to provide a centralized integration point for internal and external products both future and present.
   - bullet: Designed and created a component library using Vue.js SFC's, Rollup, npm, and Github Packages that generated npm packages.
-  - bullet: Developed, designed, implemented, and maintained CRUD API endpoints using Golang.
   - bullet: Designed and implemented new databases and schemas for account management and authentication across multiple products using PostgreSQL.
   - bullet: Regularly met with the UX team to assess designs for technical feasibility, identify and step through user workflows, scope project requirements, and estimate effort prior to development.
   - bullet: Designed and developed a tool for rapid prototyping and also helps in facilitating UX/UI A/B testing.
-  - bullet: Reported team progress and project development status to management and stakeholders at the close of each sprint.
-  - bullet: Hosted (and regularly presented at) open invitation tech talks with an average attendance of 20-30 people from multiple departments and with varying levels of technical experience.
   - bullet: Introduced new testing procedures (BDD) for department-wide use. Implemented a test generation tool written in Go that translated Cucumber's Gherkin syntax.
-  - bullet: Oversaw and supported contract work on a variety of projects such as a website builder / publisher, a streaming platform, and a help documentation portal to assist for a high-volume .NET web application.
-  - bullet: Provided leadership as a subject matter expert (SME) in analytics and styling languages (CSS/SCSS/LESS).
-  - bullet: Created a Vue SPA that allowed users to give to a church or organization.
+  # abundant
   - bullet: Actively participated in all phases of the software development life cycle, from architectural planning and requirements gathering to development and testing to release and maintenance.
+  - bullet: Created a Vue SPA that allowed users to give to a church or organization.
+  - bullet: Developed, designed, implemented, and maintained CRUD API endpoints using Golang.
   - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
-  - bullet: Redesigned a reporting engine to mitigate serious performance issues and increase its capacity to generate client data in multiple formats.
-  - bullet: Created multiple SPA's by leveraging modern functionality (code-splitting, etc.) using Vue.js, Vue CLI, Vuex, Vuetify, and other various tools.
 
 # JUNIOR | 05.11.2015 - 07.02.2017 #
 - company: ACS Technologies
@@ -114,22 +117,17 @@ education:
 
 # SKILL SUMMARY #
 skills:
-# 1
 - languages: JavaScript, C#, TypeScript, Golang
   key: 88ADB973-397D-49BF-BDD1-7A432F315AEF
-# 2
-- webtechnologies: VueJS, jQuery, .NET MVC/.NET Core/Razor, CSS/SCSS/Less, Angular, NPM, Webpack, Gulp, Grunt
+- webtechnologies: VueJS, jQuery, .NET MVC / .NET Core / Razor, CSS / SCSS / Less, Angular, npm, Webpack, Gulp, Grunt
   key: 72D90732-7E87-4C8F-AACF-21470AB1C7F0
-# 3
 - database: MS SQL, PostgreSQL, Couchbase
   key: 73E30C15-C583-4358-AC9F-6443A5C812D3
-- vsc: Git
-  key: 4F46F9AB-FEDE-422C-83A8-30EAFDFD1EDA
 - cicdtools: TeamCity, Octopus Deploy, Jenkins, GitHub Actions, Azure DevOps
   key: 9D9AC1B4-3A83-4BD4-8A26-88DCE82E70CD
-- analytics: Segment, Intercom, Google Analytics, Grafana, Datadog, New Relic
+- analytics: Segment, Intercom, Google Analytics, Grafana, Datadog
   key: 121218AF-5165-4538-A337-AA2B3FACDBC0
-- other: Jira, Agile Methodology, Scum, Figma, InVision
+- other: Git, Jira, Agile Methodology, Scum, Figma, InVision
   key: 65810A1C-F514-438D-80A2-6BCF55533C73
 
 contact:

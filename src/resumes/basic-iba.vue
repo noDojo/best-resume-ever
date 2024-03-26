@@ -27,12 +27,12 @@
               {{ person.contact.linkedin }}
             </a>
           </span>
-          <span v-if="person.contact.github" id="github">
+          <!-- <span v-if="person.contact.github" id="github">
             <a :href="'https://github.com/' + person.contact.github">
               <i class="fa fa-github" aria-hidden="true"></i>
               {{ person.contact.github }}
             </a>
-          </span>
+          </span> -->
           <span v-if="person.contact.github2" id="github">
             <a :href="'https://github.com/' + person.contact.github2">
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -40,7 +40,7 @@
             </a>
           </span>
           <span v-if="person.contact.website" id="website">
-            <a :href="person.contact.website">
+            <a :href="person.contact.websiteurl">
               <i class="fa fa-home" aria-hidden="true"></i>
               {{ person.contact.website }}
             </a>
@@ -82,16 +82,13 @@
               <span class="bold-text">Database: </span><span>{{ person.skills[2].database }}</span>
             </li>
             <li>
-              <span class="bold-text">CI/CD Tools: </span><span>{{ person.skills[4].cicdtools }}</span>
+              <span class="bold-text">CI/CD Tools: </span><span>{{ person.skills[3].cicdtools }}</span>
             </li>
             <li>
-              <span class="bold-text">Monitoring & Analytics: </span><span>{{ person.skills[5].analytics }}</span>
+              <span class="bold-text">Monitoring & Analytics: </span><span>{{ person.skills[4].analytics }}</span>
             </li>
-            <!-- <li>
-              <span class="bold-text">VCS: </span><span>{{ person.skills[5].vsc }}</span>
-            </li> -->
             <li>
-              <span class="bold-text">Other: </span><span>{{ person.skills[6].other }}</span>
+              <span class="bold-text">Other: </span><span>{{ person.skills[5].other }}</span>
             </li>
         </ul>
       </div>
