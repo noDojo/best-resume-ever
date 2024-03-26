@@ -86,7 +86,7 @@ experience:
   - bullet: Introduced new testing procedures (BDD) for department-wide use. Implemented a test generation tool written in Go that translated Cucumber's Gherkin syntax.
   # abundant
   - bullet: Actively participated in all phases of the software development life cycle, from architectural planning and requirements gathering to development and testing to release and maintenance.
-  - bullet: Created a Vue SPA that allowed users to give to a church or organization.
+  - bullet: Created a Vue SPA that allowed users to make donations to an organization.
   - bullet: Developed, designed, implemented, and maintained CRUD API endpoints using Golang.
   - bullet: Optimized queries and document/subdocument/key indexing strategies in Couchbase.
 
@@ -132,7 +132,6 @@ skills:
 
 contact:
   email: levinerjamie@gmail.com
-  # phone: (843) 229-1193
   city: Florence
   citystate: Florence, SC
   zipcode: 29501
